@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Set of Radio Buttons</title>
+</head>
+<body>
+    <h2>CatPhotoApp</h2>
+    <main>
+        <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        alt="A cute orange cat lying on its back."></a>
+
+        <p>Things cats love:</p>
+        <ul>
+            <li>Cat nip</li>
+            <li>Laser pointers</li>
+            <li>Lasagna</li>
+        </ul>
+
+        <p>Top 3 things cats hate:</p>
+        <ol>
+            <li>Baths</li>
+            <li>Dogs</li>
+            <li>Being groomed</li>
+        </ol>
+
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+            
+            <!--Create a Set of Radio Buttons <label for=""></label>-->
+            <label for="indoor">
+                <!--All related radio buttons must have the same name attribute to create a radio button group-->
+                <!--
+                    When creating a radio group, selecting any radio button automatically deselects the other
+                    buttons within the same group, ensuring that the user provides only one response.
+                -->
+                <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+            </label>
+
+            <!--
+                It is considered good practice to set a for attribute on the label element, with a value that
+                matches the value of the input element's id attribute. This allows assistive technologies to
+                establish a link relationship between the tag and the related input element.
+            -->
+            <label for="outdoor">
+                <!--All related radio buttons must have the same name attribute to create a radio button group-->
+                <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+            </label>
+        </form>
+    </main>
+</body>
+</html>
