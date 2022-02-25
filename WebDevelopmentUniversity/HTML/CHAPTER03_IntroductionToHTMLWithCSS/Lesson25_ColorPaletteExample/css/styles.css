@@ -1,0 +1,41 @@
+h1{
+    color: #e76f51;
+    text-align: center;
+}
+
+h3{
+    color: #e76f51;
+    text-align: center;
+}
+
+p{
+    color: #e9c46a;
+    background-color: #264653;
+    padding: 15px;
+    border: 10px solid #2a9d8f;
+    /*margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;*/
+    /*margin: 40px 10px 20px 10px;*/    /*top-right-bottom-left*/
+    /*margin: 40px 10px 20px;*/     /*top: 40px - right & left: 10px - bottom: 20px*/
+    /*margin: 40px 20px;*/      /*top & bottom: 40px - right & left: 20px*/
+    /*margin: auto;*/       /*margin auto without setting px*/
+    margin: auto 50px;
+    text-align: center;
+}
+
+img{
+    background-color: #264653;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+a{
+    display: block;
+    text-align: center;
+}
+
+/* Color Palettes: https://coolors.co/palettes/trending */
