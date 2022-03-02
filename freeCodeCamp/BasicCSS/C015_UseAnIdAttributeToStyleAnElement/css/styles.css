@@ -1,0 +1,32 @@
+.red-text{          /* Class declaration */      
+    color: red;
+}
+
+h2{
+    font-family: Lobster, monospace;  /* font-family: FAMILY_NAME, GENERIC_NAME(optional); */
+    /* When a font is not available on the system, you can tell the browser to "downgrade" to an alternate font. */
+}
+
+p{
+    font-size: 16px;  /* font-size property */
+    font-family: monospace;     /* font-family property */
+}
+
+.thick-green-border{    /* Class Declaration */
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;    /* Round */
+}
+
+.smaller-image{     /* Class declaration */ 
+    width: 100px;
+}
+
+.silver-background{     /* Class declaration */
+    background-color: silver;
+}
+
+#cat-photo-form{    /* id Declaration */    /* To refer to an id, you must add # in front of its name. */
+    background-color: green;
+}
