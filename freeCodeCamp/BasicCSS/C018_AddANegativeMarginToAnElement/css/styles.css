@@ -19,14 +19,14 @@
     background-color: crimson;
     color: #fff;
     padding: 20px;
-    margin: 20px;
+    margin: -15px;  /* If you set the margin of an element to a negative value, the element will grow in size. */
 }
 
 .blue-box {
     background-color: blue;
     color: #fff;
     padding: 20px;
-    margin: 20px;
+    margin: -15px;   /* If you set the margin of an element to a negative value, the element will grow in size. */
 }
 
 /*
