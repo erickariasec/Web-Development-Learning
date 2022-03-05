@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: green;
+    font-family: monospace;
+}
+
+.pink-text{     /* Overwrites body element */
+    color: pink;
+}
+
+.blue-text{     /* Overwrites pink-text */
+    color: blue;
+}
+
+#orange-text{   /* Overwrites Class Declarations */
+    color: orange;
+}
