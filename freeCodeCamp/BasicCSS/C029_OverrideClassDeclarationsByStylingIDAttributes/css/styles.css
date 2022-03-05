@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: green;
+    font-family: monospace;
+}
+
+.pink-text{     /* Overwrites body element */
+    color: pink;
+}
+
+.blue-text{     /* Overwrites pink-text */
+    color: blue;
+}
+
+#orange-text{   /* Overwrites Class Declarations */
+    color: orange;
+}
+
+/*
+    Note: It doesn't matter if you declare this CSS above or below the pink-text class, as the id attribute will always take precedence.
+*/
