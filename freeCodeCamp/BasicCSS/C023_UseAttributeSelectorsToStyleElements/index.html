@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Attribute Selectors to Style Elements</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!--Import Lobster font from Google Fonts-->
+    <link rel="stylesheet" href="css/styles.css"> <!--Here are all styles added--> <!--Styles tag-->
+</head>
+<body>
+    <h2 class="red-text">CatPhotoApp</h2> 
+    <main>
+        <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p> 
+
+        <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
+        alt="A cute orange cat lying on its back."></a>  
+
+        <div class="silver-background">    
+            <p>Things cats love:</p>
+            <ul>
+                <li>Cat nip</li>
+                <li>Laser pointers</li>
+                <li>Lasagna</li>
+            </ul>
+
+            <p>Top 3 things cats hate:</p>
+            <ol>
+                <li>Baths</li>
+                <li>Dogs</li>
+                <li>Being groomed</li>
+            </ol>
+        </div>
+
+        <!--
+            An id is not reusable and should only be applied to a single element.
+            An id also has higher specificity (importance) than a class, so if you apply an id and a class to the same element and their styles conflict, the id's styles will be applied.
+        -->
+        <form id="cat-photo-form" action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+            <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+            <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+            <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
