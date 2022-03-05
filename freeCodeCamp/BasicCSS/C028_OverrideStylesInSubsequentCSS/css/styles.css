@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    color: green;
+    font-family: monospace;
+}
+
+.pink-text{     /* Overwrites body element */
+    color: pink;
+}
+
+.blue-text{     /* Overwrites pink-text */
+    color: blue;
+}
+
+/*
+    Note: The order in which the classes are listed within the HTML element does not matter.
+    
+    What is important, however, is the order of the class declarations in the <style> section.
+    The second statement will always take precedence over the first. Since .blue-text is declared second, it will override the attributes of .pink-text
+*/

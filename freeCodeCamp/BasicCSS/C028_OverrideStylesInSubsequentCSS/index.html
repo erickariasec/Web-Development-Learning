@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Override Styles in Subsequent CSS</title>
+    <link rel="stylesheet" href="css/styles.css"> <!--Here are all styles added--> <!--Styles tag-->
+</head>
+
+    <h1 class="pink-text blue-text">Hello World</h1>
+    
+</html>
+
+<!--
+    Note: The order in which the classes are listed within the HTML element does not matter.
+    
+    What is important, however, is the order of the class declarations in the <style> section.
+    The second statement will always take precedence over the first. Since .blue-text is declared second, it will override the attributes of .pink-text
+-->
