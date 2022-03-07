@@ -1,0 +1,24 @@
+.red-text {
+    color: #FF0000;
+}
+.green-text {
+    color: #00FF00;
+}
+.dodger-blue-text {
+    color: #1E90FF;
+}
+.orange-text {
+    color: #FFA500;
+}
+
+/*
+    Let's review: In hexadecimal code, 6 hexadecimal digits are used to represent the colors, two for the red (R), green (G) and blue (B) component.
+
+    From these three pure colors (red, green, and blue) we can vary the amounts of each color component to create over 16 million different colors!
+
+    For example, orange is pure red mixed with some green and no blue. In hex code, this translates to #FFA500.
+
+    The digit 0 is the lowest number in the hex code, and represents the complete absence of color.
+
+    The digit F is the highest number in the hex code, and represents the maximum brightness.
+*/
