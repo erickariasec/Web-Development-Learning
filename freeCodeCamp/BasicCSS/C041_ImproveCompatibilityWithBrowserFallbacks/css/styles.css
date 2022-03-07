@@ -1,0 +1,25 @@
+:root {
+    --red-color: red;
+}
+.red-box {
+    background: red;    /* Browser Fallback */
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+}
+
+/*
+    When working with CSS code, you may at some point run into compatibility issues with other web browsers.
+    For this reason it is important to provide fallback configurations for other browsers or "browser fallbacks" to deal with possible compatibility issues.
+
+    When your browser analyzes the CSS of a web page, it ignores any properties it doesn't recognize or support.
+    For example, if you use a CSS variable to set a background color on a site, Internet Explorer will ignore the set background color because it doesn't support the use of CSS variables.
+    In that case, the browser will use whatever value you have set as the value of that property.
+    If it can't find any other value set for that property in the code, it will revert to that browser's default, which is usually not ideal.
+
+    This means that if you want to provide a fallback value for the browser, this is as simple as including another more commonly supported value immediately before your declaration.
+    That way, an older browser will have a value that it can support, while a newer browser will interpret whatever statement you include later in the cascade.
+
+    It appears that in this code a variable is used to set the background color of the .red-box class.
+    Let's improve our code's compatibility with other browsers by adding another background declaration just before the existing declaration, and setting this fallback value to red (red).
+*/
