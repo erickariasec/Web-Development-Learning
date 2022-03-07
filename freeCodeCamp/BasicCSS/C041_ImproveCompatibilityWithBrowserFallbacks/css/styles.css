@@ -2,7 +2,7 @@
     --red-color: red;
 }
 .red-box {
-    background: red;    /* Browser Fallback */
+    background: red;    /*Browser Fallback*/
     background: var(--red-color);
     height: 200px;
     width:200px;
