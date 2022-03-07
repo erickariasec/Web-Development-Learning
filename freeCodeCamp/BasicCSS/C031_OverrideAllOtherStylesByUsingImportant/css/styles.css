@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: green;
+    font-family: monospace;
+}
+
+.pink-text{     /* Overwrites body element */
+    color: pink !important; /* OVERRIDES ALL BY USING !important */
+}
+
+.blue-text{     /* Overwrites pink-text */
+    color: blue;
+}
+
+#orange-text{   /* Overwrites Class Declarations */
+    color: orange;
+}
+
+/*
+    There is one last way to override CSS. This is the most powerful method of all.
+
+    In many situations you will use CSS libraries.
+    These libraries can accidentally override your own CSS code.
+    So when you need to make sure that a specific CSS code is applied to an element, you can use !important.
+*/
