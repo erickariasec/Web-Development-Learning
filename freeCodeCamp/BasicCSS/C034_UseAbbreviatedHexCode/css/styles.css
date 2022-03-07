@@ -1,0 +1,20 @@
+.red-text {
+    color: #F00;
+}
+.fuchsia-text {
+    color: #F0F;
+}
+.cyan-text {
+    color: #0FF;
+}
+.green-text {
+    color: #0F0;
+}
+
+/*
+    The hexadecimal code #FF0000 for the color red can be shortened to #F00.
+    This short form uses one digit for red, one digit for green, and one digit for blue.
+
+    This reduces the total number of possible colors to around 4,000.
+    However, browsers will interpret #FF0000 and #F00 to be the exact same color.
+*/
