@@ -1,0 +1,25 @@
+h1{
+    color: #f07167;
+}
+
+a:link{
+    color: #fb8500;     /* This color is applied to elements that we have not yet clicked */
+    text-decoration: none;      /* Remove underlining from links */
+}
+
+a:visited{
+    color: #219ebc;     /* This color is applied to elements when we have already clicked */
+    text-decoration: none;      /* Remove underlining from links */
+}
+
+/* When we mouse over the link */
+a:hover{
+    color: #8ecae6;
+    text-decoration: underline;
+}
+
+/* When we are clicking on the link */
+a:active{
+    color: #023047;
+    text-decoration: underline;
+}
