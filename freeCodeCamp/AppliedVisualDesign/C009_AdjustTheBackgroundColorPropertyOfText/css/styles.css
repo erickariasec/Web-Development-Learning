@@ -1,0 +1,49 @@
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+}
+p {
+    text-align: justify;
+}
+.links {
+    text-align: left;
+    color: black;
+}
+.fullCard {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+}
+.cardContent {
+    padding: 10px;
+}
+.cardText {
+    margin-bottom: 30px;
+}
+
+/*
+    Instead of adjusting the overall background or text color so that the foreground is easily readable,
+    you can add a background-color to the element that contains the text you want to highlight.
+    This challenge uses rgba() instead of normal rgb() or hex codes.
+
+    rgba means:
+    r = network
+    g = green
+    b = blue
+    a = alpha/opacity level
+    
+    RGB values can range from 0 to 255.
+    Alpha value can range from 1, which is completely opaque, or a solid color, to 0, which is completely transparent, or light.
+    rgba() is ideal to use in this case, as it allows you to adjust the opacity.
+    This means you don't have to completely block out the background.
+
+    You will use background-color: rgba(45, 45, 45, 0.1) for this challenge.
+    Produces a dark gray color that is almost transparent given the low opacity value of 0.1.
+
+    To make the text stand out more, set the background-color of the h4 element to the given rgba() value.
+
+    Also for the h4, remove the height property and add 10px padding.
+*/
