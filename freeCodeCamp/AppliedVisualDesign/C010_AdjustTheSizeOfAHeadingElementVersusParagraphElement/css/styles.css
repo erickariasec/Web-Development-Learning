@@ -1,0 +1,34 @@
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 27px;
+}
+p {
+    text-align: justify;
+}
+.links {
+    text-align: left;
+    color: black;
+}
+.fullCard {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+}
+.cardContent {
+    padding: 10px;
+}
+.cardText {
+    margin-bottom: 30px;
+}
+
+/*
+    The font size of heading tags (h1 to h6) should generally be larger than the font size of paragraph tags.
+    This makes it easier for the user to visually understand the layout and level of importance of each element on the page.
+    Use the font-size property to adjust the size of the text in an element.
+
+    To make the header significantly larger than the paragraph, change the font-size of the h4 element to 27 pixels.
+*/
