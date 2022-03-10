@@ -1,0 +1,52 @@
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 27px;
+}
+p {
+    text-align: justify;
+}
+.links {
+    text-align: left;
+    color: black;
+}
+#thumbnail{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.fullCard {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+}
+.cardContent {
+    padding: 10px;
+}
+.cardText {
+    margin-bottom: 30px;
+}
+
+/*
+    The box-shadow property applies one or more shadows to an element.
+
+    The box-shadow property takes values for:
+
+    offset-x (how far to extend the shadow horizontally from the element),
+    offset-y (how far to extend the shadow vertically from the element),
+    blur Radius,
+    spread-radius and
+    color, in that order.
+
+    The blur-radius and spread-radius values are optional.
+
+    Multiple box-shadows can be created by using commas to separate the properties of each box-shadow element.
+
+    Here's an example of CSS to create multiple shadows with a bit of blur, with almost transparent black colors:
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    The element now has a thumbnail id.
+    With this selector, use the values from the CSS example above to apply box-shadow to the card.
+*/
