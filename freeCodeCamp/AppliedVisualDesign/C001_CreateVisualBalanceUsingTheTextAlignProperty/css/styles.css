@@ -1,0 +1,31 @@
+h4 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+.links {
+    margin-right: 20px;
+
+}
+.fullCard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+}
+.cardContent {
+    padding: 10px;
+}
+
+/*
+    Text is often a large part of web content. CSS has multiple options to align it with the text-align property.
+
+    text-align: justify; spaces the text so that each line is the same width.
+
+    text-align: center; center the text
+
+    text-align: right; align text to the right
+
+    And text-align: left; (default option) aligns the text to the left.
+*/
