@@ -1,0 +1,20 @@
+a {
+    color: #000;
+}
+a:hover {
+    color: blue;
+}
+/*
+    This challenge will show the use of pseudo-classes.
+    A pseudo-class is a keyword that can be added to selectors to select a specific state of an element.
+
+    For example, the style of an "anchor" tag can be changed by its hover state using the :hover pseudo-class selector.
+    Here is the CSS to change the color of the "anchor" tag to red during the hover state:
+
+    a:hover {
+    color: red;
+    }
+
+    The code editor has a CSS rule to style all tags black.
+    Add a rule so that when the user hovers over the a tag, the color is blue.
+*/
