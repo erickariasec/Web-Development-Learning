@@ -1,0 +1,29 @@
+h2{
+    position: relative;
+    top: 15px;
+}
+/*
+    CSS treats each HTML element as its own box, this is what is usually referred to as the CSS Box Model.
+    Block elements automatically start on a new line (think title tags, paragraphs, and divs) while inline elements sit between surrounding content (like images or spans).
+    The default layout of elements in this way is called the normal flow of a document, but CSS offers a position property to override it.
+
+    When an element's position is set to relative, it allows you to specify how CSS will move it relative to its current position within the normal flow of the page.
+    It is paired with the CSS scroll properties of left or right, and top or bottom.
+    These tell how many pixels, percentages, or ems to move the element away from where it is normally positioned.
+    The following example moves the paragraph 10 pixels away from the bottom:
+
+    p {
+    position: relative;
+    bottom: 10px;
+    }
+
+    Changing an element's position to relative does not remove it from the normal flow;
+    other elements around it will still behave as if that element were in its default position.
+
+    Note: Positioning gives you a lot of flexibility and power over the visual layout of a page.
+    It's good to remember that no matter the position of the elements, the underlying HTML markup must be organized and make sense when read from top to bottom.
+    This is how visually impaired users (who rely on assistive devices like screen readers) access your content.
+
+    Change the position property of h2 to relative, and use CSS offset to move it 15 pixels away from the top where it sits within the normal flow.
+    Notice that there is no impact on the positions of the surrounding h1 and p elements.
+*/
