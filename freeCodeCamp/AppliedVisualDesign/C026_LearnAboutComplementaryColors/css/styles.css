@@ -1,0 +1,44 @@
+body {
+    background-color: #FFFFFF;
+}
+.blue {
+    background-color: #0000FF;
+}
+.yellow {
+    background-color: #FFFF00;
+}
+div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+/*
+    Color theory and its impact on design is a heavy topic and we will only cover the basics in the next few challenges.
+    On a website, colors draw attention, provoke emotions and create visual harmony.
+    Different color combinations can change the look of a website and it takes extensive planning to decide on a color palette that integrates with our content.
+
+    The color wheel is a useful tool for looking at how colors are related to each other - it's a circle where similar hues are close together and dissimilar hues are far apart.
+    When two opposite colors are together on the circle, they are called complementary colors.
+    They are characterized because if they are combined, they cancel themselves and create a gray color.
+    However, when placed together, these colors appear brighter and produce a strong visual contrast.
+
+    Below are some examples of colors with their hex codes:
+
+    red (#FF0000) and cyan (#00FFFF)
+    green(#00FF00) and magenta (#FF00FF)
+    blue (#0000FF) and yellow (#FFFF00)
+
+    This is different from the old-fashioned RYB color model that many of us learned in school, which has different primary and complementary colors.
+    Modern color theory uses the additive RGB model (as in a computer screen) and the remaining CMY(K) model (as in printing).
+    Read here for more information on this complex topic.
+
+    There are many color picker tools available online that have the option of finding the complement of a color.
+
+    Note: The use of color can be a powerful way to add visual interest to a page.
+    However, color alone should not be used as the only way to convey important information because visually impaired users may not understand that content.
+    This issue will be covered in more detail in Applied Accessibility Challenges.
+
+    Change the background-color property of the blue and yellow classes to their respective colors.
+    Notice how the colors look to each other other than when compared to the white background.
+*/
