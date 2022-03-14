@@ -1,0 +1,50 @@
+body {
+    background-color: #FFFFFF;
+}
+
+.orange {
+    background-color: #FF7F00;
+}
+
+.cyan {
+    background-color: #00FFFF;
+}
+
+.raspberry {
+    background-color: #FF007F;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+/*
+    Monitors and screens create different colors by combining amounts of red, green, and blue light.
+    This is known as the additive RGB color model in modern color theory.
+    Red (R), green (G) and blue (B) "for its acronym in English" are primary colors.
+    Combining two primary colors makes the secondary colors cyan (G + B), magenta (R + B), and yellow (R + G).
+    You already saw these colors in the complementary color challenges.
+    These secondary colors are the complement of the primary color not used in their creation and are opposite that primary color on the color wheel.
+    For example, magenta is made up of red and blue and is the complement of green.
+
+    Tertiary colors are formed by combining two primary colors with one of their secondary color neighbors.
+    For example, among the RGB color model, red (primary) and yellow (secondary) form orange (tertiary).
+    This adds six colors to a single color wheel for a total of twelve.
+
+    There are several methods to select different colors that result in a harmonious combination in design.
+    An example that you can use tertiary colors is the split complementary color scheme.
+    This scheme starts with a base color, then pairs it with the two colors that are adjacent to its complement.
+    All three colors provide a strong visual contrast in a design, but are more subtle than using two complementary colors.
+
+    Here are three colors created using the divide-complement scheme:
+
+    Color       Hex code
+    orange      #FF7F00
+    cyan        #00FFFF
+    raspberry   #FF007F
+
+    Change the background-color property of the orange, cyan, and raspberry classes to their respective colors.
+    Make sure you use the hex codes and not the color names.
+*/
