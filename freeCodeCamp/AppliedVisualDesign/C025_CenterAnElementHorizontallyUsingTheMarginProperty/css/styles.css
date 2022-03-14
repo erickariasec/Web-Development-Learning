@@ -1,0 +1,16 @@
+div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+/*
+    Another positioning technique is to center a block element horizontally.
+    One way to do this is to set margin to auto.
+
+    This method also works for images.
+    Images are inline elements by default, but can be changed to block elements when the display property is set to block.
+
+    Center the div on the page by adding a margin property with a value of auto.
+*/
