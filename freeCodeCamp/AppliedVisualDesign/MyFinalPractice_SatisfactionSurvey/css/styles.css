@@ -1,0 +1,82 @@
+body{
+    background-image: url("https://images.hdqwalls.com/wallpapers/sun-blur-gradient-minimalist-4k-3h.jpg");
+    padding: 2% 20%;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    padding: 0% 3%;
+}
+
+hr{
+    height: 1px;
+    background-color: rgb(255, 199, 44);
+    border: none;
+}
+
+#question-container{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgba(255, 199, 44, 0.2);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form{
+    padding: 0% 5%;
+}
+
+p{
+    text-align: center;
+}
+
+div{
+    color: white;
+}
+
+button{
+    border-radius: 5px;
+    background-color: rgb(218, 41, 28);
+    color: white;
+    padding: 8px;
+    width: 90px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: rgb(218, 41, 28);
+}
+
+button:hover, button:active{
+    background-color: rgb(255, 199, 44);
+    color: rgb(39, 37, 31);
+    border-color: rgb(255, 199, 44);
+}
+
+#button-container{
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 5%;
+}
+
+#button-left{
+    float: left;
+    width: 50%;
+}
+
+#button-right{
+    float: right;
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+}
+
+
