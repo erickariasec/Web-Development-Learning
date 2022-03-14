@@ -1,0 +1,33 @@
+body {
+    min-height: 150vh;
+}
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #767676;
+}
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+}
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+/*
+    The next layout scheme that CSS offers is fixed position, which is a type of absolute positioning that locks an element relative to the browser window.
+    Similar to absolute positioning, it is used with CSS hover properties and also removes the element from the normal flow of the document.
+    Other elements no longer "know" where it is placed, which may require some layout adjustments elsewhere.
+
+    A key difference between fixed and absolute positions is that an element with a fixed position (fixed) will not move when the user scrolls.
+
+    The navbar in code is tagged with an id of navbar.
+    Change its position to fixed, and the offset 0 pixels from the top and 0 pixels from the left.
+    After adding the code, scroll through the preview window to see how the navigation stays in place.
+*/
