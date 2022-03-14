@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+}
+header {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.25em;
+}
+h2 {
+    color: #09A7A1;
+}
+button {
+    background-color: #FF790E;
+}
+footer {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.5em;
+}
+
+/*
+    In the complementary colors challenge we saw that by placing two opposite colors on the color wheel, they appear more vivid.
+    However, strong visual contrast can be annoying if used on a website and can sometimes make text difficult to read if it is set against a complementary-color background.
+    In practice, one of the colors is usually used as the dominant and the complementary colors are used to draw visual attention to certain content within the page.
+
+    This page will use a shade of teal (#09A7A1) as the dominant color and the complementary orange (#FF790E) to highlight the login buttons.
+    Change the background-color of the header and footer from black to teal.
+    Next, change h2 text color to teal as well. Finally, set the button's background-color to orange.
+*/
