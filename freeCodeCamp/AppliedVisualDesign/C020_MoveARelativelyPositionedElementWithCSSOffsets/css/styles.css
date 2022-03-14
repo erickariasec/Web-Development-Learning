@@ -1,0 +1,14 @@
+h2{
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+}
+
+/*
+    The top or bottom and left or right CSS offsets tell the browser how far to offset an element relative to where it would be in the normal flow of the document.
+    You are offsetting an element away from a given point, which moves the element away from the referenced side (effectively in the opposite direction).
+    As you saw in the last challenge, using the top offset moved the h2 down.
+    Similarly, using a left shift moves an element to the right.
+
+    Use CSS offsets to move the h2 15 pixels to the right and 10 pixels up.
+*/
