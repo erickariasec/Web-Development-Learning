@@ -1,0 +1,21 @@
+#left {
+    float: left;
+    width: 50%;
+}
+#right {
+    float: right;
+    width: 40%;
+}
+aside, section {
+    padding: 2px;
+    background-color: #ccc;
+}
+
+/*
+    The following positioning tool doesn't actually use position, but instead sets the float property of an element.
+    Floating elements are removed from the normal flow of a document and pushed to the left or right of their containing parent element.
+    It is commonly used with the width property to specify how much horizontal space the floating element requires.
+
+    The given markup would work well as a two-column layout, with the section and aside elements side by side.
+    Gives the #left float element of left and #right float element of right.
+*/
