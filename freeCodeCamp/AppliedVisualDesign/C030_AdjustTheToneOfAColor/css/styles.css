@@ -1,0 +1,41 @@
+header {
+    background-color: hsl(180, 90%, 35%);
+    color: #FFFFFF;
+}
+
+nav {
+    background-color: hsl(180, 80%, 25%);
+}
+
+h1 {
+    text-indent: 10px;
+    padding-top: 10px;
+  }
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+    The hsl() option in CSS also makes it easy to adjust the hue of a color.
+    Mixing white with a pure tone creates a tint of that color and adding black will make a shadow.
+    Alternatively, a tone is produced by adding gray or tints and shadows.
+    Remember that the 's' and 'l' in hsl() represent saturation and lightness, respectively.
+    The saturation percentage changes the amount of gray, and the light percentage determines the percentage of white or black in the color.
+    This is useful when you have a base shade that you want, but need different variations of it.
+
+    All elements have a default background-color of transparent.
+    Our nav element appears to have a cyan background since the element behind it has a background-color set to cyan.
+    Add a background-color to the nav element so that it uses the same shade of cyan, but has 80% saturation and 25% lightness to change its hue and shadow.
+*/
