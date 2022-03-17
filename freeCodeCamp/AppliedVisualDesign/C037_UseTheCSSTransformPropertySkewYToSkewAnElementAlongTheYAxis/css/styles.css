@@ -1,0 +1,20 @@
+div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+}
+#top {
+    background-color: red;
+    transform: skewY(-10deg);
+  }
+#bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+}
+
+/*
+    Since the skewX() function skews the selected element along the X axis by a given degree,
+    it is not surprising that the skewY() property skews an element along the Y (vertical) axis.
+
+    Skews the element with the id of top -10 degrees along the Y axis using the transform property.
+*/
