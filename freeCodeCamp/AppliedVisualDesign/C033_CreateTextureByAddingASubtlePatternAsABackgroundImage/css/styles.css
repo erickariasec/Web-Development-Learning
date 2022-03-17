@@ -1,0 +1,12 @@
+body{
+    background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+}
+
+/*
+    One way to add texture and interest to a background and make it stand out more is to add a subtle pattern.
+    Balance is key, as you don't want the background to stand out too much and take attention away from the foreground.
+    The background property accepts the url() function to bind an image to the chosen texture or pattern.
+    The link is covered in quotes within the parentheses.
+
+    Using the link https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png, set the background of the entire page with the body selector.
+*/
