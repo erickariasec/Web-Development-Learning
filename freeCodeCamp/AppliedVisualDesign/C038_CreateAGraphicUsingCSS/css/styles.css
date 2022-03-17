@@ -1,0 +1,31 @@
+.center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0 0 blue;  /* offset-x, offset-y, blur-radius (optional), spread-radius (optional) & color */
+}
+
+/*
+    By manipulating different selectors and properties, you can make interesting figures.
+    One of the easiest shapes to try is the crescent moon.
+    For this challenge you need to work with the box-shadow property that applies the shadow of an element,
+    along with the border-radius property that controls the roundness of the element's corners.
+
+    You'll create a round, transparent object with a sharp shadow that's slightly off to the side - the shadow is actually going to be the moon shape you'll see.
+
+    To create a round object, the border-radius property must be assigned a value of 50%.
+
+    You may remember from a previous challenge that the box-shadow property takes values ​​for offset-x, offset-y, blur-radius, spread-radius, and a value for color, in that order.
+    The blur-radius and spread-radius values ​​are optional.
+
+    Manipulate the square element in the editor to create the moon shape.
+    First, change the background-color to transparent, then set the border-radius property to 50% to make the shape circular.
+    Finally, change the box-shadow property to set offset-x to 25px, offset-y to 10px, blur-radius to 0, spread-radius to 0, and color to blue.
+*/
