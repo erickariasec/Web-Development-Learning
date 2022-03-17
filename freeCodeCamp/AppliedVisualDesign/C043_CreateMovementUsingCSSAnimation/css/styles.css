@@ -1,0 +1,58 @@
+div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+#rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: blue;
+        top: 0px;
+        left: 0px;
+    }
+    50% {
+        background-color: green;
+        top: 50px;
+        left: 25px;
+    }
+    100% {
+        background-color: yellow;
+        top: 0px;
+        left: -25px;
+    }
+}
+
+/*
+    When elements have a position, such as fixed or relative,
+    the right, left, top, and bottom CSS scroll properties can be used in animation rules to create movement.
+
+    As shown in the example below, you can push the element down and then up by setting the top keyframe property to 50% at 50px,
+    but setting it to 0px for the first keyframe (0%) and the last keyframe to (100%).
+
+    @keyframes rainbow {
+        0% {
+            background-color: blue;
+            top: 0px;
+        }
+        50% {
+            background-color: green;
+            top: 50px;
+        }
+        100% {
+            background-color: yellow;
+            top: 0px;
+        }
+    }
+
+    Adds a horizontal movement to the animation div. Using the offset left property,
+    add to the @keyframes rule so that the rainbow starts at 0 pixels at 0%, moves to 25 pixels at 50%, and ends at -25 pixels at 100%.
+    Don't override the top property in the editor; the animation must have vertical and horizontal movement.
+*/
