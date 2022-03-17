@@ -1,0 +1,28 @@
+div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+}
+div:hover {
+    transform: scale(1.1);
+}
+
+/*
+    The transform property has a variety of functions that allow it to scale, move, rotate, skew, etc., its elements.
+    When used with pseudo-classes like :hover that specify a certain state of an element, the transform property can easily add interactivity to your elements.
+
+    Here's an example to scale the paragraph elements to 2.1 times their original size:
+
+    p:hover {
+        transform: scale(2.1);
+    }
+
+    Note: Applying a transform to a div element will also affect any contained child elements of the div.
+
+    Add a CSS rule for the hover state of the div and use the transform property to scale the div element to 1.1 times its original size when a user hovers over it.
+*/
