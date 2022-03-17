@@ -1,0 +1,47 @@
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+}
+
+button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #4791d0;
+    }
+}
+
+/*
+    You can use CSS @keyframes to change the color of a button in its hover state.
+
+    Here is an example of how to change the width of an image when hovering over it:
+
+    <style>
+        img {
+            width: 30px;
+        }
+        img:hover {
+            animation-name: width;
+            animation-duration: 500ms;
+        }
+
+        @keyframes width {
+            100% {
+            width: 40px;
+            }
+        }
+    </style>
+
+    <img src="https://cdn.freecodecamp.org/curriculum/applied-visual-design/google-logo.png" alt="Google's Logo" />
+
+
+    Note that ms means milliseconds, where 1000ms equals 1s.
+
+    Use CSS @keyframes to change the button element's background-color to become #4791d0 when a user hovers over it.
+    The @keyframes rule should only have one entry for 100%.
+*/
