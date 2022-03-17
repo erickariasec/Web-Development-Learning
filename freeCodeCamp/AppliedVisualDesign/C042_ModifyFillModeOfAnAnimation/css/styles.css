@@ -1,0 +1,34 @@
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+}
+button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    /* Cambia solo el código debajo de esta línea */
+    animation-fill-mode: forwards;
+    /* Cambia solo el código encima de esta línea */
+}
+@keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+}
+
+/*
+    That's great, but it still doesn't work right.
+    Notice how the animation resets after 500ms has passed, turning the button back to its original color.
+    What you want is for the button to stay highlighted.
+
+    This can be done by setting the animation-fill-mode property to forwards.
+    The animation-fill-mode specifies the style applied to an element when the animation has finished.
+    You can configure it like this:
+
+    animation-fill-mode: forwards;
+
+    Set the animation-fill-mode property of button:hover to forwards so that the button remains highlighted when a user hovers over it.
+
+    forwards: the element will retain the same animation properties from the last keyframe after the animation completes.
+*/
