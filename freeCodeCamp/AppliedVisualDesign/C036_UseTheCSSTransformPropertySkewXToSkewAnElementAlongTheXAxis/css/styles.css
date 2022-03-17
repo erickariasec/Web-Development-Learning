@@ -1,0 +1,24 @@
+div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+}
+#top {
+    background-color: red;
+  }
+#bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+}
+
+/*
+    The next function for the transform property is skewX(), which will skew the selected element along its X (horizontal) axis.
+
+    The following code tilts the paragraph element by -32 degrees along the X axis.
+
+    p {
+        transform: skewX(-32deg);
+    }
+
+    Skews the element with the id of bottom by 24 degrees along the X axis using the transform property.
+*/
