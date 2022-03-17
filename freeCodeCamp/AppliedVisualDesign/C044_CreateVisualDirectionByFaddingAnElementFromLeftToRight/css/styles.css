@@ -1,0 +1,30 @@
+#ball {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    position: fixed;
+    left: 20%;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    50% {
+        left: 60%;
+        opacity: 0.1;
+    }
+}
+
+/*
+    For this challenge, you will change the opacity of an animated element so that it gradually fades as it reaches the right side of the screen.
+
+    In the animation shown, the round element with the gradient background moves to the right at the 50% mark of the animation according to the @keyframes rule.
+
+    Point to the element with the id of ball and add the opacity property set to 0.1 at 50%, so that the element fades as it moves to the right.
+*/
