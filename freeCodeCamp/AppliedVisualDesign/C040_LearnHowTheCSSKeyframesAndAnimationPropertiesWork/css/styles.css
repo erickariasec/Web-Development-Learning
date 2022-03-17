@@ -1,0 +1,64 @@
+div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+#rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+/*
+    To animate an element, you need to know the animation properties and the @keyframes rule.
+    The animation properties control how the animation should behave, and the @keyframes rule controls what happens during that animation.
+    There are eight animation properties in total.
+    This challenge will keep it simple and cover the two most important ones first:
+
+    animation-name sets the name of the animation, which is then used by @keyframes to tell CSS which rules go with which animations.
+
+    animation-duration sets the time of the animation.
+
+    @keyframes is like specifying exactly what happens inside the animation during the duration.
+    This is done by giving CSS properties for specific "frames" during animation, with percentages ranging from 0% to 100%.
+    If you compare this to a movie, CSS properties of 0% is how the element is displayed in the opening scene.
+    CSS properties with 100% is how the element appears at the end, just before the credits roll.
+    CSS then applies the magic to transition the element for the given duration to render the scene.
+    Here is an example to illustrate the use of @keyframes and animation properties:
+
+    #anim {
+        animation-name: colorful;
+        animation-duration: 3s;
+    }
+
+    @keyframes colorful {
+        0% {
+            background-color: blue;
+        }   
+        100% {
+            background-color: yellow;
+        }
+    }
+
+    For the anim id element, the code snippet above sets the animation-name to colorful and sets the animation-duration to 3 seconds.
+    Next, the @keyframes rule binds to animation properties named colorful.
+    Sets the color to blue at the beginning of the animation (0%) which will turn yellow at the end of the animation (100%).
+    You are not limited to just transitions from start to finish, you can set properties for the element to any percentage between 0% and 100%.
+
+    Create an animation for the element with the id rect, setting animation-name to rainbow and animation-duration to 4 seconds.
+    Next, declare a @keyframes rule and set the background-color at the beginning of the animation (0%) to blue, the middle of the animation (50%) to green, and the end of the animation (100%) to yellow.
+*/
