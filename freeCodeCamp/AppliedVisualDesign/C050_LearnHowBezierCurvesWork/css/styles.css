@@ -1,0 +1,56 @@
+.balls{
+    border-radius: 50%;
+    background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+    );
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#ball1 {
+    left: 27%;
+    animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+#ball2 {
+    left: 56%;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 249px;
+    }
+}
+
+/*
+    The last challenge introduced the animation-timing-function property and some keywords that change the speed of an animation over its duration.
+    CSS offers an option other than keywords that provides even finer control over how the animation unfolds, through the use of Bezier curves.
+
+    In CSS animations, Bezier curves are used with the cubic-bezier function. The shape of the curve represents how the animation unfolds.
+    The curve lives in a 1 to 1 coordinate system.
+    The X axis of this coordinate system is the duration of the animation (think of a time scale), and the Y axis is the change in animation.
+
+    The cubic-bezier function consists of four main points that lie on this 1-by-1 grid: p0, p1, p2, and p3.
+    p0 and p3 are set for you: they are the start and end points that are always at the origin (0, 0) and (1, 1) respectively.
+    You set the x and y values ​​for the other two points, and where you place them on the grid determines the shape of the curve for the animation to follow.
+    This is done in CSS by declaring the x and y values ​​of the anchor points p1 and p2 as follows: (x1, y1, x2, y2).
+    Putting it all together, here is an example of a Bezier curve in CSS code:
+
+    animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+
+    In the example above, the x and y values are equivalent for each point (x1 = 0.25 = y1 and x2 = 0.75 = y2), which if you recall from geometry class, results in a line extending from the origin to point ( eleven).
+    This animation is a linear change of an element over the duration of an animation, and is the same as using the linear keyword.
+    In other words, it changes at a constant rate.
+
+    For the element with the id of ball1, change the value of the animation-timing-function property from linear to its equivalent cubic-bezier function value.
+    Use the point values given in the previous example.
+*/
