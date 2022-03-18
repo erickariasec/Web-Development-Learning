@@ -1,0 +1,44 @@
+.balls {
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#ball1 {
+    left:27%;
+    animation-timing-function: linear;      /* constant speed throughout the animation */
+}
+#ball2 {
+    left:56%;
+    animation-timing-function: ease-out;    /* fast at the start and then slows down */
+}
+
+@keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: 249px;
+    }
+}
+
+/*
+    In CSS animations, the animation-timing-function property controls how fast an animated element changes over the entire duration of the animation.
+    If the animation is a car moving from point A to point B at a set time (your animation-duration), the animation-timing-function dictates how the car speeds up and slows down during the run.
+
+    There are a number of predefined keywords available for the popular options.
+    For example, the default is ease, which starts slow, speeds up in the middle, and then slows down again at the end.
+    Other options include ease-out, which is fast at the start and then slows down, ease-in, which is slow at the start and then speeds up at the end, or linear, which applies a constant speed throughout the animation.
+
+    For the elements with id ball1 and ball2, add an animation-timing-function property to each and assign linear to #ball1 and ease-out to #ball2.
+    Notice the difference between how the elements move during the animation but end up together, since they share the same animation-duration of 2 seconds.
+*/
