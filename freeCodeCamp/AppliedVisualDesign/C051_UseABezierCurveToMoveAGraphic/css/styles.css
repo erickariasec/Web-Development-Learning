@@ -1,0 +1,49 @@
+.balls{
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#red {
+    background: red;
+    left: 27%;
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);  /* It acts as ease-out */
+}
+  #blue {
+    background: blue;
+    left: 56%;
+    animation-timing-function: ease-out;
+}
+@keyframes bounce {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 249px;
+    }
+}
+
+/*
+    A previous challenge discussed the keyword ease-out which describes an animation change that speeds up first and then slows down at the end of the animation.
+    On the right, the difference between the ease-out keyword (for the blue element) and the linear keyword (for the red element) is shown.
+    Animation progressions similar to the ease-out keyword can be achieved using a custom cubic Bezier curve function.
+
+    In general, changing the anchor points p1 and p2 drives the creation of different Bezier curves, which control how the animation progresses over time.
+    Here's an example of a Bezier curve that uses values to mimic the ease style:
+
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+    Remember that all cubic-bezier functions start with p0 at (0, 0) and end with p3 at (1, 1).
+    In this example, the curve moves faster along the Y axis (starts at 0, goes to p1 and value 0,
+    then goes to p2 and value 1) than it moves along the X axis (0 to start, then 0 for p1, down to 0.58 for p2 As a result,
+    the change in the animated element progresses faster than the animation time for that segment Towards the end of the curve,
+    the ratio of the change in X and Y values is inverted: the y value moves from 1 to 1 (no change), and the x values ​​move from 0.58 to 1,
+    causing the animation changes to progress more slowly compared to the duration of the animation.
+
+    To see the effect of this Bezier curve in action, change the animation-timing-function of the element with id of red to a cubic-bezier function with values ​​x1, y1, x2, y2 respectively set to 0, 0, 0.58, 1.
+    This will cause both elements to progress through the animation in a similar way.
+*/
