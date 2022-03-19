@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colspan and rowspan Attributes in HTML Tables</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <table>
+        <tr> <!--table row (renglon)-->
+            <th colspan="2">Name</th>   <!--table head - First Column-->
+            <th>Email</th>  <!--table head - Third Column-->
+        </tr>
+        <tr> <!--table row (renglon)-->  
+            <td>Juan</td>   <!--table data - First Column-->
+            <td>Perez</td>   <!--table data - Second Column-->
+            <td rowspan="2">jperez@mail.com</td>   <!--table data - Third Column-->
+        </tr>
+        <tr> <!--table row (renglon)-->
+            <td>Martha</td>   <!--table data - First Column-->
+            <td>Lara</td>   <!--table data - Second Column-->
+        </tr>
+    </table>
+</body>
+</html>
+
+<!--
+    col = columnas
+    row = renglones
+-->
