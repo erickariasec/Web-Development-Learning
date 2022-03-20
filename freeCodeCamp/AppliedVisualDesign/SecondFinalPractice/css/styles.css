@@ -1,13 +1,19 @@
 body {
     min-height: 150vh;
+    background-color: #e56b6f;
 }
 #navbar {
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: black;
+    background-color: #355070;
     padding: 20px;
+}
+#logo {
+    margin-left: 60%;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
 }
 nav ul {
     margin: 0px;
@@ -16,12 +22,13 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 20px;
-    color: white;
+    color: #e56b6f;
+    font-weight: bold;
 }
 a {
     text-decoration: none;
-    color: white;
+    color: #e56b6f;
 }
-li:hover {
-    font-size: larger;
+li a:hover {
+    color: #b56576;
 }
