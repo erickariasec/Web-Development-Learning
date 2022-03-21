@@ -1,6 +1,14 @@
 body {
     min-height: 150vh;
     background-color: #e56b6f;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    margin-top: 70px;
+    font-size: 200%;
+    color: #355070;
+    text-align: center;
 }
 #navbar {
     position: fixed;
