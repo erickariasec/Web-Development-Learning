@@ -1,14 +1,13 @@
+* {
+    scroll-behavior: smooth;
+}
 body {
     min-height: 150vh;
     background-color: #e56b6f;
-    padding: 20px;
+    padding: 2% 4%;
     text-align: center;
-}
-main {
-    margin-top: 70px;
-    font-size: 200%;
-    color: #355070;
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
 }
 #navbar {
     position: fixed;
@@ -17,11 +16,75 @@ main {
     width: 100%;
     background-color: #355070;
     padding: 20px;
+    display: block;
 }
 #logo {
-    margin-left: 60%;
+    margin-left: 50%;
     font-size: 23px;
     font-family: 'Courier New', Courier, monospace;
+}
+#home {
+    padding-top: 3%;
+    font-size: 200%;
+    color: #355070;
+    text-align: center;
+}
+#about-us {
+    background-color: #eaac8b;
+    border-radius: 10px;
+    padding: 13% 5%;
+    display: inline-flex;
+    width: 90%;
+    margin: 9% 0 13% 0;
+}
+#about-us-left {
+    float: left;
+    color: #b56576;
+    text-align: initial;
+    width: 50%;
+    font-size: 271%;
+}
+#description-about-us {
+    text-align: justify;
+    font-size: 60%;
+}
+#about-us-right {
+    float: right;
+    margin-left: 40px;
+    width: 50%;
+    margin-top: 2%;
+}
+#jobs {
+    background-color: #eaac8b;
+    border-radius: 10px;
+    padding: 11% 5%;
+    display: inline-flex;
+    width: 90%;
+    margin: 0% 0 13% 0;
+}
+#jobs-left {
+    float: left;
+    color: #b56576;
+    text-align: initial;
+    width: 50%;
+    font-size: 271%;
+}
+#description-jobs {
+    text-align: justify;
+    font-size: 60%;
+}
+#jobs-right {
+    float: right;
+    margin-left: 40px;
+    width: 50%;
+    margin-top: 2%;
+}
+#register {
+    color: #355070;
+    background-color: #eaac8b;
+    border-radius: 10px;
+    padding: 8% 5% 13% 5%;
+    width: 90%;
 }
 nav ul {
     margin: 0px;
@@ -39,4 +102,35 @@ a {
 }
 li a:hover {
     color: #b56576;
+}
+button {
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #355070;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+button:hover {
+    background-color: #e56b6f;
+}
+form {
+    font-size: 50%;
+    background-color: #b56576;
+    border-radius: 10px;
+    padding: 5%;
+    width: 25%;
+    display: inline-block;
+}
+form input {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+footer {
+    padding-top: 3%;
+    color: #355070;
+    font-weight: bold;
 }
