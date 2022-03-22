@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improve Chart Accessibility with the figure Element</title>
+</head>
+<body>
+    <header>
+        <h1>Training</h1>
+        <nav>
+            <ul>
+                <li><a href="#stealth">Stealth &amp; Agility</a></li>
+                <li><a href="#combat">Combat</a></li>
+                <li><a href="#weapons">Weapons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+    
+            <!-- Cambia solo el código debajo de esta línea -->
+            <figure>
+                <!-- La tabla de barras apiladas irá aquí -->
+                <br>
+                <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>
+            </figure>
+            <!-- Cambia solo el código encima de esta línea -->
+    
+        </section>
+        <section id="stealth">
+            <h2>Stealth &amp; Agility Training</h2>
+            <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>
+            <article><h3>No training is NP-complete without parkour</h3></article>
+        </section>
+        <section id="combat">
+            <h2>Combat Training</h2>
+            <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>
+            <article><h3>Goodbye world: 5 proven ways to knock out an opponent</h3></article>
+        </section>
+        <section id="weapons">
+            <h2>Weapons Training</h2>
+            <article><h3>Swords: the best tool to literally divide and conquer</h3></article>
+            <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>
+        </section>
+    </main>
+    <footer>&copy; 2018 Camper Cat</footer>
+</body>
+</html>
+
+<!--
+    HTML5 introduced the figure element and the related figcaption.
+    When used together, these elements wrap a visual representation (such as an image, diagram, or graph) along with its legend.
+    Wrapping these elements gives a double accessibility boost by semantically grouping related content and providing a text alternative explaining the figure figure.
+
+    In data visualizations such as graphs, the legend or "figcaption" can be used to summarize trends or conclusions in text format, for the benefit of visually impaired users.
+    Another challenge addresses how to move a table version of the chart data off screen (using CSS) to help screen reader users.
+
+    Here's an example: Note that the figcaption element goes inside figure tags and can be combined with other elements:
+
+    <figure>
+        <img src="roundhouseDestruction.jpeg" alt="Photo of Camper Cat executing a roundhouse kick">
+        <br>
+        <figcaption>
+            Master Camper Cat demonstrates proper form of a roundhouse kick.
+        </figcaption>
+    </figure>
+
+    Camper Cat is working on creating a stacked bar chart that shows the amount of weekly time spent on stealth, combat, and weapons training.
+    Help him better structure his page by changing the div tag he used to a figure tag, and changing the p tag surrounding the caption to a figcaption tag.
+-->
