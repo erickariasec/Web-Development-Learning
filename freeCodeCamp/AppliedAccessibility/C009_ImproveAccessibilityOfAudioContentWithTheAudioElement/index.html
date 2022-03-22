@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improve Accessibility of Audio Content with the audio Element</title>
+</head>
+<body>
+    <header>
+        <h1>Real Coding Ninjas</h1>
+    </header>
+    <main>
+        <p>A sound clip of Zersiax's screen reader in action.</p>
+        <audio controls>
+            <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+        </audio>
+    </main>
+</body>
+</html>
+
+<!--
+    The HTML audio element gives it semantic meaning when it contains sound or audio stream content in code.
+    Audio content also needs alternative text so that people who are deaf or hard of hearing can access it.
+    For this you must have a nearby text on the page or a link to a transcript.
+
+    The audio tag supports the controls attributes.
+    This shows the default controls for play, pause, among other controls, and supports keyboard functionality.
+    This is a boolean attribute so it doesn't need a value, its presence in the tag triggers the setting.
+
+    Here we have an example:
+
+    <audio id="meowClip" controls>
+        <source src="audio/meow.mp3" type="audio/mpeg">
+        <source src="audio/meow.ogg" type="audio/ogg">
+    </audio>
+
+    Note: Multimedia content generally has visual and audio components.
+    The subtitles and a transcript need to be synchronized so that users who are visually impaired or hard of hearing can access them.
+    Generally, a web developer is not responsible for creating subtitles or transcripts but needs to know how to include them.
+
+    It's time to get out of the Camper Cat and meet our fellow Zersiax (@zersiax), an accessibility champion and screen reader user.
+    To hear a clip of your screen reader in action, add an audio element after e.g.
+    Includes the controls attribute.
+    Next, place a source tag inside the audio tags with the src attribute set to https://s3.amazonaws.com/freecodecamp/screen-reader.mp3 and the type attribute set to "audio/mpeg".
+
+    Note: The audio clip may sound fast and may be difficult to understand, but this speed is normal for screen readers.
+-->
