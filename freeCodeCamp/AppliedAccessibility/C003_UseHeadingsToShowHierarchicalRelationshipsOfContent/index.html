@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Headings to Show Hierarchical Relationships of Content</title>
+</head>
+<body>
+    <h1>How to Become a Ninja</h1>  <!--each page should always have one (and only one) h1 element, which is the main topic of your content-->
+    <main>
+        <h2>Learn the Art of Moving Stealthily</h2>
+        <h3>How to Hide in Plain Sight</h3>
+        <h3>How to Climb a Wall</h3>
+
+        <h2>Learn the Art of Battle</h2>
+        <h3>How to Strengthen your Body</h3>
+        <h3>How to Fight like a Ninja</h3>
+
+        <h2>Learn the Art of Living with Honor</h2>
+        <h3>How to Breathe Properly</h3>
+        <h3>How to Simplify your Life</h3>
+    </main>
+</body>
+</html>
+
+<!--
+    Headings (h1 to h6 elements) are workhorse tags that help provide structure and tagging to your content.
+    Screen readers can be configured to read only the titles of a page so that the user gets a summary.
+    This means that it is important that the title tags in your markup have semantic meaning and relate to each other, not simply chosen for their size values.
+
+        • Semantic meaning* means that the tag you use around the content indicates the type of information it contains.
+          If you were writing a document with an introduction, a body, and a conclusion, it wouldn't make much sense to put the conclusion as a subsection of the body in your outline.
+          It should be its own section. Similarly, the title tags on a web page should be in order and indicate the hierarchical relationships of its content.
+
+    Titles with equal (or higher) rank start new implied sections, titles with lower rank start subsections of the previous one.
+
+    As an example, a page with an h2 element followed by several subsections tagged with h4 elements would confuse a screen reader.
+    With six options, it's tempting to use a tag because it looks better in a browser, but you can use CSS to edit the relative size.
+
+    One final point, every page should always have one (and only one) h1 element, which is the main topic of your content.
+    This and the other titles are used in part by search engines to understand the topic of the page.
+
+    Camper Cat wants a page on her site dedicated to becoming a ninja.
+    Help him fix the headings so that his markup gives semantic meaning to the content and displays the proper parent-child relationships of his sections.
+    Change all h5 tags to the appropriate heading level to indicate that they are subsections of h2 tags. Use h3 tags for this purpose.
+-->
