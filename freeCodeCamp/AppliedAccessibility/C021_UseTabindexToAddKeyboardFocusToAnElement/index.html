@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use tabindex to Add Keyboard Focus to an Element</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ninja Survey</h1>
+    </header>
+    <section>
+        <form>
+    
+    
+            <p tabindex="0">Instructions: Fill in ALL your information then click <b>Submit</b></p>
+        
+        
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <fieldset>
+                <legend>What level ninja are you?</legend>
+                <input id="newbie" type="radio" name="levels" value="newbie">
+                <label for="newbie">Newbie Kitten</label><br>
+                <input id="intermediate" type="radio" name="levels" value="intermediate">
+                <label for="intermediate">Developing Student</label><br>
+                <input id="master" type="radio" name="levels" value="master">
+                <label for="master">9th Life Master</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Select your favorite weapons:</legend>
+                <input id="stars" type="checkbox" name="weapons" value="stars">
+                <label for="stars">Throwing Stars</label><br>
+                <input id="nunchucks" type="checkbox" name="weapons" value="nunchucks">
+                <label for="nunchucks">Nunchucks</label><br>
+                <input id="sai" type="checkbox" name="weapons" value="sai">
+                <label for="sai">Sai Set</label><br>
+                <input id="sword" type="checkbox" name="weapons" value="sword">
+                <label for="sword">Sword</label>
+            </fieldset>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form><br>
+    </section>
+    <footer>&copy; 2018 Camper Cat</footer>
+</body>
+</html>
+
+<!--
+    The HTML tabindex attribute has three different functions related to the keyboard focus of an element.
+    When in a tag, it indicates that the element can be focused.
+    The value (an integer that is positive, negative, or zero) determines the behavior.
+
+    Some elements, such as links and controls on forms, automatically receive keyboard focus when a user tabs through a page.
+    It's in the same order that the elements come in the HTML markup language source.
+    This same functionality can be given to other elements, such as div, span, and p, by placing a tabindex="0" attribute.
+    Here is an example:
+
+    <div tabindex="0">I need keyboard focus!</div>
+
+    Note: A negative value of tabindex (usually -1) indicates that an element is focusable, but not keyboard accessible.
+    This method is typically used to programmatically focus content (such as when activating a div using for a popup), and is beyond the scope of these challenges.
+
+    Camper Cat created a new survey to collect information about its users.
+    He knows that input fields automatically get keyboard focus, but he wants to make sure that his keyboard users pause on instructions while they tab to items.
+    He adds a tabindex attribute to the p tag and sets its value to 0. Extra: Using tabindex also allows the CSS pseudo-class: focus to work on the p tag.
+-->

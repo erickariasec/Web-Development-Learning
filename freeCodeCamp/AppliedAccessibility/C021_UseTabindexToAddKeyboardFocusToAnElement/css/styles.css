@@ -1,0 +1,23 @@
+p:focus {
+        background-color: yellow;
+}
+
+/*
+    The HTML tabindex attribute has three different functions related to the keyboard focus of an element.
+    When in a tag, it indicates that the element can be focused.
+    The value (an integer that is positive, negative, or zero) determines the behavior.
+
+    Some elements, such as links and controls on forms, automatically receive keyboard focus when a user tabs through a page.
+    It's in the same order that the elements come in the HTML markup language source.
+    This same functionality can be given to other elements, such as div, span, and p, by placing a tabindex="0" attribute.
+    Here is an example:
+
+    <div tabindex="0">I need keyboard focus!</div>
+
+    Note: A negative value of tabindex (usually -1) indicates that an element is focusable, but not keyboard accessible.
+    This method is typically used to programmatically focus content (such as when activating a div using for a popup), and is beyond the scope of these challenges.
+
+    Camper Cat created a new survey to collect information about its users.
+    He knows that input fields automatically get keyboard focus, but he wants to make sure that his keyboard users pause on instructions while they tab to items.
+    He adds a tabindex attribute to the p tag and sets its value to 0. Extra: Using tabindex also allows the CSS pseudo-class: focus to work on the p tag.
+*/
