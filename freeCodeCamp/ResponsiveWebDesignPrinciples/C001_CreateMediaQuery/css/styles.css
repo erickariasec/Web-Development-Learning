@@ -1,0 +1,28 @@
+p {
+    font-size: 20px;
+}
+@media(max-height: 800px){
+    p{
+        font-size: 10px;
+    }
+}
+
+/*
+    Media Queries are a new technique introduced in CSS3 that changes the presentation of content based on different viewport sizes.
+    The viewport is the user-visible area of ​​a web page, and is different depending on the device used to access the site.
+
+    Media queries are based on a media type, and if that media type matches the type of device the document is displayed on, the styles are applied.
+    You can have as many selectors and styles within your media queries as you like.
+
+    Here's an example of a media query that returns content when the device width is less than or equal to 100px:
+
+    @media (max-width: 100px) {  CSS Rules  }
+
+    and the following media query returns the content when the height of the device is greater than or equal to 350px:
+
+    @media (min-height: 350px) {  CSS Rules  }
+
+    Remember, CSS within media queries is applied only if the media type matches that of the device being used.
+
+    Add a media query, so that the p tag has a font-size of 10px when the device height is less than or equal to 800px.
+*/
