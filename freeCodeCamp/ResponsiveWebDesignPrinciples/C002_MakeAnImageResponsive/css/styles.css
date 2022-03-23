@@ -1,0 +1,24 @@
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+  width: 600px;
+}
+
+/*
+    Making responsive images with CSS is really simple.
+    You just have to add these properties to an image:
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    The max-width max-width of 100% will make sure that the image is never wider than the container it's in, and the height of auto will keep the image in its original aspect ratio.
+
+    Add the style rules to the responsive-img class to make it responsive.
+    It should never be wider than its container (in this case, it's the preview window) and should keep its original aspect ratio.
+    After you've added your code, resize the preview to see how your images behave.
+*/
