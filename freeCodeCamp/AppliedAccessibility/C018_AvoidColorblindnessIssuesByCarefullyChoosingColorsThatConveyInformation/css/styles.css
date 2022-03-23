@@ -1,0 +1,22 @@
+button {
+    color: #003366;
+    background-color: #FFFF33;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/*
+    There are several forms of color blindness or color blindness.
+    These can range from having reduced sensitivity to a specific wavelength of light, to being unable to see any color at all.
+    The most common way it presents is a reduced sensitivity to detect shades of green.
+
+    For example, if two similar green colors are the color used in the foreground and background of your content, a colorblind user might not be able to tell them apart.
+    We can think of nearby colors as those colors that are neighbors or adjacent on the color wheel.
+    For this reason, combinations of these colors should be avoided when used to convey important information.
+
+    Note: Some color selection tools available on the Internet include visual simulations of how they would be seen by users with various types of color blindness.
+    These are great resources to take advantage of, along with color contrast calculators you can find online.
+
+    Camper Cat is testing different styles for an important button, but the yellow background-color (#FFF33) and the green text-color (#33FF33) are neighboring shades on the color wheel, making them virtually indistinguishable for some colorblind users .
+    (Also, since they have a similar brightness level, they do not pass the contrast ratio check). Change the text color to dark blue (#003366) to resolve both issues.
+*/
