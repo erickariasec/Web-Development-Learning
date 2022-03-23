@@ -1,0 +1,26 @@
+body {
+    color: hsl(0, 55%, 15%);    /* hue, saturation, lightness */
+    background-color: hsl(120, 25%, 55%);   /* hue, saturation, lightness */
+}
+
+/*
+    Color is an important part of visual design, but its application has two accessibility issues.
+    The first problem is that color should not be used as the only way to convey important information, because screen readers do not distinguish it.
+    Second, the foreground and background colors need to have enough contrast for users to be able to tell them apart.
+
+    The above challenges explained the existence of alternative text to remedy the first problem.
+    The latest challenge introduced contrast checking tools to help with the second issue.
+    The WCAG recommended contrast ratio of 4.5:1 applies to both colors and grayscale combinations.
+
+    Colorblind users have trouble distinguishing some colors from others.
+    This generally depends on the hue but also sometimes depends on its lightness.
+    You may remember that the contrast ratio is calculated using the relative luminance (or lightness) values ​​of the foreground and background colors.
+
+    In practice, the 4.5:1 contrast ratio can be achieved by darkening the darker color (ie adding black) and lightening the lighter color (adding white).
+    The darkest hues on the color wheel are considered to be blues, violets, magentas, and reds, while the lightest colors are oranges, yellows, greens, and blue-greens.
+
+    Camper Cat is experimenting with using color in her blog's text and background, but her current combination of greenish background-color with maroon text color has a contrast ratio of 2.5:1.
+    You can easily adjust the lightness of the colors, since she declared them using the CSS property hsl() (which stands for hue, saturation, lightness) by changing only the third argument.
+    Increases the lightness value of the background-color from 35% to 55%, and decreases the lightness value of the text color from 20% to 15%.
+    This improves the contrast ratio by bringing it to 5.9:1.
+*/
