@@ -1,0 +1,22 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+/*
+    With the rise of Internet-connected devices, their sizes and specifications vary, and the screens they use could be different both externally and internally.
+    The pixel density is an aspect that can be different from one device to another, this density is known as Pixel Per Inch, in English "pixels per inch" (PPI) or Points per Inch, in English "dots per inch" (DPI ).
+    The most famous display that takes advantage of this is the so-called "Retina Display" on the latest Apple MacBook Pro laptops, and recently on iMac computers.
+    Due to the difference in pixel density between "Retina" and "Non-Retina" displays, some images that were not made with a high-resolution display in mind may appear "pixelated" when displayed on a high-resolution display.
+
+    The easiest way to make your images appear correctly on high-resolution displays, such as the "retina display" of MacBook Pros, is to set their width and height values ​​to only half of what the original file is.
+    Here's an example of an image that only uses half of the original height and width:
+
+    <style>
+        img { height: 250px; width: 250px; }
+    </style>
+    <img src="coolPic500x500" alt="A most excellent picture">
+    
+    Set the width and height of the img tag to half of their original values.
+    In this case, both the original height and the original width are 200px.
+*/
