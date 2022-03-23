@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Elements Only Visible to a Screen Reader by Using Custom CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Training</h1>
+        <nav>
+            <ul>
+                <li><a href="#stealth">Stealth &amp; Agility</a></li>
+                <li><a href="#combat">Combat</a></li>
+                <li><a href="#weapons">Weapons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Master Camper Cat's Beginner Three Week Training Program</h2>
+        <figure>
+            <!-- La tabla de barras apiladas de entrenamiento semanal -->
+            <p>[Stacked bar chart]</p>
+            <br />
+            <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>
+        </figure>
+        <table class="sr-only">
+            <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>
+            <thead>
+                <tr>
+                <th></th>
+                <th scope="col">Stealth &amp; Agility</th>
+                <th scope="col">Combat</th>
+                <th scope="col">Weapons</th>
+                <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Week One</th>
+                <td>3</td>
+                <td>5</td>
+                <td>2</td>
+                <td>10</td>
+                </tr>
+                <tr>
+                <th scope="row">Week Two</th>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>12</td>
+                </tr>
+                <tr>
+                <th scope="row">Week Three</th>
+                <td>4</td>
+                <td>6</td>
+                <td>3</td>
+                <td>13</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="stealth">
+        <h2>Stealth &amp; Agility Training</h2>
+        <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>
+        <article><h3>No training is NP-complete without parkour</h3></article>
+    </section>
+    <section id="combat">
+        <h2>Combat Training</h2>
+        <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>
+        <article><h3>Goodbye, world: 5 proven ways to knock out an opponent</h3></article>
+    </section>
+    <section id="weapons">
+        <h2>Weapons Training</h2>
+        <article><h3>Swords: the best tool to literally divide and conquer</h3></article>
+        <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>
+    </section>
+    <footer>&copy; 2018 Camper Cat</footer>
+</body>
+</html>
+
+<!--
+    Have you noticed that all the accessibility challenges applied so far have not used any CSS?
+    This shows the importance of using a logical document outline and semantically meaningful tags around your content before introducing the visual design aspect.
+
+    However, the magic of CSS can also improve accessibility on your page when you want to visually hide content intended for screen readers only.
+    This happens when the information is in a visual format (such as a graph), but screen reader users need an alternate presentation (such as a table) to access the data.
+    CSS is used to place screen reader-only elements outside the visual area of ​​the browser window.
+
+    Here is an example of the CSS rules that accomplish this:
+
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: car;
+        overflow:hidden;
+    }
+
+    Note: The following CSS approaches will not do the same:
+
+        • display:none; or visibility: hidden; hide content from everyone, including screen reader users
+        • Zero values ​​for pixel sizes, such as width: 0px; height: 0px; remove that element from your document flow, which means screen readers will ignore it
+    
+    Camper Cat created a really cool stacked bar chart for her training page and put the data in a table for her visually impaired users.
+    The table already has an sr-only class, but the CSS rules are not yet complete. Set position to an absolute value, left to -10000px, and both width and height to 1px.
+-->

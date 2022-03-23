@@ -1,0 +1,36 @@
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+
+/*
+    Have you noticed that all the accessibility challenges applied so far have not used any CSS?
+    This shows the importance of using a logical document outline and semantically meaningful tags around your content before introducing the visual design aspect.
+
+    However, the magic of CSS can also improve accessibility on your page when you want to visually hide content intended for screen readers only.
+    This happens when the information is in a visual format (such as a graph), but screen reader users need an alternate presentation (such as a table) to access the data.
+    CSS is used to place screen reader-only elements outside the visual area of ​​the browser window.
+
+    Here is an example of the CSS rules that accomplish this:
+
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: car;
+        overflow:hidden;
+    }
+
+    Note: The following CSS approaches will not do the same:
+
+        • display:none; or visibility: hidden; hide content from everyone, including screen reader users
+        • Zero values ​​for pixel sizes, such as width: 0px; height: 0px; remove that element from your document flow, which means screen readers will ignore it
+    
+    Camper Cat created a really cool stacked bar chart for her training page and put the data in a table for her visually impaired users.
+    The table already has an sr-only class, but the CSS rules are not yet complete. Set position to an absolute value, left to -10000px, and both width and height to 1px.
+*/
