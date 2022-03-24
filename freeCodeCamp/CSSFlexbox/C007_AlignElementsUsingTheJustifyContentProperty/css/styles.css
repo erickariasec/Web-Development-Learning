@@ -1,0 +1,48 @@
+#box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+#box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+}
+
+#box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+}
+
+/*
+    Sometimes the flex items inside a flex container do not fill the entire space of the container.
+    It's common to want to tell CSS how to align and space flex elements in a certain way. Fortunately, the justify-content property has several options to do this.
+    But first, you need to understand some important terminology before reviewing these options.
+
+    Here is a helpful image showing a row to illustrate the concepts below:
+    https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg
+
+    Remember that setting a flex container to row places flex items next to each other from left to right.
+    A flex container set as a column places flex items stacked vertically from top to bottom. For each, the direction in which the flexible elements are arranged is called the main axis.
+    For a row, this is a horizontal line that cuts through each element.
+    And for a column, the main axis is a vertical line through the elements.
+
+    There are several options for spacing the flex elements along the line that represents the main axis.
+    One of the most commonly used is justify-content: center;, which center-aligns all flex items inside the flex container.
+    Other options include:
+
+        • flex-start - Align elements with the start of the flex container. For a row, this pushes the items to the left of the container. For a column, this pushes the items to the top of the container. This is the default alignment if no justify-content type is specified.
+        • flex-end - Align elements with the end of the flex container. For a row, this pushes the elements to the right of the container. For a column, this pushes the items to the bottom of the container.
+        • space-between: aligns the elements in the center of the main axis, with an extra space between the elements. The first and last items are pushed to the edge of the flex container. For example, in a row the first element is on the left side of the container, the last element is on the right side of the container, then the remaining space is distributed evenly among the other elements.
+        • space-around: Similar to space-between but the first and last elements are not fixed to the edges of the container, space is distributed around all elements with half a space at both ends of the flex container.
+        • space-evenly: Distribute space evenly between flex items with a full space at both ends of the flex container
+    
+    An example helps to show this property in action.
+    Add the justify-content CSS property to the #box-container element and give it a value of center.
+
+    Extra:
+    Try the other options for the justify-content property in the code editor to see their differences.
+    But keep in mind that a value of center is the only one that will overcome this challenge.
+*/
