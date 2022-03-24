@@ -1,0 +1,45 @@
+#box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+#box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+}
+
+#box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 18px;
+}
+
+/*
+    The align-items property is similar to justify-content.
+    Remember that the justify-content property aligned the flex elements along the main axis.
+    For rows, the main axis is a horizontal line and for columns it is a vertical one.
+
+    Flexible containers also have a transverse axis that is the opposite of the main axis.
+    For rows, the cross axis is vertical and for columns, the cross axis is horizontal.
+
+    CSS provides the align-items property to align flex items along the cross axis.
+    For a row, it tells the CSS how to push the elements in the entire row up or down inside the container.
+    And for a column, like pushing all elements to the left or right inside the container.
+
+    The different values ​​available for align-items include:
+
+        • flex-start - Align elements with the start of the flex container. For rows, this aligns the elements to the top of the container. For columns, this aligns the elements to the left of the container.
+        • flex-end - Align elements with the end of the flex container. For rows, this aligns the elements to the bottom of the container. For columns, this aligns the elements to the right side of the container.
+        • center: aligns the elements towards the center. For rows, this aligns items vertically (equal space above and below items). For columns, this aligns them horizontally (equal space left and right of elements).
+        • stretch - Stretches the items to fill the flex container. For example, row elements are stretched to fill the flex container from top to bottom. This is the default value if no align-items type is specified.
+        • baseline: aligns the elements with their baselines. A baseline is a text concept, think of it as the line on which the letters are placed.
+    
+    An example helps to show this property in action.
+    Add the align-items CSS property to the #box-container element and give it a value of center.
+
+    Extra:
+    Try the other options for the align-items property in the code editor to see their differences.
+    But keep in mind that a value of center is the only one that will overcome this challenge.
+*/
