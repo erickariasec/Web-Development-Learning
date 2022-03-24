@@ -58,8 +58,8 @@ footer .cta button {
 }
 
 /*
-    The last challenge showed an example of the justify-content property.
-    For the embedded tweet, this property can be applied to align the elements in the .profile-name .
+    The last challenge introduced the align-items property and gave an example.
+    This property can be applied to a few elements of the embedded tweet to align the flex elements within them.
 
-    Add the justify-content CSS property to the .profile-name and set the value to any of the options from the last challenge.
+    Add the align-items CSS property to the header's .follow-btn element. Set the value to center.
 */
