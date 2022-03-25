@@ -1,0 +1,56 @@
+#box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+#box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 50%;
+}
+
+#box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 50%;
+}
+#box-3 {
+    background-color: violet;
+    width: 25%;
+    height: 50%;
+}
+#box-4 {
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+}
+#box-5 {
+    background-color: green;
+    width: 25%;
+    height: 50%;
+}
+#box-6 {
+    background-color: black;
+    width: 25%;
+    height: 50%;
+}
+
+/*
+    CSS flexbox has a feature to split a flex element into multiple rows (or columns).
+    By default, a flex container will fit all flex items together.
+    For example, a row will be complete on a single line.
+
+    However, using the flex-wrap property tells the CSS to wrap the elements.
+    This means that the extra elements are moved to a new row or column.
+    The breakpoint where the wrapping occurs depends on the size of the elements and the size of the container.
+
+    CSS also has options for the direction of the wrapper:
+
+    nowrap - This is the default setting, and does not wrap elements.
+    wrap: wraps elements on multiple lines from top to bottom if they are in rows and from left to right if they are in columns.
+    wrap-reverse: wrap elements on multiple lines from bottom to top if they are in rows and from right to left if they are in columns.
+    
+    The current layout has too many boxes for a single row.
+    Add the flex-wrap CSS property to the #box-container element and give it a value of wrap.
+*/
