@@ -1,0 +1,32 @@
+#box-container {
+    display: flex;
+    height: 500px;
+}
+#box-1 {
+    background-color: dodgerblue;
+    flex: 2 2 150px;    /* flex-grow    /   flex-shrink     /   flex-basis */
+    height: 200px;
+}
+
+#box-2 {
+    background-color: orangered;
+    flex: 1 1 150px;    /* flex-grow    /   flex-shrink     /   flex-basis */
+    height: 200px;
+}
+
+/*
+    There is a shortcut available to set multiple flex properties at once.
+    The flex-grow, flex-shrink, and flex-basis properties can be set using the flex property.
+
+    For example, flex: 1 0 10px; will set the element's properties to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;.
+
+    The default setting of the property is flex: 0 1 auto;.
+
+    Add the CSS flex property to both #box-1 and #box-2.
+    Give #box-1 values so that its flex-grow is 2, its flex-shrink is 2, and its flex-basis is 150px.
+    Give #box-2 values so that its flex-grow is 1, its flex-shrink is 1, and its flex-basis is 150px.
+
+    These values will cause #box-1 to grow to twice the size of #box-2 when the container is larger than 300px,
+    and shrink to twice the size of #box-2 when the container is smaller than 300px, to fill the extra space.
+    300px is the combined size of the flex-basis values of the two boxes.
+*/
