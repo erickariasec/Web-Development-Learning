@@ -1,0 +1,28 @@
+#box-container {
+    display: flex;
+    height: 500px;
+}
+
+#box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+}
+
+#box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+}
+
+/*
+    The opposite of flex-shrink is the flex-grow property.
+    Remember that flex-shrink controls the size of elements when the container shrinks.
+    The flex-grow property controls the size of elements when the parent container is expanded.
+
+    Using an example similar to the one in the last challenge,
+    if one element has a flex-grow value of 1 and the other has a flex-grow value of 3, the one with the value 3 will grow three times as much as the other.
+
+    Add the flex-grow CSS property to both #box-1 and #box-2.
+    Give #box-1 a value of 1 and #box-2 a value of 2.
+*/
