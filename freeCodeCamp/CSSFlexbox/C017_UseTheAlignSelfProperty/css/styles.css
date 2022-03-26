@@ -1,0 +1,28 @@
+#box-container {
+    display: flex;
+    height: 500px;
+}
+#box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+}
+
+#box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+}
+
+/*
+    The last property for flex elements is align-self.
+    This property allows you to adjust the alignment of each element individually, instead of adjusting them all at once.
+    This is useful since other common wrapping techniques use the float, clear, and vertical-align CSS properties, which don't work on flex elements.
+
+    align-self accepts the same values as align-items and will override any value set by the align-items property.
+
+    Add the align-self CSS property to both #box-1 and #box-2.
+    Give #box-1 a value of center and #box-2 a value of flex-end.
+*/
