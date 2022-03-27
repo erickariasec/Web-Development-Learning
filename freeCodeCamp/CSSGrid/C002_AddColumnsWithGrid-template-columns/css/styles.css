@@ -1,0 +1,33 @@
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Cambia solo el código debajo de esta línea */
+    grid-template-columns: 100px 100px 100px;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    Creating a simple grid element won't get you very far.
+    You also need to define its structure.
+    To add columns to the grid, use the grid-template-columns property on the grid container as shown below:
+
+    .container {
+        display:grid;
+        grid-template-columns: 50px 50px;
+    }
+
+    This will give your grid two columns that are each 50px wide.
+    The number of parameters given to the grid-template-columns property indicates the number of columns in the grid,
+    and the value of each parameter indicates the width of each column.
+
+    Make the grid container have three columns with a width of 100px each.
+*/
