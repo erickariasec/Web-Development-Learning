@@ -1,0 +1,24 @@
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    /* Cambia solo el código debajo de esta línea */
+    display: grid;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    Convert any HTML element to a grid by setting the display property to grid.
+    This gives you the ability to use all the other properties associated with CSS Grid.
+
+    Note: In CSS Grid, the parent element is referred to as the container and its children are called elements.
+
+    Change the display property of the div that has the container class to grid.
+*/
