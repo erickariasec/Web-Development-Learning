@@ -1,0 +1,27 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* Cambia solo el código debajo de esta línea */
+
+    align-items: end;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    Using the align-items property on a grid container will set the vertical alignment of all grid items.
+
+    Use it now to move all elements to the end of each cell.
+*/
