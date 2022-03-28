@@ -1,0 +1,42 @@
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Cambia solo el código debajo de esta línea */
+
+    /*grid-template-columns: auto 50px 10% 2fr 1fr;*/
+    grid-template-columns: 1fr 100px 2fr;
+
+    /* Cambia solo el código encima de esta línea */
+    grid-template-rows: 50px 50px;
+}
+
+/*
+    You can use absolute and relative units like px and em in CSS Grid to define the size of rows and columns.
+    You can use these too:
+
+    fr: fix the column or row to a fraction of the available space,
+
+    auto: set the column or row to the width or height of its content automatically,
+
+    % - Fits the column or row to the percentage width of its container.
+
+
+    Here is the code that generates the preview result:
+
+    grid-template-columns: auto 50px 10% 2fr 1fr;
+
+
+    This line of code generates five columns.
+    The first column is as wide as its content, the second is 50px wide, the third is 10% of its container,
+    and for the last two columns; the remaining space is divided into three sections: two are assigned to the fourth column and one to the fifth column.
+
+    Make a grid with three columns that have the following width dimensions: 1fr, 100px, and 2fr.
+*/
