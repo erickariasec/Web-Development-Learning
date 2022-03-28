@@ -1,0 +1,31 @@
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Cambia solo el código debajo de esta línea */
+    grid-column-gap: 20px;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    So far in the grids you've created, the columns have all been together.
+    Sometimes you will want a space between the columns.
+    To add a gap between columns, use the grid-column-gap property as follows:
+
+    grid-column-gap: 10px;
+    
+    This creates 10px empty spaces between all columns.
+
+    Make the columns in the grid 20px spaced.
+*/
