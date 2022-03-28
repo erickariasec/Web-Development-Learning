@@ -1,0 +1,28 @@
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Cambia solo el código debajo de esta línea */
+    
+    grid-gap: 10px 20px;    /* rows - columns */
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    grid-gap is a shorthand property for grid-row-gap and grid-column-gap from the previous two challenges that is more convenient to use.
+    If grid-gap has a value, it will create a gap between all rows and columns.
+    However, if there are two values, it will use the first of these to put the spaces between the rows and the second for the spaces between the columns.
+
+    Use grid-gap to introduce a 10px gap between rows and a 20px gap between columns.
+*/
