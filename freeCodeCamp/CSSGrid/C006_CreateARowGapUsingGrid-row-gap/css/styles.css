@@ -1,0 +1,26 @@
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Cambia solo el código debajo de esta línea */
+    
+    grid-row-gap: 5px;
+
+    /* Cambia solo el código encima de esta línea */
+  }
+
+/*
+    You can add a space between the rows using grid-row-gap in the same way you added a space between the columns in the previous challenge.
+
+    Create a gap for the rows that is 5px high.
+*/
