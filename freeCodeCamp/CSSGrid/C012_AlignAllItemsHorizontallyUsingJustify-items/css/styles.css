@@ -1,0 +1,29 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* Cambia solo el código debajo de esta línea */
+
+    justify-items: center;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    Sometimes you'll want all the elements in your CSS Grid to share the same alignment.
+    You can use the properties learned above and align them individually, or you can align them all at once horizontally using justify-items on your grid container.
+    This property accepts the same values learned in the previous two challenges, the only difference being that it will move all grid elements to the desired alignment.
+
+    Use this property to center all elements horizontally.
+*/
