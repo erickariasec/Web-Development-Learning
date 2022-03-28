@@ -1,0 +1,30 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+
+.item5 {
+    background: PaleGreen;
+    grid-column: 2 / 4;
+    /* Cambia solo el código debajo de esta línea */
+    grid-row: 2 / 4;
+    /* Cambia solo el código encima de esta línea */
+}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*
+    Of course, you can make elements span multiple rows just as you can with columns.
+    You can define the horizontal lines where you want an element to start and end using the grid-row property on a grid element.
+
+    Make the element with class item5 occupy the last two rows.
+*/
