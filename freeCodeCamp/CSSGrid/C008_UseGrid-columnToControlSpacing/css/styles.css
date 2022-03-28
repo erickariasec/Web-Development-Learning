@@ -1,0 +1,46 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+
+.item5 {
+    background: PaleGreen;
+    /* Cambia solo el código debajo de esta línea */
+
+    grid-column: 2 / 4;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*
+    Up to this point, all the properties we've discussed are for grid containers.
+    The grid-column property is the first one we'll use for the grid elements themselves.
+
+    The hypothetical horizontal and vertical lines that create the grid are referred to as lines.
+    These lines are numbered starting with 1 from the top left corner of the grid and scrolling to the right for columns and down for rows, counting up.
+
+    This is what the lines look like for a 3x3 grid:
+
+    https://www.freecodecamp.org/espanol/learn/responsive-web-design/css-grid/use-grid-column-to-control-spacing
+
+    To control the number of columns an element will have, you can use the grid-column property in conjunction with the number of lines you want it to start and end on.
+
+    Here an example:
+
+    grid-column: 1 / 3;
+    
+    This will cause the element to start at the first vertical grid line on the left and extend to the 3rd grid line, spanning two columns.
+
+    Make the element with class item5 occupy the last two columns of the grid.
+*/
