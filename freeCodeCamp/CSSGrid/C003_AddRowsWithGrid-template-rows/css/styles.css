@@ -1,0 +1,24 @@
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    /* Cambia solo el código debajo de esta línea */
+    grid-template-rows: 50px 50px;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    The grid (grid) you created in the last challenge will set the number of rows automatically.
+    To manually wrap the rows, use the grid-template-rows property the same way you used grid-template-columns in the previous challenge.
+
+    Add two rows to the grid that are each 50px tall.
+*/
