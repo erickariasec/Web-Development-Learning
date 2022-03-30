@@ -1,0 +1,39 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    /* Cambia solo el código debajo de esta línea */
+        "header header header"
+        "advert content content"
+        "footer footer footer";
+    /* Cambia solo el código encima de esta línea */
+}
+
+/*
+    You can group your grid cells into one area and give that area a custom name.
+    Do this using grid-template-areas on the container as follows:
+
+    grid-template-areas:
+        "header header header"
+        "advert content content"
+        "advert footer footer";
+
+    The code above groups the grid cells into four areas; header, ad, content and footer.
+    Each word represents a cell and each pair of quotes represents a row.
+
+    Change the template so that the footer area spans the entire bottom row.
+    Defining the areas will not have any visual effect at this time.
+    Next, you'll use an item to see how it works.
+*/
