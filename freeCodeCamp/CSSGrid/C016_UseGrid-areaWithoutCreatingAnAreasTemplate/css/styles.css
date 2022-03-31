@@ -1,0 +1,40 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+
+.item5 {
+    background: PaleGreen;
+    /* Cambia solo el código debajo de esta línea */
+
+    grid-area: 3/1/4/4;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*
+    The grid-area property you learned about in the last challenge can be used in another way.
+    If your grid doesn't have reference area templates, you can create an area for an item on the fly to position items like this:
+
+    item1 { grid-area: 1/1/2/4; }
+
+    This uses the line numbers learned earlier to define what the area of that element will be.
+    The numbers in the example above represent these values:
+
+    grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+
+    So the element in the example will occupy the rows between lines 1 and 2, and the columns between lines 1 and 4.
+
+    Use the grid-area property to position the element with class item5 between the third and fourth horizontal lines and between the first and fourth vertical lines.
+*/
