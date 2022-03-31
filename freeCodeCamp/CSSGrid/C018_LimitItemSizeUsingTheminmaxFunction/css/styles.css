@@ -1,0 +1,34 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Cambia solo el código debajo de esta línea */
+
+    grid-template-columns: repeat(3, minmax(90px, 1fr));
+
+    /* Cambia solo el código encima de esta línea */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*
+    There is another built-in function for use with grid-template-columns and grid-template-rows called minmax.
+    It is used to limit the size of elements when the grid container (grid) changes size.
+    To do this, you need to specify the acceptable size range for your element.
+    Here is an example:
+
+    grid-template-columns: 100px minmax(50px, 200px);
+
+    In the code above, grid-template-columns was set to create two columns;
+    the first one is 100px wide and the second one has a minimum width of 50px and a maximum width of 200px.
+
+    Using the minmax function, replace 1fr in the repeat function with a column size that is at least 90px wide and max 1fr wide, and resize the preview pane to see the effect.
+*/
