@@ -7,7 +7,7 @@
     background: PaleGreen;
     /* Cambia solo el código debajo de esta línea */
 
-    grid-area: 3/1/4/4;
+    grid-area: 3/1/4/4; /* horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at */
 
     /* Cambia solo el código encima de esta línea */
 }
