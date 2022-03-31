@@ -1,0 +1,45 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Cambia solo el código debajo de esta línea */
+
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Cambia solo el código encima de esta línea */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*
+    When you used grid-template-columns and grid-template-rows to define the structure of a grid, you entered a value for each row or column you created.
+
+    Let's say you want a grid with 100 rows of the same size.
+    It is not very practical to insert 100 values ​​manually.
+    Fortunately, there is a better way - using the repeat function to specify the number of times you want your column or row to repeat, followed by a comma and the value you want to repeat.
+
+    Here's an example that creates a grid of 100 rows, each row 50px high.
+
+    grid-template-rows: repeat(100, 50px);
+
+    You can also repeat multiple values ​​with the repeat function and insert the function between other values ​​when defining a grid structure.
+    This is what it looks like:
+
+    grid-template-columns: repeat(2, 1fr 50px) 20px;
+
+    This translates to:
+
+    grid-template-columns: 1fr 50px 1fr 50px 20px;
+    
+    Note: the 1fr 50px is repeated twice, followed by 20px.
+
+    Use repeat to remove repetition from the grid-template-columns property.
+*/
