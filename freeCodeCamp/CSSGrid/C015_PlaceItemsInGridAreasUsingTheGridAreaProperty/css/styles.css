@@ -1,0 +1,42 @@
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+
+.item5 {
+    background: PaleGreen;
+    /* Cambia solo el código debajo de esta línea */
+
+    grid-area: footer;
+
+    /* Cambia solo el código encima de esta línea */
+}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "advert content content"
+        "footer footer footer";
+    }
+
+/*
+    After creating an area template for your grid container, as shown in the challenge above, you can place an element in your custom area by referencing the name you gave it.
+    To do this, use the grid-area property on an element like so:
+
+    .item1 {
+    grid-area: header;
+    }
+
+    This tells the grid that you want the item1 class to be placed in the area called header.
+    In this case, the element will use the entire top row because that area is called the header.
+
+    Place an element with class item5 in the footer area using the grid-area property.
+*/
