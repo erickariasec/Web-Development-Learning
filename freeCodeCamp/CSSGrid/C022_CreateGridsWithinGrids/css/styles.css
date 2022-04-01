@@ -1,0 +1,54 @@
+.container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+}
+.item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+}
+
+.item2 {
+    background: LightSalmon;
+    grid-area: advert;
+}
+
+.item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    /* Cambia solo el código debajo de esta línea */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Cambia solo el código encima de esta línea */
+}
+
+.item4 {
+    background: lightpink;
+    grid-area: footer;
+}
+
+.itemOne {
+    background: PaleGreen;
+}
+
+.itemTwo {
+    background: BlanchedAlmond;
+}
+
+/*
+    Converting an element to a grid only affects the behavior of its direct descendants.
+    So by converting a direct descendant to a grid, you get a grid within a grid.
+
+    For example, by setting the display and grid-template-columns properties of the element with class item3, you create a grid within your grid.
+
+    Convert the element with class item3 to a grid with two columns of width auto and 1fr using display and grid-template-columns.
+*/
