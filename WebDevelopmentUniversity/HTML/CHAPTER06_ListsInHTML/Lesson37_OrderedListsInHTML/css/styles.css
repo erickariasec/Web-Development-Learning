@@ -1,0 +1,15 @@
+ol {
+    list-style: none;
+    counter-reset: personalizedCounter;
+}
+ol li {
+    counter-increment: personalizedCounter;
+}
+ol li::before {
+    content: "Name: " counter(personalizedCounter) ") ";
+    color: #ff6f00;
+}
+ol li::after {
+    content: ".";
+    color: #ff6f00
+}
