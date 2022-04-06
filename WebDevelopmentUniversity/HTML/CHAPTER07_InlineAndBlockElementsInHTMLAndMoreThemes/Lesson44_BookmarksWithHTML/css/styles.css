@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 #main-title {   /* id */
     color: #f72585;
     text-align: center;
-    margin: 15px;
+    margin: 100px;
 }
 h2 {
     color: #3f37c9;
@@ -17,8 +13,8 @@ p {
     border: 10px solid #560bad;
     background-color: #f1faee;
     text-align: center;
-    margin: 10px 115px;
-    padding: 15px;
+    margin: 100px 115px;
+    padding: 100px;
 }
 .title {    /* class */
     color: #f72585;
