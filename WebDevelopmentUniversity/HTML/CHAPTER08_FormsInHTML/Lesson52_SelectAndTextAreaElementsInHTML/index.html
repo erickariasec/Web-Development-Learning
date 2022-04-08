@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select and TextArea Elements in HTML</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form>
+        <label for="name">Name: </label> <br>
+        <input type="text" id="name" name="name" placeholder="Enter your name..." required> <br>
+        
+        <label for="last-name">Last Name: </label> <br>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name..." required> <br>
+
+        <label for="email">Email: </label> <br>
+        <input type="email" id="email" name="email" placeholder="user@mail.com"> <br>
+
+        <label for="age">Age: </label> <br>
+        <input type="number" id="age" name="age"> <br> <br>
+
+        <label>Genre: </label> <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="genre" value="male"> <br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="genre" value="female"> <br> <br>
+
+        <label>Favorite Music</label> <br>
+        <label for="classic">Classic</label>
+        <input type="checkbox" id="classic" name="music" value="classic"> <br>
+        <label for="jazz">Jazz</label>
+        <input type="checkbox" id="jazz" name="music" value="jazz"> <br> <br>
+
+        <label for="cars">Favorite Car Brand</label> <br>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="bmw" selected>BMW</option>
+            <option value="audi">Audi</option>
+        </select> <br> <br>
+
+        <label for="comment">Comment</label> <br>
+        <textarea id="comment" name="comment" rows="2" cols="30">This is my comment...</textarea> <br> <br>
+        
+        <input type="submit" value="Send">
+        <input type="submit" value="Send without validating" formnovalidate>
+    </form>
+</body>
+</html>
