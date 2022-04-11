@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+.dotted {
+    border-style: dotted;
+    border-width: 10px 5px 3px 2px;
+}
+.dashed {
+    border: dashed;
+    border-width: thick; /* thin, medium, thick */
+}
+.solid {
+    border: solid red;
+    border-width: 10px 5px 2px; /* 10px TOP, 5px LEFT & RIGHT, 2px BOTTOM */
+}
+.double {
+    border: double blueviolet;
+    border-width: 10px 5px; /* 10px TOP & BOTTOM, 5px LEFT & RIGHT */
+}
+.groove {
+    border: 10px groove;
+}
+.ridge {
+    border: 10px ridge;
+}
+.inset {
+    border: 10px inset;
+}
+.outset {
+    border: 10px outset;
+}
+.no-border {
+    border: none;
+}
+.hidden {
+    border: hidden;
+}
+.mixed {
+    border-style: dotted solid dashed double;
+}
