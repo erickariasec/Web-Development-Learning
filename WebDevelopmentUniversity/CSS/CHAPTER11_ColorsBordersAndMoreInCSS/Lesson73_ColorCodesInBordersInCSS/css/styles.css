@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+.dotted {
+    border-style: dotted;
+    border-width: 10px 5px 3px 2px;
+    border-color: crimson hotpink gold lime; /* Different Colors in each side */
+}
+.dashed {
+    border: dashed;
+    border-width: thick;
+    border-color: hsla(203, 39%, 44%, 0.5);
+}
+.solid {
+    border: solid red;
+    border-width: 10px 5px 2px; 
+}
+.double {
+    border: double blueviolet;
+    border-width: 10px 5px;
+}
+.groove {
+    border: 10px groove;
+}
+.ridge {
+    border: 10px ridge;
+}
+.inset {
+    border: 10px inset;
+}
+.outset {
+    border: 10px outset;
+}
+.no-border {
+    border: none;
+}
+.hidden {
+    border: hidden;
+}
+.mixed {
+    border-style: dotted solid dashed double;
+}
