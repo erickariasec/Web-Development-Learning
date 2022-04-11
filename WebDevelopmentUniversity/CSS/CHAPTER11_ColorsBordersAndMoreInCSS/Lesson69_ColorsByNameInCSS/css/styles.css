@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+.red {
+    background-color: firebrick;
+}
+.pink {
+    background-color: hotpink;
+}
+.yellow {
+    background-color: gold;
+}
+.violet {
+    background-color: blueviolet;
+}
+.green {
+    background-color: lime;
+}
+.blue {
+    background-color: turquoise;
+}
+.red, .pink, .violet {
+    color: white;
+}
+
+/* https://htmlcolorcodes.com/color-names/ */
