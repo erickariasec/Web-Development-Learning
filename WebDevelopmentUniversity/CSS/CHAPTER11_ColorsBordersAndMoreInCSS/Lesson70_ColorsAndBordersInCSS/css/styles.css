@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+.red {
+    border: 10px solid firebrick;
+    /*background-color: firebrick;*/
+}
+.pink {
+    border: 10px dashed rgb(255, 105, 180);
+}
+.yellow {
+    border: 10px double #ffd700;
+}
+.blue {
+    border: 10px dotted hsl(174, 72%, 56%);
+}
+.violet {
+    border: 10px groove blueviolet;
+}
+.green {
+    border: 10px ridge lime;
+}
