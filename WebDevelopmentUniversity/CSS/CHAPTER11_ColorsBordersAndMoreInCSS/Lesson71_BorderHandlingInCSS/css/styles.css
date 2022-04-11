@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+.dotted {
+    border-style: dotted;
+}
+.dashed {
+    border: dashed;
+}
+.solid {
+    border: 10px solid red;
+}
+.double {
+    border: 5px double; /* The Color by default is Black */
+}
+.groove {
+    border: 10px groove;
+    /*border-width: 10px;
+    border-style: groove;*/
+}
+.ridge {
+    border: 10px ridge;
+}
+.inset {
+    border: 10px inset;
+}
+.outset {
+    border: 10px outset;
+}
+.no-border {
+    border: none;
+}
+.hidden {
+    border: hidden;
+}
+.mixed {
+    border-style: dotted solid dashed double;
+}
