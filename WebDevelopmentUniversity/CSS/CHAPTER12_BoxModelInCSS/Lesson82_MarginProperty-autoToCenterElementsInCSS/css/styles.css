@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    color: #e63946;
+}
+div {
+    padding: 10px 5px 15px;
+    border: 5px solid #457b9d;
+    margin: 0 auto;   /* It will center our element */    /* Top&Bottom - Left&Right */
+    background-color: #f1faee;
+    max-width: 300px;
+    box-sizing: border-box; 
+}
