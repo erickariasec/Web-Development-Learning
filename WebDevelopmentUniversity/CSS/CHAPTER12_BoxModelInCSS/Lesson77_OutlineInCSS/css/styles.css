@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    color: #e63946;
+}
+div {
+    padding: 10px;
+    border: 15px solid #457b9d;
+    margin: 20px;
+    background-color: #f1faee;
+    width: 300px;
+    outline: 10px dashed #a8dadc;
+}
