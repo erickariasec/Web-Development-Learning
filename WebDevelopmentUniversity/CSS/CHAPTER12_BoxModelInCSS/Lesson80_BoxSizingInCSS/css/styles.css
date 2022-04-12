@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: #e63946;
+}
+div {
+    padding: 10px 5px 15px;
+    border: 0px solid #457b9d;
+    margin: 0px;
+    background-color: #f1faee;
+    width: 300px;
+    box-sizing: border-box; /* 300px is total width incluiding content, padding, border and margin */
+}
