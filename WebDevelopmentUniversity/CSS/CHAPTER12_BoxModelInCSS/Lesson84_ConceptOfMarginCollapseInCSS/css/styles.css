@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    color: #e63946;
+}
+.box1 {
+    padding: 10px 5px 15px;
+    border: 5px solid #457b9d;
+    margin: 30px;
+    background-color: #f1faee;
+    max-width: 300px;
+    box-sizing: border-box; 
+}
+.box2 {
+    padding: 10px 5px 15px;
+    border: 5px solid #457b9d;
+    margin: 20px;
+    background-color: #f1faee;
+    max-width: 300px;
+    box-sizing: border-box; 
+}
