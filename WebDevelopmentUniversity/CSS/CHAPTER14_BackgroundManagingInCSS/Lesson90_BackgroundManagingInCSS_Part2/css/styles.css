@@ -1,0 +1,15 @@
+body {
+    color: cornsilk;
+    /*
+    background-color: dodgerblue;
+    background-image: url("/CSS/CHAPTER14_BackgroundManagingInCSS/Lesson89_BackgroundManagingInCSS/img/fondo.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    */
+    background-attachment: fixed; /* Background doesn't move while scrolling the page */
+    background: dodgerblue url("/CSS/CHAPTER14_BackgroundManagingInCSS/Lesson89_BackgroundManagingInCSS/img/fondo.png") no-repeat right top;
+}
+h1 {
+    text-align: center;
+    background-color: dodgerblue;
+}
