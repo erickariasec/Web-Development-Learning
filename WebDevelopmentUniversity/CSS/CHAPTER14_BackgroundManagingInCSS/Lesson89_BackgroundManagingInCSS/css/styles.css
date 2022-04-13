@@ -1,0 +1,6 @@
+body {
+    background-color: dodgerblue;
+    color: cornsilk;
+    background-image: url("/CSS/CHAPTER14_BackgroundManagingInCSS/Lesson89_BackgroundManagingInCSS/img/fondo.png");
+    background-repeat: no-repeat;
+}
