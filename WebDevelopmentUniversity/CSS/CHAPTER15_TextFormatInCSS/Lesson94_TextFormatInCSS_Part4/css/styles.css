@@ -1,0 +1,26 @@
+h1 {
+    color: #ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-decoration: overline underline;
+}
+.box {
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    background-color: #219ebc;
+    border-radius: 5px;
+}
+.text {
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+    /* direction: rtl; */
+    text-indent: 50px;
+    line-height: 1.5;
+    white-space: normal;    /* This is by default */
+    text-shadow: 1px 1px 2px #ced4da;
+}
