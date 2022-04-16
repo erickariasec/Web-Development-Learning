@@ -1,0 +1,72 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Roboto&family=Square+Peg&display=swap'); */ /* Importing Sofia, Roboto & Square Peg Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Sofia|Roboto|Square+Peg&effect=shadow-multiple&display=swap'); /* Oldest Version includes effects */
+
+h1 {
+    color: #ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+    font-family: 'Sofia', cursive;
+}
+.box {
+    padding: 5px;
+    width: 40%;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    float: left;
+}
+.box.serif {
+    background-color: #5a189a;
+}
+.roboto-font {
+    /*
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-size: 20px;
+    */
+    /* font: font-style font-variant font-weight *font-size/line-height font-family */
+    font: italic small-caps bolder 20px 'Roboto', sans-serif;
+}
+.georgia-font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: 1.25em;  
+}
+.box.sans-serif {
+    background-color: #00b4d8;
+}
+.arial-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 2vw;  /* view width (viewport) 1vw = 1% */
+}
+.verdana-font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 2vh;  /* view height (viewport) 2vh = 2% */
+}
+.box.monospace {
+    background-color: #f15bb5;
+}
+.courier-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+.box.cursive {
+    background-color: #ff8500;
+}
+.square_peg-font {
+    font-family: 'Square Peg', cursive;
+}
+
+/* Google Fonts: https://fonts.google.com/ */
+
+/* Google Fonts API: https://developers.google.com/fonts/docs/getting_started */
