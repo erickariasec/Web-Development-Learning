@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div {
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+}
+.blue-icon {
+    font-size: 2.5em;
+    color: cornflowerblue;
+}
+.red-icon {
+    font-size: 3em;
+    color: crimson;
+}
+
+/* Bootstrap Icons: https://icons.getbootstrap.com/ */
