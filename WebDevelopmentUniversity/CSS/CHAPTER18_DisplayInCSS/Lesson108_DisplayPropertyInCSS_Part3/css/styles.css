@@ -1,0 +1,23 @@
+h1, div, p {
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 10px;
+    display: block; /* This is the default value */
+}
+h1 {    /* Overrides h1 element */
+    display: none;  /* hidde element and its space on the page */
+}
+p {     /* Overrides p element */
+    visibility: hidden; /* hidde element but mantains its space on the page */
+}
+span {
+    display: inline; /* span elements are inline by default */
+    border: 1px solid blue;
+}
+a {     /* anchor elements are inline by default */
+    display: block;
+}
+li {    /* list items are block by default */
+    display: inline;
+}
