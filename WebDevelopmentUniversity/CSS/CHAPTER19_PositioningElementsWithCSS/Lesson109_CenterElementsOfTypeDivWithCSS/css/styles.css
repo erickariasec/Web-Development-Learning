@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div {
+    max-width: 50%; /* Adapts 50% to screen width */
+    /*max-width: 400px;*/ /* It is also possible */
+    border: 3px solid firebrick;
+    margin: auto;   /* center */
+}
