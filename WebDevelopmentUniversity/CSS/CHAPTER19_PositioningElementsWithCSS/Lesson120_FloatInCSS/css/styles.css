@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div.container {
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;
+    overflow: auto;
+    float: left;    /* positions a box by moving it as far to the left or right of its original position as possible */
+}
