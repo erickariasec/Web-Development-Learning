@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div {
+    position: sticky; /* Is a hybrid of relative and fixed. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned. */
+    position: -webkit-sticky; /* It makes workable for Safari Browser */ /* Sticky doesn't work on Internet Explorer */
+    top: 0; 
+    border: 3px solid firebrick;
+}
