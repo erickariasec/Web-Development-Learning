@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div {
+    position: fixed; /* Moves relatively to the viewport (screen) and stay fixed altough we scroll */
+    top: 0; /* Moves 0 relatively to the viewport (screen) and stay fixed altough we scroll */
+    right: 0; /* Moves 0 relatively to the viewport (screen) and stay fixed altough we scroll */
+    border: 3px solid firebrick;
+}
