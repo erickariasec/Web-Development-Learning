@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div {
+    position: static; /* Position static is by default */
+    top: 100px; /* This doesn't make any difference because is static */
+    left: 50px; /* This doesn't make any difference because is static */ 
+    max-width: 50%;
+    border: 3px solid firebrick;
+    margin: auto;
+}
