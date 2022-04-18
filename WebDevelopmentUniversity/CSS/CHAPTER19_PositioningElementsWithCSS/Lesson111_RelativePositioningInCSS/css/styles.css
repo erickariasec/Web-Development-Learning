@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div {
+    position: relative; /* Moves relatively from the original position */
+    top: 100px; /* Moves 100px from the original position */
+    left: 50px; /* Moves 50px from the original position */
+    max-width: 50%;
+    border: 3px solid firebrick;
+    margin: auto;
+}
