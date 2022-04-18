@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div.container {
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;  /* overflow will work only if height is assigned */
+    margin: auto;
+    /*overflow: visible;*/  /* visible property is by default */
+    /*overflow: hidden;*/   /* hidde everything outside of div element */
+    /*overflow: scroll;*/   /* create scroll bars (horizontal & vertical) on div elements */
+    overflow: auto; /* Create scroll bar automatically on div elements if it is necessary */
+}
