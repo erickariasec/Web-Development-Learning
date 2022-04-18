@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+div.relative {
+    max-width: 300px;
+    height: 200px;
+    position: relative; /* If position is static, it doesn't make any effect */
+    top: 100px;
+    left: 100px;
+    background-color: aqua;
+}
+div.absolute {
+    position: absolute; /* Moves absolutely to the container element (div or similar) */
+    bottom: 20px; /* Moves 0 relatively to the container element (div or similar) */
+    right: 10px; /* Moves 0 relatively to the container element (div or similar) */
+    border: 3px solid firebrick;
+}
