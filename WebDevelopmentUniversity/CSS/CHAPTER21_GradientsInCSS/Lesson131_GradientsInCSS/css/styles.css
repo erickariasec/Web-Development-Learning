@@ -1,0 +1,21 @@
+html {
+    height: auto;
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(#f72585, #3a0ca3); /* by default is vertical (from top to bottom) */
+}
+h1 {
+    text-align: center;
+}
+div.container {
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    text-align: center;
+}
+img {
+    width: 50%;
+}
