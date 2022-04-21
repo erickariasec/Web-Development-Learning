@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px grey; /* (x y blur color) */
+}
+div.container {
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    text-align: center;
+}
+img {
+    width: 50%;
+}
