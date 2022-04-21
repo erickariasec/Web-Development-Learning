@@ -1,0 +1,55 @@
+html, body {
+    background-color: #535353;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+.logo {
+    width: 11%;
+    padding: 1.5% 6%;
+}
+header {
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("https://assets.nflxext.com/ffe/siteui/vlv3/59e045df-814d-4342-bf9d-e62ba23e916a/647d81ad-194d-4994-994c-46a4a0886291/EC-es-20220418-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+header h1 {
+    text-align: center;
+    font-size: 50px;
+}
+header p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -20px;
+    font-weight: 500;
+}
+header section p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+header form {
+    display: flex;
+    justify-content: center;
+}
+header form input {
+    padding: 18px;
+    width: 35%;
+}
+header form label {
+    padding: 18px;
+    width: 10%;
+    background-color: #db0000;
+    text-align: center;
+    font-size: larger;
+}
+header form label:hover {
+    padding: 18px;
+    width: 10%;
+    background-color: #e60000;
+    text-align: center;
+    font-size: larger;
+}
