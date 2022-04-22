@@ -1,0 +1,16 @@
+* {     /* Universal Selector */
+    background-color: blueviolet;
+}
+#title {    /* id Selector */
+    color: coral;
+    font-size: 50px;
+}
+.text {     /* class Selector */
+    color: cornflowerblue;
+    font-size: 30px;
+    background-color: crimson;
+}
+h2, h3 {    /* Group Selector */
+    background-color: coral;
+    font-size: 40px;
+}
