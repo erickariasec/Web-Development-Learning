@@ -1,11 +1,13 @@
 html, body {
-    background-color: #535353;
+    background-color: #303030;
     height: 100%;
     margin: 0;
     color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .logo {
-    width: 11%;
+    min-width: 130px;
+    max-width: 180px;
     padding: 1.5% 6%;
 }
 header {
@@ -13,12 +15,12 @@ header {
     height: 700px;
     width: 100%;
     background-color: black;
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: bold;
 }
 header h1 {
     text-align: center;
     font-size: 50px;
+    padding-top: 20px;
 }
 header p {
     text-align: center;
@@ -53,3 +55,61 @@ header form label:hover {
     text-align: center;
     font-size: larger;
 }
+section article {
+    background-color: black;
+    margin-top: 7px;
+    display: flex;
+    width: 100%;
+    height: 470px;
+}
+section article .left-text {
+    padding: 70px 0 80px 70px;
+    flex: 50%;
+    width: 100%;
+    margin: auto;
+    float: right;
+    justify-self: right;
+}
+section article .left-text h2 {
+    font-size: 48px;
+}
+section article .left-text p {
+    margin-top: -15px;
+    font-size: 25px;
+}
+section article .right-image {
+    padding: 40px 0 80px 70px;
+    flex: 50%;
+    width: 100%;
+    margin: auto;
+    float: left;
+}
+section article .right-image img {
+    width: 500px;
+}
+section article .right-text {
+    padding: 70px 0 80px 70px;
+    flex: 50%;
+    width: 100%;
+    margin: auto;
+    float: right;
+    justify-self: left;
+}
+section article .right-text h2 {
+    font-size: 48px;
+}
+section article .right-text p {
+    margin-top: -15px;
+    font-size: 25px;
+}
+section article .left-image {
+    padding: 40px 0 80px 70px;
+    flex: 50%;
+    width: 100%;
+    margin: auto;
+    float: right;
+}
+section article .left-image img {
+    width: 500px;
+}
+
