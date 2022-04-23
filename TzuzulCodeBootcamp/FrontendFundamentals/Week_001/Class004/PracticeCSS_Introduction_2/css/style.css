@@ -20,10 +20,21 @@ nav {
 .main-section {
     background-color: #354f52d8;
     padding: 200px;
+    min-height: 350px;
 }
 #main-title {
     text-align: center;
     font-size: 80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #cad2c5;
+}
+footer {
+    background-color: #2f3e46f3;
+    margin: auto;
+    padding: 30px;
+}
+.rights-reserved {
+    color: #cad2c5;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
