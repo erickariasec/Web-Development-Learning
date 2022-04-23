@@ -1,12 +1,29 @@
 html, body {
-    background-color: #2f3e46;
+    background: url("https://www.wallpaperkiss.com/wimg/b/168-1680547_big.png");
+    height: 100%;
+    margin: 0;
 }
-header nav {
+header {
+    background-color: #2f3e46f3;
+    width: 100%;
+}
+nav {
     width: 50%;
     margin: auto;
+    padding: 10px;
 }
 .logo-header {
-    width: 200px;
+    width: 175px;
     margin: auto;
     display: block;
+}
+.main-section {
+    background-color: #354f52d8;
+    padding: 200px;
+}
+#main-title {
+    text-align: center;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cad2c5;
 }
