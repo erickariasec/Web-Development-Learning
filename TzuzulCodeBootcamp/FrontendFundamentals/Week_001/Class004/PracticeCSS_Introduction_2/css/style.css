@@ -1,0 +1,12 @@
+html, body {
+    background-color: #2f3e46;
+}
+header nav {
+    width: 50%;
+    margin: auto;
+}
+.logo-header {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
