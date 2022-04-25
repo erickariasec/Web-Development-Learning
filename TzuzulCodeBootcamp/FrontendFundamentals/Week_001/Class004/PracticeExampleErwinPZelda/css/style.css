@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+body {
+    padding: 0px 100px;
+}
+
+/* Presentación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .caja-verde {
+    margin: 20px 0px;
+    font-style: bold;
+}
+
+#portada {
+    width: 55%;
+}
+
+#presentacion {
+    width: 500px;
+    margin: 0px 20px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    color: rgb(67, 170, 65);
+    line-height: 45px;
+}
+
+.caja-verde {
+    background-color: rgb(67, 170, 65);
+    color: white;
+}
+
+#presentacion p {
+    text-align: center;
+}
+
+/* Separadores */
+.separador {
+    width: 100%;
+    height: 4px;
+    margin: 40px 0px;
+    background-color: rgb(67, 170, 65);
+}
+
+/* Contenido de la página */
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Contenido principal */
+.mini-portada {
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+figcaption {
+    font-size: 16px;
+    padding-left: 15px;
+    background-color: azure;
+}
+
+figcaption b {
+    font-size: 15px;
+    color: rgb(0, 145, 255);
+}
+
+main h2 {
+    color: rgb(67, 170, 65);
+    font-size: 30px;
+    margin: 32px 0px 16px 0px;
+}
+
+main {
+    padding-left: 10px;
+}
+
+/* Barra Lateral */
+aside {
+    margin: 0px 25px 0px 30px;
+}
+
+aside .caja-verde {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+aside h2 {
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+#personajes {
+    background-color: rgb(90, 178, 241);
+    height: 1180px;
+    color: white;
+}
+
+#personajes h3 {
+    padding: 0px 0px 5px 10px;
+}
+
+.miniatura {
+    width: 100%;
+}
+
+/* Anuncios */
+.anuncio {
+    width: 100%;
+    padding-top: 25px;
+}
+
+/* Pie de página */
+footer {
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
