@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63046;
+}
+
+div.container {
+    display: flex;  /* ability of a flexible element to alter its dimensions and fill the available space */
+    background-color: #560bad;
+}
+
+div.container > p {
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
