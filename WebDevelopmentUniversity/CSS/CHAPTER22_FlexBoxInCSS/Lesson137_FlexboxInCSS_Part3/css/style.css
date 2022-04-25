@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63046;
+}
+
+div.container {
+    display: flex;  /* ability of a flexible element to alter its dimensions and fill the available space */
+    background-color: #560bad;
+    
+    /*flex-direction: column;*/ /* * elements are added from top to bottom, taking up the full width of the available superior element (div) */
+    /*flex-direction: column-reverse;*/ /* * The same as column, but inversely */
+    /*flex-direction: row;*/ /* * This is by default (horizontally) */ 
+    /*flex-direction: row-reverse;*/ /* * The same as row, but inversely (from right to left) */
+    
+    /*flex-wrap: nowrap;*/ /* * This is by default, Default value. Specifies that the flexible items will not wrap (stay in the same line) */
+    /*flex-wrap: wrap;*/ /* * Specifies that the flexible items will wrap if necessary (flow in several lines if necessary) */
+    
+    flex-flow: row wrap; /* ! flex-direction & flex-wrap combinated in only one attribute */
+    
+    /* ? justify-content to align items HORIZONTALLY*/
+    /*justify-content: flex-start;*/ /* * This is the value by default (align elements at the beginning (to the left)) */
+    justify-content: center; /* ! Center elements */
+    /*justify-content: flex-end;*/ /* * Align items at the end (to the right) */
+    /*justify-content: space-between;*/ /* ! Distribute items evenly(uniformemente). The first item at the beginning, the last at the end (generate new lines if it is necessary) */
+    /*justify-content: space-around;*/ /* ! Distribute items evenly(uniformemente). Items have the same space around them */
+    /*justify-content: space-evenly;*/ /* ! Distributes the space between items evenly. It is similar to space-around but provides equal instead of half-sized space on the edges */
+    
+    height: 300px;
+    
+    /* ? align-itmes to align items VERTICALLY */
+    /*align-items: stretch;*/ /* * This is the value by default. Stretch to fill the container (still respect min-width/max-width) */
+    /*align-items: flex-start;*/ /* * Group flex elements from the start/top (vertically) */
+    align-items: center; /* * Group elements to the center (vertically) */
+    /*align-items: baseline;*/ /* * Items are aligned such as their baselines align */
+}
+
+div.container > p {
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
