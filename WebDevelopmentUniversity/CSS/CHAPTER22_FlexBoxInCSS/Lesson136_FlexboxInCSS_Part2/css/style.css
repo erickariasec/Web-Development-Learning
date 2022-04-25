@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63046;
+}
+
+div.container {
+    display: flex;  /* ability of a flexible element to alter its dimensions and fill the available space */
+    background-color: #560bad;
+    /*flex-direction: column;*/ /* * elements are added from top to bottom, taking up the full width of the available superior element (div) */
+    /*flex-direction: column-reverse;*/ /* * The same as column, but inversely */
+    /*flex-direction: row;*/ /* * This is by default (horizontally) */ 
+    /*flex-direction: row-reverse;*/ /* * The same as row, but inversely (from right to left) */
+    /*flex-wrap: nowrap;*/ /* * This is by default, Default value. Specifies that the flexible items will not wrap (stay in the same line) */
+    /*flex-wrap: wrap;*/ /* * Specifies that the flexible items will wrap if necessary (flow in several lines if necessary) */
+    flex-flow: row wrap; /* ! flex-direction & flex-wrap combinated in only one attribute */
+}
+
+div.container > p {
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
