@@ -6,7 +6,7 @@ console.log(fullName);
 console.log(fullname);
 
 // ! You can't start variable name with a number
-let 1name;
+//let 1name;
 
 // * Possible ways to name a variable
 let a1fullName;
@@ -14,4 +14,4 @@ let _fullName;
 let $fullName;
 
 // ! You can't use javascript reserved word names
-let break = 10;
+//let break = 10;
