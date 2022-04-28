@@ -1,0 +1,17 @@
+/* .item-nav {
+    display: inline;
+} */
+
+ol li {
+    list-style-type: decimal-leading-zero;
+}
+
+ul li {
+    /*list-style-position: outside;*/
+    /*list-style-position: inside;*/
+    /*list-style-image: url("../images/row-right.png");*/
+    /*border: 1px solid;*/
+    /*list-style-type: none;*/
+    list-style: url("../images/row-right.png") inside;
+    border: 1px solid;
+}
