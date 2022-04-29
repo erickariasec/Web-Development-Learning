@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Square+Peg&display=swap');
+
+table {
+    border-collapse: collapse; /* remove space between rows and columns */
+    width: 100%;
+    border: 1px solid rgb(202, 201, 201);
+}
+
+caption {
+    font-size: 30px;
+    font-family: 'Square Peg', cursive;
+    background-color: rgb(255, 154, 154);
+    color: white;
+}
+
+th {
+    border: 1px solid rgb(202, 201, 201);
+    font-size: 20px;
+    color: rgb(255, 153, 0);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+td {
+    border: 1px solid rgb(202, 201, 201);
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+}
