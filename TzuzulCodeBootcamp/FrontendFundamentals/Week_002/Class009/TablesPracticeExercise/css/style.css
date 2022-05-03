@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300&display=swap');
+
+body {
+    background-color: #ef333f;
+    padding: 20px 0px;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    border-collapse: collapse;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+caption {
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #0072CE;
+    color: #FFD100;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.table-header {
+    color: #EF3340;
+    padding: 20px 0px;
+}
+
+th {
+    border-bottom: 1px solid #ef333f42;
+    font-size: 20px;
+    text-align: center;
+    color: #EF3340;
+    background-color: #FFD100;
+}
+
+td {
+    border-bottom: 1px solid #ef333f42;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFD100;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    padding: 1px 5px;
+}
