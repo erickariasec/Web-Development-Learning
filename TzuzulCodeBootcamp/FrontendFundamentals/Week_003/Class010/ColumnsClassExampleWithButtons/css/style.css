@@ -1,0 +1,73 @@
+article {
+    width: 100%;
+    column-gap: 60px;
+}
+
+p {
+    width: 100%;
+    height: 600px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+
+    border: none;
+    border-radius: 10px;
+}
+
+button:nth-child(1) {
+    background-color: red;
+    color: white;
+}
+
+button:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+button:nth-child(3) {
+    background-color: gray;
+    color: white;
+}
+
+button:nth-child(4) {
+    background-color: orange;
+    color: white;
+}
+
+button:nth-child(5) {
+    background-color: blue;
+    color: white;
+}
+      
+.btn1 {
+    columns: 1;
+}
+
+.btn2 {
+    columns: 2;
+}
+
+.btn3 {
+    columns: 3;
+}
+
+.btn4 {
+    columns: 4;
+}
+
+.btn5 {
+    columns: 5;
+}
+
+.btnAuto {
+    columns: auto;
+}
