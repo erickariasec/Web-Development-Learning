@@ -3,7 +3,7 @@
 body {
     width: 90%;
     margin: auto;
-    background-color: #beb19d;
+    background-image: url("../images/old-paper.jpg");
     padding-bottom: 10px;
 }
 
@@ -51,7 +51,7 @@ article {
     column-gap: 40px;
 }
 
-article div h4 {
+article h4 {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     margin: 10px;
@@ -59,13 +59,13 @@ article div h4 {
     text-align: center;
 }
 
-article div img {
-    width: 100%;
-    margin: auto;
+article p {
+    font-size: 18px;
 }
 
-article div p {
-    font-size: 18px;
+article img {
+    width: 100%;
+    margin: auto;
 }
 
 footer {
