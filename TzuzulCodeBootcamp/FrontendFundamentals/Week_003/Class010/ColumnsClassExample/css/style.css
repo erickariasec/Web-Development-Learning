@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Updock&display=swap');
+
+body {
+    background-color: rgb(221, 214, 195);
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+    border-bottom: 1px solid;
+    font-family: 'Diplomata SC', cursive;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+main {
+    background-color: rgb(231, 225, 204);;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Updock', cursive;
+    font-size: 20px;
+    text-align: justify;
+
+    column-count: 4;
+    column-gap: 60px;
+    column-rule: 5px double #000;
+}
