@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Mukta:wght@300&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -26,7 +28,7 @@ nav {
 }
 
 nav ul {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -41,6 +43,7 @@ nav ul li a {
     color: #000;
     background-color: #fff;
     text-decoration: none;
+    font-family: 'Koulen', cursive;
     font-size: 25px;
     font-weight: bolder;
 }
@@ -49,4 +52,67 @@ nav ul li a:hover {
     color: #fff;
     background-color: #000;
     border-radius: 15px;
+}
+
+.get-back-disney-plus {
+    padding: 2vh;
+    margin-bottom: 70px;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.description-get-back {
+    max-width: 40%;
+    padding: 0px 6vh;
+}
+
+.description-get-back h2 {
+    width: 180px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    border-bottom: 2px solid;
+}
+
+.video-get-back {
+    width: 500px;
+    height: 315px;
+}
+
+.spotify-songs {
+    padding-bottom: 5%;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.spotify-songs h2 {
+    padding: 30px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.spotify-songs article {
+    width: 100%;
+    margin: auto;
+    padding: 0 7vh;
+    text-align: center;
+}
+
+.spotify-songs article iframe {
+    width: 300px;
+    height: 300px;
 }
