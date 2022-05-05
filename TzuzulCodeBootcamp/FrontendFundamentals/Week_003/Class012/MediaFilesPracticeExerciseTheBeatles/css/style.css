@@ -116,3 +116,9 @@ nav ul li a:hover {
     width: 300px;
     height: 300px;
 }
+
+footer {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
