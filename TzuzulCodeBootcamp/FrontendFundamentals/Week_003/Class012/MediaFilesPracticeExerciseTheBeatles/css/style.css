@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    padding: 20px 0;
+    margin: auto;
+}
+
+.main-logo {
+    width: 20vh;
+    margin: auto;
+    display: block;
+}
+
+
+nav {
+    margin: 18px 0px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+nav ul {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    margin: 12px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a {
+    padding: 10px 30px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 15px;
+}
