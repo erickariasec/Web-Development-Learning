@@ -1,0 +1,16 @@
+.container {
+    border: 1px solid;
+}
+
+.paragraph {
+    width: 320px;
+
+    /*Property*/
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Shorthand Property*/
+    /* margin: 10px auto; */
+}
