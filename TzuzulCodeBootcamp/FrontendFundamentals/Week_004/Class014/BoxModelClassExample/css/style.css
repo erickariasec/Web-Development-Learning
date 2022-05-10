@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+/* .paragraph-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    margin: 0 auto;
+} */
+
+p {
+    width: 320px;
+    text-align: justify;
+
+    /* Property */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* Shorthand Property */
+    /* padding: 10px 10px 0 0; */
+}
