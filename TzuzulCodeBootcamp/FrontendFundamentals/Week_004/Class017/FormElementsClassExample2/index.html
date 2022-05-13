@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Elements Class Example 2</title>
+</head>
+<body>
+    <form action="">
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </form>
+
+    <!-- * ------------------------------------------------->
+
+    <form action="">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <label for="last-name">Last Name: </label>
+            <input type="text" name="last-name" id="last-name">
+        </fieldset>
+    </form>
+
+    <!-- * ------------------------------------------------->
+    
+    <form action="">
+        <label for="carBrand">Enter your car brand: </label>
+        <input list="carBrand" name="carBrand">
+        <datalist id="carBrand">
+            <option value="honda">Honda</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="toyota">Toyota</option>
+            <option value="mercedez benz">Mercedes Benz</option>
+            <option value="volvo">Volvo</option>
+        </datalist>
+    </form>
+
+    <!-- * ------------------------------------------------->
+
+    <form action="">
+        <input type="text" value="Rodolfo" disabled>
+        <input type="text" value="Rodolfo">
+        <input type="text" placeholder="Write here..." autofocus>
+        <input type="email" required>
+    </form>
+</body>
+</html>
