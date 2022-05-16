@@ -1,0 +1,35 @@
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: lowercase;
+}
+h3 {
+    text-transform: capitalize;
+}
+
+p {
+    text-indent: 50px; /* Sangria first line */
+}
+
+.letter-spacing {
+    letter-spacing: 7px;
+}
+
+.line-height {
+    line-height: 50px;
+}
+
+.word-spacing {
+    word-spacing: 20px;
+}
+
+.white-space {
+    white-space: nowrap;
+}
+
+.text-shadow {
+    /* text-shadow: 5px 5px; */
+    /* text-shadow: 2px 2px red; */
+    text-shadow: 2px 2px 5px green;
+}
