@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+}
+
+.container-relative {
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    color: royalblue;
+    background-color: aquamarine;
+}
+.container-relative p {
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: indigo;
+}
