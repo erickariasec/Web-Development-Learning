@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    color: white;
+    background-color: yellowgreen;
+    text-align: center;
+}
+li {
+    padding: 25px;
+    display: inline-block;
+    list-style: none;
+    font-size: 40px;
+}
+
+main {
+    margin-top: 110px;
+    padding: 0 50px;
+    font-size: 25px;
+    text-align: justify;
+}
+main span {
+    color: black;
+    background-color: gold;
+    font-weight: bold;
+}
