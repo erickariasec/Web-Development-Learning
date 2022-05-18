@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables in CSS  */
+:root {
+    --black: #000
+}
+html{
+    font-size: 62.5%;
+}
+.parent {
+    border: 2px var(--black) dotted;
+    display: inline-block;
+}
+.box {
+    display: inline-block;
+    background-color: aqua;
+    width: 10rem;
+    height: 10rem;
+}
+#two {
+    background-color: brown;
+}
