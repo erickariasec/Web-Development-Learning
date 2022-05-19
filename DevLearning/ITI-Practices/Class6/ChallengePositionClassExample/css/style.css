@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --border-color: #000;
+}
+.container-title {
+    position: relative;
+    top: 30px;
+    width: 250px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+}
+.container-text {
+    width: 450px;
+    margin: 0 auto;
+    padding: 80px 60px;
+    border: 1px solid var(--border-color);
+    border-radius: 40px;
+    background-color: gainsboro;
+}
