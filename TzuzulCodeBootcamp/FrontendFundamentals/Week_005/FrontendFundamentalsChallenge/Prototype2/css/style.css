@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(68, 92, 230);
+}
+
+.signupSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    color: white;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.info {
+    width: 45%;
+    background: white;
+    padding: 30px 0;
+    border-radius: 15px 0 0 15px;
+}
+.info h2 {
+    padding-top: 30px;
+    font-weight: 300;
+    color: rgba(10, 180, 180, 1);
+}
+.info img {
+    width: 280px;
+}
+
+.signupForm {
+    width: 70%;
+    padding: 30px 0;
+    background: rgb(75, 98, 228);
+    transition: .2s;
+    border-radius: 0 15px 15px 0;
+}
+.signupForm h2 {
+    font-weight: 300;
+}
+
+.inputFields {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 70%;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(20, 20, 20, .2);
+    color: white;
+    outline: none;
+}
+
+#join-btn {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, .6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+#join-btn:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+}
