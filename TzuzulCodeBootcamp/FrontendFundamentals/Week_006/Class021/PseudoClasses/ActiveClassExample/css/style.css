@@ -1,0 +1,15 @@
+button {
+    padding: 20px;
+    border: none;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: white;
+    background-color: blue;
+}
+
+button:active {
+    color: green;
+    background-color: greenyellow;
+}
