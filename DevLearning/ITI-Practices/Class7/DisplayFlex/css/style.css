@@ -1,0 +1,60 @@
+/* It is not necessary to memorize flexbox properties, it is better to use inspect from browser */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+.container {
+    height: 50vh; /* To center vertically it is neccessary to have a height */
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.box {
+    /* width: 10rem; */
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+.box1 {
+    background-color: aquamarine;
+    /* order: 1; */
+}
+.box2 {
+    background-color: blueviolet;
+}
+.box3 {
+    background-color: cadetblue;
+}
+.box4 {
+    background-color: brown;
+    /* order: 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box4 > p {
+    color: white;
+}
+.box5 {
+    background-color: yellow;
+}
+.box6 {
+    background-color: blue;
+    /* order: 3; */
+}
