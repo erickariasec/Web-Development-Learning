@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+:root {
+    --border-color: #000;
+}
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-title {
+    width: 25rem;
+    height: 5rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.container-text {
+    width: 45rem;
+    height: 30rem;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 4rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
