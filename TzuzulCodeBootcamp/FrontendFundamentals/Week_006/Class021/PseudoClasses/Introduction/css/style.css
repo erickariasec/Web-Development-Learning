@@ -1,0 +1,20 @@
+/* https://www.w3schools.com/css/css_pseudo_classes.asp */
+
+a {
+    color: red;
+    background-color: black;
+}
+
+a:visited {
+    color: aquamarine
+}
+
+a:hover {
+    color: white;
+    background-color: red;
+}
+
+a:active {
+    color: yellow;
+    background-color: green;
+}
