@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+
+:root {
+    /* Colors */
+    --bgc-color: red;
+    --color: white;
+
+    /* Fonts */
+    --font-size: 25px;
+    --font-beautiful: 'Lato', sans-serif;
+
+    /* Positioning */
+    --center-div: 0 auto;
+}
+
+.edited {
+    background-color: var(--bgc-color);
+    color: var(--color);
+    font-size: var(--font-size);
+    font-family: var(--font-beautiful);
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    background-color: var(--bgc-color);
+    margin: var(--center-div);
+}
