@@ -1,0 +1,26 @@
+p:nth-child(2n+1) { /* 2n+1 for odd numbers */
+    color: red;
+    background-color: #000;
+}
+
+/*
+p:nth-child(2n) {  2n for even numbers 
+    color: red;
+    background-color: #000;
+}
+
+p:nth-child(odd) {  For odd numbers 
+    color: red;
+    background-color: #000;
+}
+
+p:nth-child(even) {  For even numbers 
+    color: red;
+    background-color: #000;
+}
+
+p:nth-child(3) {  To select only the third child 
+    color: red;
+    background-color: #000;
+}
+*/
