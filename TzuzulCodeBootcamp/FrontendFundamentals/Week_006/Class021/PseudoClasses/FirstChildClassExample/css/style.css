@@ -1,0 +1,6 @@
+p {
+    color: red;
+}
+p:first-child { /* First paragraph of each element */
+    color: blue;
+}
