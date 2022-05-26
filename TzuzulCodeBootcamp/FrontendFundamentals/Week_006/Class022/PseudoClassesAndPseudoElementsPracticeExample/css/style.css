@@ -82,3 +82,14 @@ html {
     font-size: 12rem;
     text-decoration: underline;
 }
+
+.pseudo-elements {
+    height: 80rem;
+    background-color: var(--purple-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
