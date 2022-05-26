@@ -56,3 +56,29 @@ html {
 .navbar .menu li a:active {
     text-decoration: underline;
 }
+
+.home {
+    margin-top: 3rem;
+    height: 80rem;
+    background-color: var(--ligth-blue-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.home article:first-child {
+    font-size: 10rem;
+    text-decoration: overline;
+}
+
+.home article:nth-child(2){
+    font-size: 5rem;
+}
+
+.home article:last-child {
+    font-size: 12rem;
+    text-decoration: underline;
+}
