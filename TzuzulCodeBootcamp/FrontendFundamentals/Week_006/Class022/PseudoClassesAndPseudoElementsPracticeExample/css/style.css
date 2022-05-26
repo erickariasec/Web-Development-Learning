@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --yellow-color: #FFBE0B;
+    --orange-color: #FB5607;
+    --pink-color: #FF006E;
+    --purple-color: #8338EC;
+    --ligth-blue-color: #3A86FF;
+    --black-color: #000;
+    --white-color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--yellow-color);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 3rem;
+    background-color: var(--orange-color);
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    background-color: var(--orange-color);
+}
+
+.navbar .menu li a {
+    margin: 0 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    color: var(--white-color);
+}
+
+.navbar .menu li a:hover {
+    color: var(--black-color);
+    background-color: var(--yellow-color);
+    transition: all 0.3s ease-out;
+}
+
+.navbar .menu li a:active {
+    text-decoration: underline;
+}
