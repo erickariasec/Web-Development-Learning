@@ -1,0 +1,10 @@
+body {
+    background-image: url("../img/kfc.jpg");
+    background-size: cover;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat; */
+    /* background-repeat: round; */
+    /* background-repeat: space; */
+    background-repeat: no-repeat;
+}
