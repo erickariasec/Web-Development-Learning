@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: crimson;
+}
+
+.container > p {
+    width: 50%; /* Relative to paren element (container) */
+    height: 50%;
+    background-color: aqua;
+}
