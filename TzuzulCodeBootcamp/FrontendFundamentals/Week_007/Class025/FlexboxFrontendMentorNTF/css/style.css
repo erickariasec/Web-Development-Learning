@@ -90,6 +90,8 @@ main {
 .card-creator span img {
     margin-right: 1.5rem;
     width: 3rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
 }
 
 .card-creator .information {
