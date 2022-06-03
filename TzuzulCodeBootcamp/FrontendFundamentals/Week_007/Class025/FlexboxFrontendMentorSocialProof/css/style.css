@@ -72,11 +72,7 @@ main {
     gap: 10px;
 }
 
-.rating p {
-    width: 200px;
-}
-
-.rate-item {
+.rating .rate-item {
     width: 450px;
     height: 50px;
     display: flex;
@@ -86,26 +82,26 @@ main {
     border-radius: 5px;
 }
 
-.rate-item p {
+.rating .rate-item p {
     width: auto;
     font-size: 18px;
     font-weight: 700;
     color: var(--VeryDarkMagenta);
 }
 
-.item1 {
+.rating .item1 {
     align-self: flex-start;
 }
 
-.item2 {
+.rating .item2 {
     align-self: center;
 }
 
-.item3 {
+.rating .item3 {
     align-self: flex-end;
 }
 
-.stars {
+.rating .stars {
     width: 150px;
     text-align: left;
 }
