@@ -32,6 +32,7 @@ body {
 }
 
 main {
+    padding: 70px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,6 +40,7 @@ main {
 
 /* Info */
 .info {
+    margin-bottom: 80px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -104,6 +106,37 @@ main {
 .rating .stars {
     width: 150px;
     text-align: left;
+}
+
+/* Testimonials */
+.testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.testimonials .card {
+    width: 334px;
+    padding: 30px;
+    color: var(--White);
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 10px;
+}
+
+.testimonials .card .user {
+    padding-bottom: 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.testimonials .card .user img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.testimonials .card .user p {
+    font-weight: 400;
 }
 
 /* attributes section  */
