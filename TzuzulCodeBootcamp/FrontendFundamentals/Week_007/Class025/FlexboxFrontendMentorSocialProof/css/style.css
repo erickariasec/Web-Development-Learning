@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -14,6 +16,9 @@
     --DarkGrayishMagenta: hsl(303, 10%, 53%);
     --LightGrayishMagenta: hsl(300, 24%, 96%);
     --White: hsl(0, 0%, 100%);
+
+    /* Font */
+    --LeagueSpartanFont: 'League Spartan', sans-serif;
 }
 
 body {
@@ -23,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: var(--LeagueSpartanFont);
 }
 
 main {
@@ -37,7 +43,23 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid;
+}
+
+.info .text {
+    width: 425px;
+}
+
+.info .text h1 {
+    padding-bottom: 25px;
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+}
+
+.info .text p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--DarkGrayishMagenta);
 }
 
 /* Rating */
@@ -62,6 +84,13 @@ main {
     align-items: center;
     background-color: var(--LightGrayishMagenta);
     border-radius: 5px;
+}
+
+.rate-item p {
+    width: auto;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
 }
 
 .item1 {
