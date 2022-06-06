@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.none {
+    position: relative;
+}
+
+.none p {
+    top: 45%;
+    left: 31%;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.none .box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: 1s;
+}
+
+.none .box:hover {
+    transform: rotate(45deg);
+}
