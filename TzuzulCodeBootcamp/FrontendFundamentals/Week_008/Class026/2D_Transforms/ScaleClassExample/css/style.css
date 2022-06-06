@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    transition: 1s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
