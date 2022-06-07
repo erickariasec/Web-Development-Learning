@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    border: 1px solid blue;
+    margin: auto;
+    perspective: 700px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+    background-color: red;
+}
+
+.box:hover {
+    transform: translate3d(300px, -100px, -280px); /* (x, y, z) */
+}
