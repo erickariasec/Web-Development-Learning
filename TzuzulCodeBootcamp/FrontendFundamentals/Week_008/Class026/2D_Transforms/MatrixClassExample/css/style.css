@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+    background-color: red;
+}
+
+.box:hover {
+    transform: matrix(3, -0.3, 0, 1, 0, 0); /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+}
