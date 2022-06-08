@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.78, 0.24, 0.46, 0.86);
+}
+
+img:hover {
+    border: 15px solid red;
+    border-radius: 50%;
+}
