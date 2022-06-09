@@ -1,0 +1,52 @@
+.box {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: red;
+    animation-name: moveBox;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+@keyframes moveBox {
+    /* from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(550px);
+    } */
+    0% {
+        /* transform: translateY(0); */
+        top: 0;
+        left: 0;
+    }
+    25% {
+        /* transform: translateY(550px); */
+        top: 550px;
+        left: 0;
+        background-color: yellow;
+        border-radius: 10%;
+    }
+    50% {
+        /* transform: translateX(550px);
+        transform: translateY(550px); */
+        top: 550px;
+        left: 550px;
+        background-color: green;
+        border-radius: 20%;
+    }
+    75% {
+        /* transform: translateY(-550px); */
+        top: 0;
+        left: 550px;
+        background-color: blue;
+        border-radius: 30%;
+    }
+    100% {
+        /* transform: translateY(-550px); */
+        top: 0;
+        left: 0;
+        background-color: orange;
+        border-radius: 40%;
+    }
+}
