@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    box-shadow: 5px 5px 20px 20px blue, 10px 10px 20px 25px yellow; /* x y blur spread color */
+}
