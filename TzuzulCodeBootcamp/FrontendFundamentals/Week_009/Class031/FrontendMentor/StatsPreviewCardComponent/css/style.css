@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+    --VeryDarkBlue: hsl(233, 47%, 7%); /* (main background)  */
+    --DarkDesaturatedBlue: hsl(244, 38%, 16%); /* (card background) */
+    --SoftViolet: hsl(277, 64%, 61%); /* (accent) */
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%); /* (main heading, stats) */
+    --SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.75); /* (main paragraph) */
+    --SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
+    --InterFont: 'Inter', sans-serif;
+    --LexendDecaFont: 'Lexend Deca', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+    font-family: var(--InterFont);
+    font-size: 1.5rem;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 76%;
+    height: auto;
+    background-color: var(--DarkDesaturatedBlue);
+    display: flex;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.card .left {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+
+.card .left .card-title {
+    font-size: 2.1rem;
+}
+
+.card .left .card-title span {
+    color: var(--SoftViolet);
+}
+
+.card .left .card-content {
+    font-family: var(--LexendDecaFont);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--SlightlyTransparentWhite);
+    line-height: 2.2rem;
+}
+
+.card .left .card-statistics {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .left .card-statistics h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card .left .card-statistics h4 {
+    margin-top: 0.7rem;
+    text-transform: uppercase;
+    color: var(--SlightlyTransparentWhite);
+    font-family: var(--LexendDecaFont);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.card .right {
+    width: 48%;
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      hsla(278, 93%, 26%, 0.603), 
+      hsla(278, 93%, 26%, 0.603)
+    ),
+    /* your image */
+    url("../images/image-header-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
