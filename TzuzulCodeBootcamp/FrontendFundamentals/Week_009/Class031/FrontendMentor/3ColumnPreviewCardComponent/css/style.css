@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap'); 
+
+:root {
+    /* ### Primary */
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+
+    /* (paragraphs) */
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+
+    /* (background, headings, buttons) */
+    --Verylightgray: hsl(0, 0%, 95%);
+
+    /* Fuente Google */
+
+    /* 400 */
+    --LexendDeca: "Lexend Deca", sans-serif;
+
+    /* 700 */
+    --BigShouldersDisplay: "Big Shoulders Display", cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--Verylightgray);
+}
+
+.card {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.sedans {
+    background-color: var(--Brightorange);
+}
+
+.suvs {
+    background-color: var(--Darkcyan);
+}
+
+.luxury {
+    background-color: var(--Verydarkcyan);
+}
+
+.sedans,
+.suvs,
+.luxury {
+    padding: 45px;
+}
+
+h2 {
+    margin: 30px 0;
+    color: var(--Verylightgray);
+    font-family: var(--BigShouldersDisplay);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+p {
+    color: var(--Transparentwhite);
+    font-family: var(--LexendDeca);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    margin-top: 80px;
+    border: none;
+    background-color: var(--Verylightgray);
+    border-radius: 40px;
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--LexendDeca);
+
+    outline: none;
+    cursor: pointer;
+
+    transition: all 0.5s, border 0s;
+}
+
+button:active {
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-1 {
+    color: var(--Brightorange);
+}
+
+.btn-2 {
+    color: var(--Darkcyan);
+}
+
+.btn-3 {
+    color: var(--Verydarkcyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 100px 40px;
+        height: 100%;
+    }
+    .card {
+        flex-direction: column;
+    }
+    button {
+        margin-top: 30px;
+    }
+}
