@@ -1,0 +1,18 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+.container div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    background-color: red;
+}
