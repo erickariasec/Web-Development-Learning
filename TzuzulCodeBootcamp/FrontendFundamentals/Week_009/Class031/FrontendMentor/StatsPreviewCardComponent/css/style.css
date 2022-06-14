@@ -95,13 +95,11 @@ body {
 .card .right {
     width: 48%;
     background-image: 
-    /* top, transparent red */
-    linear-gradient(
-      hsla(278, 93%, 26%, 0.603), 
-      hsla(278, 93%, 26%, 0.603)
-    ),
-    /* your image */
-    url("../images/image-header-desktop.jpg");
+        linear-gradient(
+          hsla(278, 93%, 26%, 0.603), 
+          hsla(278, 93%, 26%, 0.603)
+        ),
+        url("../images/image-header-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
