@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-size: 3rem;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 300px);
+    border: 2px solid white;
+    /* Container */
+    /* justify-content: space-around; */ /* X Axis */
+    /* align-content: space-evenly; */ /* Y Axis */
+
+    /* Elements inside container */
+    justify-items: center; /* X Axis */
+    align-items: center; /* Y Axis */
+    gap: 20px;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
