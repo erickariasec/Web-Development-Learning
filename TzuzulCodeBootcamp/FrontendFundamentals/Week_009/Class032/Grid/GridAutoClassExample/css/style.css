@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: row; /* by default */
+    grid-auto-rows: 100px; /* cada nuevo contenedor toma un valor de 100px por defecto */
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 100px; */ /* cada nuevo contenedor toma un valor de 100px por defecto */
+    gap: 20px;
+}
+
+.container div {
+    background-color: red;
+}
