@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "nav nav aside"
+        "article-1 article-1 aside"
+        "article-2 article-2 article-2"
+        "footer footer footer";
+    text-align: center;
+    background-color: #000;
+    gap: 20px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: yellow;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: yellowgreen;
+}
+
+.article-1 {
+    grid-area: article-1;
+    background-color: pink;
+}
+
+.article-2 {
+    grid-area: article-2;
+    background-color: aquamarine;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: coral;
+}
