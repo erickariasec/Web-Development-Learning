@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --white:#ffffff;
+    --black:#000;
+    --very-ligth-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:1.8rem;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24rem);
+    gap: 2.4rem;
+    place-content: center;
+}
+.card-product{
+    width: 24rem;
+}
+.card-product > img{
+    width: 24rem;
+    height: 24rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.info-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+.info-product div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+}
+.info-product div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-ligth-pink);
+}
+@media (max-width: 640px) {
+    .cards-container{
+        grid-template-columns: repeat(auto-fill,14rem);
+    }
+    .card-product{
+        width: 14rem;
+    }
+    .card-product > img{
+        width: 14rem;
+        height: 14rem;
+    }
+
+}
