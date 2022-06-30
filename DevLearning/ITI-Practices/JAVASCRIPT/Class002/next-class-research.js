@@ -13,3 +13,13 @@ console.log(otherNumbers.map(multiplyNumberBy10));
 function multiplyNumberBy10(num) {
     return num * 10;
 }
+
+
+// Array.filter() method: creates a new array filled with elements that pass a test provided by a function.
+
+const ages = [25, 33, 16, 50, 12, 18];
+console.log(ages.filter(checkAdult));
+
+function checkAdult(age) {
+    return age >= 18;
+}
