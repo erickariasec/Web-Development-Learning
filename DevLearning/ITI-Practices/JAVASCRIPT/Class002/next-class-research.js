@@ -57,3 +57,14 @@ console.log(newAges.find(checkFirstKidAge));
 function checkFirstKidAge(age) {
     return age <= 18;
 }
+
+
+// Array.findIndex() method: returns the index (position) of the first element that passes a test.
+// The findIndex() method returns -1 if no match is found.
+
+const otherNewAges = [3, 10, 18, 27, 5, 50];
+console.log(otherNewAges.findIndex(checkFirstAdultAndReturnIndexPosition));
+
+function checkFirstAdultAndReturnIndexPosition(age) {
+    return age >= 18;
+}
