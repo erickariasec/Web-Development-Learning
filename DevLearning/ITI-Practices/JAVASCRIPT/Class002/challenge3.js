@@ -5,3 +5,13 @@ pregunta si quiere añadir otro número: si la respuesta es
 afirmativa añádelo al total; en caso contrario finaliza el
 ciclo y muestra el resultado total en pantalla.
 */
+
+let num1 = Number(prompt("Enter the first number"));
+let num2 = Number(prompt("Enter the second number"));
+let total = num1 + num2;
+let answer = prompt(`Your answer is ${total} \nDo you want to continue? (Y/N)`);
+while (answer === "Y") {
+    num3 = Number(prompt("Enter antoher number"));
+    total += num3;
+    answer = prompt(`Your answer is ${total} \nDo you want to continue? (Y/N)`);
+}
