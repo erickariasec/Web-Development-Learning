@@ -23,3 +23,15 @@ console.log(ages.filter(checkAdult));
 function checkAdult(age) {
     return age >= 18;
 }
+
+
+// Array.some() method: checks if any of the elements in an array pass a test (provided as a function).
+// The some() method returns true (and stops) if the function returns true for one of the array elements.
+// The some() method returns false if the function returns false for all of the array elements.
+
+const otherAges = [3, 10, 18, 27, 5, 50];
+console.log(otherAges.some(checkOtherAdults));
+
+function checkOtherAdults(age) {
+    return age >= 18;
+}
