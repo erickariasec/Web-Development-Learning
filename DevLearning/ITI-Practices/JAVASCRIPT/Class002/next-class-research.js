@@ -46,3 +46,14 @@ students.forEach(myFunction);
 function myFunction(item) {
     console.log(item);
 }
+
+
+// Array.find() method: returns the value of the first element that passes a test.
+// The find() method returns undefined if no elements are found.
+
+const newAges = [30, 59, 15, 22, 3, 94];
+console.log(newAges.find(checkFirstKidAge));
+
+function checkFirstKidAge(age) {
+    return age <= 18;
+}
