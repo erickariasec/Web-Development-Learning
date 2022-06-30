@@ -35,3 +35,14 @@ console.log(otherAges.some(checkOtherAdults));
 function checkOtherAdults(age) {
     return age >= 18;
 }
+
+
+// Array.forEach() method: calls a function for each element in an array.
+
+const students = ["John", "Sara", "Jack"];
+
+students.forEach(myFunction);
+
+function myFunction(item) {
+    console.log(item);
+}
