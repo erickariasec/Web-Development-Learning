@@ -11,7 +11,7 @@ let num2 = Number(prompt("Enter the second number"));
 let total = num1 + num2;
 let answer = prompt(`Your answer is ${total} \nDo you want to continue? (Y/N)`);
 while (answer === "Y") {
-    num3 = Number(prompt("Enter antoher number"));
-    total += num3;
+    anotherNumber = Number(prompt("Enter antoher number"));
+    total += anotherNumber;
     answer = prompt(`Your answer is ${total} \nDo you want to continue? (Y/N)`);
 }
