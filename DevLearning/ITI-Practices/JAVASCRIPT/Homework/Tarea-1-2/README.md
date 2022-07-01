@@ -18,3 +18,35 @@
   const array = [2, 4, 5, 6];
   console.log(solution(array));
   ```
+
+## Componente Práctico
+Resuelva y conteste los ejercicios propuestos en el documento adjunto.  
+Adjunte en el documento el link del repositorio de Github con las soluciones realizadas.
+
+1. ¿Qué es un ciclo?
+
+2. ¿Qué tipos de ciclos existen en JavaScript?
+
+3. ¿Qué es un ciclo infinito y por qué es un problema?
+   
+4. Replica el comportamiento de los siguientes ciclos `for` utilizando ciclos `while`
+```js
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+```
+
+5. Escribe un código en JavaScript que le pregunte a los usuarios cuánto es `2 + 2`
+   - Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.  
+     Pista: puedes usar la función `prompt` de JavaScript.
+     
+6. Tienes un array de productos con los siguientes atributos:
+   - name
+   - price
+   - stock  
+
+   Debes agregar y calcular una nueva propiedad llamada "iva", los impuestos deben ser del 12% con base al precio base.  
+   Por ejemplo, si aplicamos el 12% de impuestos para un producto con precio de $1000 el resultado de los "IVA" será $190, debes tener en cuenta que como resultado se debe dejar un valor entero sin decimales.
