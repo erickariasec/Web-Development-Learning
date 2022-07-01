@@ -47,6 +47,13 @@ let debts = 100;
 3. Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
    - Nombre completo (nombre y apellido)
    - Dinero real (dinero ahorrado menos deudas)
+```js
+const fullName = `${firstName} ${lastName}`;
+console.log(fullName); // Erick Arias
+
+let realMoney = `${moneySaved - debts}`;
+console.log(realMoney); // 900
+```
    
 4. Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 ```js
