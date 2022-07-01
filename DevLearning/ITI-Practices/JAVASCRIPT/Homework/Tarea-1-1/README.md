@@ -19,3 +19,52 @@
   console.log(solution(array));
   ```
   
+## Componente Práctico
+Resuelva y conteste los ejercicios propuestos en el documento adjunto.  
+Adjunte en el documento el link del repositorio de Github con las soluciones realizadas.
+
+1. Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+   - Nombre
+   - Apellido
+   - Nombre de usuario en ITI
+   - Edad
+   - Correo electrónico
+   - Mayor de edad
+   - Dinero ahorrado
+   - Deudas
+2. Traduce a código JavaScript las variables del ejemplo anterior y adjunta una captura.
+
+3. Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+   - Nombre completo (nombre y apellido)
+   - Dinero real (dinero ahorrado menos deudas)
+   
+4. Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+```js
+const name = "Juan David";
+const lastname = "Castro Gallego";
+const completeName = name + lastname;
+const nickname = "juandc";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+```
+
+5. ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+6. Replica el comportamiento del siguiente código que usa la sentencia switch Utilizando `if`, `else` y `else if`
+```js
+const tipoDeMatricula = "Basic";
+switch (tipoDeMatricula) {
+     case "Free":
+          console.log("Solo puedes tomar los cursos gratis");
+          break;
+     case "Basic":
+          console.log("Puedes tomar casi todos los cursos de ITI durante un mes");
+          break;
+     case "Expert":
+          console.log("Puedes tomar casi todos los cursos de ITI durante un año");
+          break;
+     case "ExpertPlus":
+          console.log("Tú y alguien más pueden tomar TODOS los cursos de ITI durante un año");
+          break;
+}
+```
