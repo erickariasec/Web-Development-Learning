@@ -33,6 +33,16 @@ Adjunte en el documento el link del repositorio de Github con las soluciones rea
    - Dinero ahorrado
    - Deudas
 2. Traduce a código JavaScript las variables del ejemplo anterior y adjunta una captura.
+```js
+const firstName = "Erick";
+const lastName = "Arias";
+const ITI_UserName = "erick.arias";
+let age = 23;
+const email = "erick.arias@iti.edu.ec";
+const checkAdult = true;
+let moneySaved = 1000;
+let debts = 100;
+```
 
 3. Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
    - Nombre completo (nombre y apellido)
