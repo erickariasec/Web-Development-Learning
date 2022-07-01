@@ -17,6 +17,8 @@
 //         break;
 // }
 
+// CONVERTED TO IF-ELSE CONDITIONAL
+
 const tipoDeMatricula = "Basic";
 if (tipoDeMatricula === "Free") {
     console.log("Solo puedes tomar los cursos gratis");
