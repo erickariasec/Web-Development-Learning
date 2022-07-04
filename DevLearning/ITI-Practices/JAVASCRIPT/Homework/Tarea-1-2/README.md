@@ -27,6 +27,11 @@ Adjunte en el documento el link del repositorio de Github con las soluciones rea
    - Los ciclos (loops / bucles) facilitan la ejecución de un conjunto de instrucciones/funciones repetidamente mientras alguna condición se evalúa como verdadera; una vez que esta condición deje de cumplirse, el ciclo terminaría su ejecución.
 
 2. ¿Qué tipos de ciclos existen en JavaScript?
+   - `while` recorre un bloque de código siempre que la condición especificada se evalúe como verdadera.
+   - `do-while` recorre un bloque de código al menos una vez; luego se evalúa la condición. Si la condición es verdadera, la declaración se repite mientras la condición especificada sea verdadera.
+   - `for` recorre un bloque de código hasta que el contador alcanza un número específico.
+   - `for-in` recorre las propiedades de un objeto.
+   - `for-of` recorre los valores de un objeto iterable. 
 
 3. ¿Qué es un ciclo infinito y por qué es un problema?
    
