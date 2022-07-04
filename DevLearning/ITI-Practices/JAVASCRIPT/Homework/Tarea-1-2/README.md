@@ -24,6 +24,7 @@ Resuelva y conteste los ejercicios propuestos en el documento adjunto.
 Adjunte en el documento el link del repositorio de Github con las soluciones realizadas.
 
 1. ¿Qué es un ciclo?
+   - Los ciclos (loops / bucles) facilitan la ejecución de un conjunto de instrucciones/funciones repetidamente mientras alguna condición se evalúa como verdadera; una vez que esta condición deje de cumplirse, el ciclo terminaría su ejecución.
 
 2. ¿Qué tipos de ciclos existen en JavaScript?
 
