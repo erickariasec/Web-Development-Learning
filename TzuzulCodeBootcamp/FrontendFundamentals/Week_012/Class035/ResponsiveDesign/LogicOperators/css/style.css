@@ -1,0 +1,63 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+h1,
+p {
+    background-color: blue;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+/* Mobile Design */
+@media (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 50%;
+    }
+    h1,
+    p {
+        background-color: green;
+    }
+}
+/* End Mobile Design */
+
+
+/* !--------------------- */
+
+
+/* Tablet Design */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 70%;
+    }
+
+    h1,
+    p {
+        background-color: red;
+    }
+}
+/* End Tablet Design */
+
+
+/* !--------------------- */
+
+
+/* PC Design */
+@media (min-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    h1,
+    p {
+        background-color: orange;
+    }
+}
+/* End PC Design */
+/* !--------------------- */
