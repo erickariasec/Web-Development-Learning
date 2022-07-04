@@ -24,14 +24,14 @@ Resuelva y conteste los ejercicios propuestos en el documento adjunto.
 Adjunte en el documento el link del repositorio de Github con las soluciones realizadas.
 
 1. Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
-   - Nombre
-   - Apellido
-   - Nombre de usuario en ITI
-   - Edad
-   - Correo electrónico
-   - Mayor de edad
-   - Dinero ahorrado
-   - Deudas
+   - Nombre: Erick - `string`
+   - Apellido: Arias - `string`
+   - Nombre de usuario en ITI: erick.arias `string`
+   - Edad: 23 - `number`
+   - Correo electrónico: erick.arias@iti.edu.ec - `string`
+   - Mayor de edad: Sí - `boolean`
+   - Dinero ahorrado: 1000 - `number`
+   - Deudas: 100 - `number`
 2. Traduce a código JavaScript las variables del ejemplo anterior y adjunta una captura.
 ```js
 const firstName = "Erick";
