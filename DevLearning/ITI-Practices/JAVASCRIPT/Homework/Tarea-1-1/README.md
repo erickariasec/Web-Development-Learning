@@ -77,6 +77,10 @@ console.log(showInformation(completeName, nickname));
 ```
 
 5. ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+   - `if` para especificar un bloque de código que se ejecutará, si una condición especificada es verdadera.
+   - `else` para especificar un bloque de código a ejecutar, si la misma condición es falsa.
+   - `else-if` para especificar una nueva condición para probar, si la primera condición es falsa.
+   - `switch` para especificar muchos bloques alternativos de código para ejecutar. Una instrucción `switch` funciona mucho más rápido que una instrucción `else-if` equivalente. Esto sucede porque el compilador genera una tabla de saltos para un conmutador durante la compilación. Como resultado, durante la ejecución, en lugar de verificar qué caso se cumple, solo decide qué caso debe ejecutarse.
 
 6. Replica el comportamiento del siguiente código que usa la sentencia switch Utilizando `if`, `else` y `else if`
 ```js
