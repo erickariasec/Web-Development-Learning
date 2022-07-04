@@ -34,6 +34,7 @@ Adjunte en el documento el link del repositorio de Github con las soluciones rea
    - `for-of` recorre los valores de un objeto iterable. 
 
 3. ¿Qué es un ciclo infinito y por qué es un problema?
+   - Un ciclo infinito es una pieza de código que sigue ejecutándose para siempre ya que nunca se alcanza la condición de terminación. Un ciclo infinito es un problema porque puede bloquear nuestro programa o navegador y congelar la computadora. Para evitar este tipo de incidentes, es importante ser consciente de los bucles infinitos para que podamos evitarlos.
    
 4. Replica el comportamiento de los siguientes ciclos `for` utilizando ciclos `while`
 ```js
