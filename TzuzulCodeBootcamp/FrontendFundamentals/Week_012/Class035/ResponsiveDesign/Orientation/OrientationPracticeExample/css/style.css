@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +13,7 @@ html {
 body {
     width: 100vw;
     height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: gainsboro;
     display: flex;
     justify-content: center;
@@ -22,8 +25,10 @@ body {
     height: 400px;
     padding: 20px;
     background-color: black;
+    color: gainsboro;
     border-radius: 15px;
     display: flex;
+    box-shadow: 10px 10px 10px 5px grey;
 }
 
 .card .img-container {
@@ -39,4 +44,15 @@ body {
     height: auto;
     border-radius: 50%;
     background-color: gainsboro;
+}
+
+.card .content {
+    width: 50%;
+    height: 100%;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
