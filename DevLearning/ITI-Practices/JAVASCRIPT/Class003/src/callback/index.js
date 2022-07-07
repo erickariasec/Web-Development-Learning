@@ -26,3 +26,11 @@ function myNewArray(career) {
 }
 
 
+// Mutable and immutable
+
+const newCareer = career;
+
+newCareer[0].name = "Turismo";
+
+console.log(newCareer);
+console.log(career);
