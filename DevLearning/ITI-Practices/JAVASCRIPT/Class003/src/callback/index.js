@@ -64,3 +64,15 @@ function call(num1, num2, callback) {
 }
 
 console.log(call(5, 10, sum));
+
+
+// setTimeout
+
+
+console.log(1);
+setTimeout(() => {
+    console.log(2);
+    console.log(3);
+}, 0);
+
+console.log(4);
