@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(min-width: 768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1024px)" href="css/desktop.css">
     <title>Mobile First Class Example</title>
 </head>
 <body>
     <nav class="nav">
         <ul class="list">
-            <a href="home">
+            <a href="#home">
                 <li>HOME</li>
             </a>
-            <a href="images">
+            <a href="#images">
                 <li>IMAGES</li>
             </a>
-            <a href="register">
+            <a href="#register">
                 <li>REGISTER</li>
             </a>
         </ul>
     </nav>
-    <section class="main-section">
+    <section id="home" class="main-section">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe consequuntur dolorum incidunt nam possimus a natus
             illum minus totam, doloribus omnis in? Vel voluptatum voluptate ipsa exercitationem quia perferendis quod!</p>
         <img src="https://images.unsplash.com/photo-1529717730488-7a2492983b2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -38,7 +40,7 @@
                 alt="img-4" class="img">
         </div>
     </section>
-    <section class="section-img sect-2">
+    <section id="images" class="section-img sect-2">
         <div class="title">PERSONAS</div>
         <div class="img-container">
             <img src="https://images.unsplash.com/photo-1597871040916-4b4c20ba08dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -60,7 +62,7 @@
                 alt="img-10" class="img">
         </div>
     </section>
-    <section class="user">
+    <section id="register" class="user">
         <h2 class="title-user">REGISTER NOW!</h2>
         <div class="btn-container">
             <button class="login">Login</button>
