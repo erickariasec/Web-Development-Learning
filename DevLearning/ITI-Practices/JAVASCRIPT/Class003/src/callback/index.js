@@ -34,3 +34,12 @@ newCareer[0].name = "Turismo";
 
 console.log(newCareer);
 console.log(career);
+
+
+// Heap memory
+// Stack memory
+let num = 1; // stack memory
+let num1 = 2; // stack memory
+
+
+// Objects are in heap memory (random saves)
