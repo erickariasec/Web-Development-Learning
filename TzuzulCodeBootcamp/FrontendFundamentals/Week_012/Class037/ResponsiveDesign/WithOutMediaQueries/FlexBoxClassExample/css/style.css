@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+
+    background-color: red;
+}
