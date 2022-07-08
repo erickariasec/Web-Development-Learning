@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 200px minmax(300px, 400px) 300px;
+    grid-template-rows: auto;
+    
+    gap: 20px;
+}
+
+.box {
+    width: auto;
+    height: 200px;
+
+    background-color: red;
+}
