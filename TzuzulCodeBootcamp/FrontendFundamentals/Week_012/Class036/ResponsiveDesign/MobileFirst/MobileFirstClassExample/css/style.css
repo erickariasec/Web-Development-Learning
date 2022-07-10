@@ -232,6 +232,9 @@ body {
     background-color: #414141;
     color: var(--mainColor);
 }
+.btn-container .register:hover {
+    background-color: #4d4d4d;
+}
 
 /* Finaliza User */
 
