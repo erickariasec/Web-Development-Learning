@@ -40,6 +40,36 @@ Este método fue muy eficiente, pero solo hasta cierto punto. A veces, los desar
 Para solucionar este problema, se introdujeron promesas.
 
 ## Promises
+Una promesa, es algo que llevará algún tiempo cumplir. Hay dos resultados posibles de una promesa:
+- O ejecutamos y resolvemos la promesa, o
+- Se produce algún error a lo largo de la línea y se rechaza la promesa  
 
+Las promesas llegaron para resolver los problemas de las funciones de devolución de llamada. Una promesa toma dos funciones como parámetros. Es decir, `resolve` y `reject`. Recuerde que `resolve` es éxito y `reject` es para cuando ocurre un error.
+
+Veamos cómo funcionan las promesas con un ejemplo:
+```js
+const getData = (dataEndpoint) => {
+   return new Promise ((resolve, reject) => {
+      //alguna solicitud al endpoint;
+     
+      if(la solicitud es exitosa){
+         //do something;
+         resolve();
+      }
+      else if(existe un error){
+         reject();
+      }
+   
+   });
+};
+```  
+
+El código anterior es una promesa, incluida en una solicitud a algún end point. La promesa abarca `resolve` y `reject`.  
+
+Después de hacer una llamada al end point, por ejemplo, si la solicitud es exitosa, resolveríamos la promesa y seguiríamos haciendo lo que queramos con la respuesta. Pero si hay un error, la promesa será rechazada.  
+
+Las promesas son una buena forma de solucionar los problemas provocados por la devolución de llamadas, en un método conocido como encadenamiento de promesas. Se puede usar este método para obtener secuencialmente datos de múltiples end points, pero con menos código y métodos más sencillos.  
+
+¡Hay una manera aún mejor! Es una forma preferida de manejar datos y llamadas a la API en JavaScript.
 
 ## Async-await
