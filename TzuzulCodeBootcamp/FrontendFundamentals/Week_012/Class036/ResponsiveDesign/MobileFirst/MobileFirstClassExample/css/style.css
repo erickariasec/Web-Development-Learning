@@ -224,6 +224,9 @@ body {
     background-color: #323232;
     color: var(--mainColor);
 }
+.btn-container .login:hover {
+    background-color: #363636;
+}
 
 .btn-container .register {
     background-color: #414141;
