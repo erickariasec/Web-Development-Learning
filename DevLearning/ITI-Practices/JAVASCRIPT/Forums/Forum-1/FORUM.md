@@ -73,3 +73,31 @@ Las promesas son una buena forma de solucionar los problemas provocados por la d
 ¡Hay una manera aún mejor! Es una forma preferida de manejar datos y llamadas a la API en JavaScript.
 
 ## Async-await
+Encadenar promesas al igual que las funciones callback puede volverse bastante voluminoso y confuso. Es por eso que se crearon Async y Await.  
+
+Para definir una función asíncrona, simplemente tenemos que hacer esto:
+```js
+const asyncFunc = async() => {
+
+}
+```
+
+Debemos tener en cuenta que llamar a una función asíncrona siempre devolverá una Promesa. Por ejemplo:
+```js
+const test = asyncFunc();
+console.log(test);
+```
+
+Al ejecutar lo anterior en la consola del navegador, vemos que `asyncFunc` devuelve una promesa.  
+
+Analicemos realmente algo de código ahora. Consideremos el fragmento a continuación:
+```js
+const asyncFunc = async () => {
+	const response = await fetch(resource);
+   	const data = await response.json();
+}
+```  
+
+La palabra clave `async` es lo que usamos para definir funciones asíncronas como se mencionó anteriormente. Pero ¿qué tal `await`? Bueno, impide que JavaScript se asigne `fetch` a la variable de respuesta hasta que se haya resuelto la promesa. Una vez que se ha resuelto la promesa, los resultados del método de búsqueda ahora se pueden asignar a la variable de respuesta.  
+
+Lo mismo sucede en la línea 3. El método `.json` devuelve una promesa y podemos usar `await` todavía para retrasar la asignación hasta que se resuelva la promesa.
