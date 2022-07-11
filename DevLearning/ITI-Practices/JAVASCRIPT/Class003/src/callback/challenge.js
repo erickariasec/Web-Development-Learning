@@ -22,8 +22,5 @@ function fetchData(urlAPI, callback) {
 
 fetchData(`${API}/character`, function (error1, data1) {
     if (error1) return console.error(error1);
-    fetchData(`${API}/character/${data1.results}`, (error2, data2) => {
-        if (error2) return console.error(error2);
-        console.log(data2);
-    });
+    console.log(data1);
 })
