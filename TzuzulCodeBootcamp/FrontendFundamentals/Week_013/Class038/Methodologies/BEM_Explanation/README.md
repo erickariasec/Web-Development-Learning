@@ -14,4 +14,11 @@ Forman parte de un bloque, normalmente son los botones, textos, imágenes etc.
 ### Modificadores
 Se usan para establecer estilos diferentes a un mismo bloque o elemento.
 
-![BEM-use-explanation](img/BEM-use-explanation.png "BEM Use Explanation")
+![BEM-use-explanation](img/BEM-use-explanation.png "BEM Use Explanation")  
+
+```
+[bloque]__[elemento]
+[bloque]--[modificador]
+[elemento]--[modificador]
+[bloque]__[elemento]--[modificador]
+```
