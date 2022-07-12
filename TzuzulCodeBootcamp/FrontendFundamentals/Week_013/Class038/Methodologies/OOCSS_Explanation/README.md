@@ -21,3 +21,9 @@ Los archivos de estructura y diseño son archivos separados. Estructura signific
 
 #### HTML
 ![HTML1-OOCSS](img/HTML1-OOCSS.png "HTML1 OOCSS")
+
+![OOCSS-separation-container-from-content](img/OOCSS-separation-container-from-content.jpeg "OOCSS separation container from content") 
+
+Este principio sugiere que los child-sellectors deben usarse menos.  
+
+Si el elemento `<h2>` se usa en más de un lugar en el sitio, entonces el uso de selectores secundarios viola la regla OOCSS y conduce a la duplicación del código.
