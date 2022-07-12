@@ -95,3 +95,13 @@ console.log(elements.join());
 console.log(elements.join(''));
 
 console.log(elements.join('-'));
+
+
+// ! Array.concat() method: is used to join two or more arrays. This method does not change existing arrays, but returns a new array.
+// var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
+
+const array1 = ["a", "b", "c"];
+const array2 = ["d", "e", "f"];
+const array3 = array1.concat(array2);
+
+console.log(array3);
