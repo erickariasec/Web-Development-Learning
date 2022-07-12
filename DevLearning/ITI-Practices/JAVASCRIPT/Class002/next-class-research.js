@@ -68,3 +68,17 @@ console.log(otherNewAges.findIndex(checkFirstAdultAndReturnIndexPosition));
 function checkFirstAdultAndReturnIndexPosition(age) {
     return age >= 18;
 }
+
+
+// ! Array.flat() method: creates a new array with all sub-array elements concatenated recursively up to the specified depth.
+// var newArray = arr.flat([depth]);
+// The depth level that specifies how deep a nested array structure should be flattened. The predetermined value is 1.
+
+var arr1 = [1, 2, [3, 4]];
+console.log(arr1.flat());
+
+var arr2 = [1, 2, [3, 4, [5, 6]]];
+console.log(arr2.flat());
+
+var arr3 = [1, 2, [3, 4, [5, 6]]];
+console.log(arr3.flat(2));
