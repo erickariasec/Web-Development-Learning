@@ -33,3 +33,6 @@ Si el elemento `<h2>` se usa en más de un lugar en el sitio, entonces el uso de
 
 #### Sin OOCSS
 ![without-OOCSS](img/without-OOCSS.png "Without OOCSS")
+
+#### Con OOCSS
+![with-OOCSS](img/with-OOCSS.png "With OOCSS")
