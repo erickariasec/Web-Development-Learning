@@ -27,3 +27,9 @@ Los archivos de estructura y diseño son archivos separados. Estructura signific
 Este principio sugiere que los child-sellectors deben usarse menos.  
 
 Si el elemento `<h2>` se usa en más de un lugar en el sitio, entonces el uso de selectores secundarios viola la regla OOCSS y conduce a la duplicación del código.
+
+#### HTML
+![HTML2-OOCSS](img/HTML2-OOCSS.png "HTML2 OOCSS")
+
+#### Sin OOCSS
+![without-OOCSS](img/without-OOCSS.png "Without OOCSS")
