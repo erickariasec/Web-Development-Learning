@@ -13,5 +13,8 @@ La estructura se refiere a estilos invisibles aplicados a elementos (ancho, altu
 
 Los archivos de estructura y diseño son archivos separados. Estructura significa: "ancho, alto, relleno, margen, posición". Diseño significa: "borde, color, fuente, fondo". Los archivos de diseño y los archivos de estructura deben estar separados.
 
-#### Wrong
+#### Incorrecto
 ![wrong-OOCSS](img/wrong-OOCSS.png "Wrong OOCSS")
+
+#### Correcto  
+![correct-OOCSS](img/correct-OOCSS.png "Correct OOCSS")
