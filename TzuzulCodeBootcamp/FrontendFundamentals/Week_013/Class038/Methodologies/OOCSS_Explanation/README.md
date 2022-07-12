@@ -36,3 +36,8 @@ Si el elemento `<h2>` se usa en más de un lugar en el sitio, entonces el uso de
 
 #### Con OOCSS
 ![with-OOCSS](img/with-OOCSS.png "With OOCSS")
+
+### El uso de OOCSS
+- A medida que su proyecto crece, el tamaño de los archivos CSS aumenta y luego reduce la velocidad del código. Podemos controlar el tamaño de css al escribir código con OOCSS.  
+- Tus códigos se vuelven comprensibles.  
+- En OOCSS, los fragmentos se codifican en CSS y se expanden en HTML.
