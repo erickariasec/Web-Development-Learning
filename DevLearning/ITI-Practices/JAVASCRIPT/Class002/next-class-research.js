@@ -82,3 +82,16 @@ console.log(arr2.flat());
 
 var arr3 = [1, 2, [3, 4, [5, 6]]];
 console.log(arr3.flat(2));
+
+
+// ! Array.join() method: joins all the elements of an array (or an array-like object) into a string and returns this string.
+// arr.join([separator])
+// separator (optional): It is a string used to separate each of the elements of the array. The separator is converted to a string if necessary. If this is omitted, the elements of the array are separated by a comma (","). If the separator is an empty string, all elements are joined without any characters between them.
+
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+
+console.log(elements.join(''));
+
+console.log(elements.join('-'));
