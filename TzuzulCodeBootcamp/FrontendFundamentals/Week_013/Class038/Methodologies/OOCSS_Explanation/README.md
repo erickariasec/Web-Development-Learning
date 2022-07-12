@@ -12,3 +12,6 @@ La estructura se refiere a estilos invisibles aplicados a elementos (ancho, altu
 ![OOCSS-separation-structure-skin](img/OOCSS-separation-structure-skin.jpeg "OOCSS separation structure skin") 
 
 Los archivos de estructura y diseño son archivos separados. Estructura significa: "ancho, alto, relleno, margen, posición". Diseño significa: "borde, color, fuente, fondo". Los archivos de diseño y los archivos de estructura deben estar separados.
+
+#### Wrong
+![wrong-OOCSS](img/wrong-OOCSS.png "Wrong OOCSS")
