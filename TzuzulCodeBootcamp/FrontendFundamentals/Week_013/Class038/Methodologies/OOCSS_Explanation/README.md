@@ -18,3 +18,6 @@ Los archivos de estructura y diseño son archivos separados. Estructura signific
 
 #### Correcto  
 ![correct-OOCSS](img/correct-OOCSS.png "Correct OOCSS")
+
+#### HTML
+![HTML1-OOCSS](img/HTML1-OOCSS.png "HTML1 OOCSS")
