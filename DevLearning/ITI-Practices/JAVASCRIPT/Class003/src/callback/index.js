@@ -76,3 +76,27 @@ setTimeout(() => {
 }, 0);
 
 console.log(4);
+
+
+// Herencia
+// Abstracción
+// Encapsulamiento
+// Polimorfismo
+
+class Personas {
+    constructor(name, age, email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+    
+    openName() {
+        console.log(`My name is ${this.name}`);
+    }
+}
+
+const person1 = new Personas("Erick", 23, "erick.arias@iti.edu.ec");
+const person2 = new Personas("Cristian", 27, "crist2306@hub.com");
+
+person1.openName();
+person2.openName();
