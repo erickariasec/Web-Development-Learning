@@ -16,6 +16,8 @@
   "author": "Erick Arias <erickarias1999@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "node-fetch": "^3.2.8",
     "xmlhttprequest": "^1.8.0"
-  }
+  },
+  "type": "module"
 }
