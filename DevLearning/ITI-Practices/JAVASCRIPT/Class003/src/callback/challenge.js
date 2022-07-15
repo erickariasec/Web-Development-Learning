@@ -44,5 +44,4 @@ fetchData(`${API}/character`, function (error1, data1) {
     })
 })
 
-// 
 console.log(newArray);
