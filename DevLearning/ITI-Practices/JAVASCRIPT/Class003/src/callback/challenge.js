@@ -12,7 +12,7 @@ function fetchData(urlAPI, callback) {
     xhttp.onreadystatechange = function (event) {
         // ! Validar el estado de la conexión
         if (xhttp.readyState === 4) {
-            // ! Validate server response
+            // ! Validar la respuesta del servidor
             if (xhttp.status === 200) {
                 callback(null, JSON.parse(xhttp.responseText));
             } else {
