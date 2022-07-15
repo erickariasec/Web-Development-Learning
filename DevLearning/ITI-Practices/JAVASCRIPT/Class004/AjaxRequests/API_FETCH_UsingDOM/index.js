@@ -14,3 +14,4 @@ fetch(`${API_URL}/users`)
 
         HTMLResponse.appendChild(ul);
     });
+    
