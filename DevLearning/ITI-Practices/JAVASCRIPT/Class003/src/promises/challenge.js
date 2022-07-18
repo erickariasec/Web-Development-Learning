@@ -9,14 +9,17 @@ const fetchData = (urlAPI) => {
 }
 
 fetchData(`${API}/character`)
-.then(data1 => {
-    console.log(data1.info.count);
-    return fetchData(`${API}/character/${data1.results[0].id}`)
-})
-.then(data2 => {
-    console.log(data2.name);
-    return fetchData(`${API}/location/${data2.id}`)
-})
-.then(data3 => {
-    console.log(data3.dimension);
-})
+    .then((data1) => {
+        console.log(data1.info.count);
+        return fetchData(`${API}/character/${data1.results[0].id}`);
+    })
+    .then((data2) => {
+        console.log(data2.name);
+        return fetchData(`${API}/location/${data2.id}`);
+    })
+    .then((data3) => {
+        console.log(data3.dimension);
+    })
+
+
+    .catch((err) => console.error(err));
