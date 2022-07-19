@@ -1,0 +1,17 @@
+{
+  "name": "tarea-2-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Erick Arias <erickarias1999@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.2.9",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "type": "module"
+}
