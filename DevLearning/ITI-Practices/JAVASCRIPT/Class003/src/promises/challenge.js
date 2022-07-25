@@ -1,11 +1,37 @@
+// const fruits = ['pera', 'manzana', 'mandarina'];
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+// fruits.forEach(function(i){
+//     console.log(i);
+// })
+// fruits.forEach(function(i){
+//     console.log(i);
+// });
+// fruits.forEach((i) => console.log(i));
+
+
+
 // Fetch
 // npm i node-fetch
 
 import fetch from 'node-fetch'
 const API = "https://rickandmortyapi.com/api";
 
+// const isTrue = new Promise((resolve, reject) => {
+//     if (true) {
+//         resolve("Hey, congratulations");
+//     } else {
+//         reject("Error");
+//     }
+// })
+
+// isTrue
+// .then(i => console.log(i))
+// .catch(i);
+
 const fetchData = (urlAPI) => {
-    return fetch(urlAPI).then(res => res.json())
+    return fetch(urlAPI).then(res => res.json());
 }
 
 fetchData(`${API}/character`)
