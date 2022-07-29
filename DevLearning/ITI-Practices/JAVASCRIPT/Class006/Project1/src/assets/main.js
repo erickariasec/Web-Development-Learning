@@ -6,7 +6,7 @@ Generar el consumo de una API (la entregada en clase) y mostrar los videos de Yo
 */
 
 // URL API
-const API = "https://youtube-v31.p.rapidapi.com/search?channelId=UC5HIvr6g_jHPa8h36hdRMqw&part=snippet%2Cid&order=date&maxResults=10";
+const API = "https://youtube-v31.p.rapidapi.com/search?channelId=UCjXAQ-cayM4mIZmUZKMFW_w&part=snippet%2Cid&order=date&maxResults=10";
 
 const options = {
     method: "GET",
