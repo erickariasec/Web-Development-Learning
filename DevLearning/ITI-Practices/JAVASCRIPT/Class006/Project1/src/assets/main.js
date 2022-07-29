@@ -16,10 +16,6 @@ const options = {
     },
 };
 
-// Declarar nuestras variables
-// const content = document.querySelector('#content')
-// content.innerHTML = "Hola";
-
 // Funcion de llamado a nuestra API
 const fetchData = async (urlAPI) => {
     const response = await fetch(urlAPI, options);
