@@ -37,8 +37,8 @@ const fetchData = async (urlAPI) => {
                 class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
                 <img src="${vi.image}" alt="" class="w-full">
             </div>
-            <div class="mt-4 flex justify-between">
-                <h3 class="text-sm text-gray-700">
+            <div class="mt-4 flex justify-center">
+                <h3 class="text-sm text-white font-medium">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     ${vi.title}
                 </h3>
