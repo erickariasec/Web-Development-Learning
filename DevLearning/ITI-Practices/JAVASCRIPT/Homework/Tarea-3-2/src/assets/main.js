@@ -1,7 +1,9 @@
 /*
 **
 ***
-Generar el consumo de una API (la entregada en clase) y mostrar los videos de Youtube.
+TAREA 3.2 - Erick Arias
+
+Generar el consumo de una API (basándose en el ejemplo de la clase) y mostrar las mejores películas de comedia del 2021.
 
 */
 
@@ -23,7 +25,7 @@ const fetchData = async (urlAPI) => {
     return data;
 };
 
-// Get Videos
+// Get Movies
 // Auto llamado de una funcion (function())
 (async () => {
     const videos = await fetchData(API);
