@@ -29,3 +29,5 @@ async function asyncGetProducts() {
 }
 asyncGetProducts();
 ```
+
+### Implementación del Método POST
