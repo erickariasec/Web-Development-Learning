@@ -51,4 +51,10 @@ fetch(`${API_products}`, {
     .catch((error) => console.log(error));
 ```  
 
-Cabe recalcar que en el caso de nuestra API, si enviamos un objeto como el código anterior, nos devolverá un objeto con un nuevo `id`, pero nada real se insertará en la base de datos, por lo tanto, si deseamos acceder a ese nuevo `id`, obtendremos un error 404.
+Cabe recalcar que en el caso de nuestra API, si enviamos un objeto como el código anterior, nos devolverá un objeto con un nuevo `id`, pero nada real se insertará en la base de datos, por lo tanto, si deseamos acceder a ese nuevo `id`, obtendremos un error 404.  
+
+### Implementación del Método PUT
+
+El método `PUT` se implementa de manera similar al método `POST`, con la diferencia que en este caso, `PUT` se usa cuando necesitamos actualizar o reemplazar el estado de cierta información ya existente.
+
+A continuación podemos verlo claramente con este ejemplo:
