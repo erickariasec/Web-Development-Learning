@@ -57,4 +57,24 @@ Cabe recalcar que en el caso de nuestra API, si enviamos un objeto como el códi
 
 El método `PUT` se implementa de manera similar al método `POST`, con la diferencia que en este caso, `PUT` se usa cuando necesitamos actualizar o reemplazar el estado de cierta información ya existente.
 
-A continuación podemos verlo claramente con este ejemplo:
+A continuación podemos verlo claramente con este ejemplo:  
+
+```js
+const API_products = "https://fakestoreapi.com/products";
+fetch(`${API_products}/7`, {
+    method: "PUT",
+    headers: {
+        "Content-type": "application/json",
+    },
+    body: JSON.stringify({
+        title: "product updated",
+        price: 15.59,
+        description: "Product 7 is updated",
+        image: "https://i.pravatar.cc",
+        category: "electronic",
+    }),
+})
+    .then((res) => res.json())
+    .then((json) => console.log(json))
+    .catch((error) => console.log(error));
+```
