@@ -49,4 +49,6 @@ fetch(`${API_products}`, {
     .then((res) => res.json())
     .then((json) => console.log(json))
     .catch((error) => console.log(error));
-```
+```  
+
+Cabe recalcar que en el caso de nuestra API, si enviamos un objeto como el código anterior, nos devolverá un objeto con un nuevo `id`, pero nada real se insertará en la base de datos, por lo tanto, si deseamos acceder a ese nuevo `id`, obtendremos un error 404.
