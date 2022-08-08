@@ -10,23 +10,14 @@ Como ya sabemos, de forma predeterminada, `fetch()` realiza una solicitud `GET`.
 fetch("https://fakestoreapi.com/products");
 ```
 
-Y esa sería nuestra solicitud en sí, aunque si ya queremos ir manejando los resultados de una manera más específica, podríamos hacerlo de la siguiente manera haciendo uso de `async` y `await`.
+Y esa sería nuestra solicitud en sí, aunque si ya queremos ir manejando los resultados de una manera más específica, podríamos hacerlo de la siguiente manera:
 
 ```js
 const API_products = "https://fakestoreapi.com/products";
-const fetchProducts = async (urlAPI) => {
-    const response = await fetch(urlAPI);
-    return response.json();
-};
-async function asyncGetSingleProduct() {
-    try {
-        const product1 = await fetchProducts(`${API_products}/1`);
-        console.log(product1);
-    } catch (err) {
-        console.error(err);
-    }
-}
-asyncGetSingleProduct();
+fetch(`${API_products}/1`)
+    .then((res) => res.json())
+    .then((json) => console.log(json))
+    .catch((error) => console.log(error));
 ```
 
 ### Implementación del Método POST
