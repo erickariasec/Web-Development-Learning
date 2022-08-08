@@ -21,3 +21,13 @@ fetch(`${API_products}/1`)
 ```
 
 ### Implementación del Método POST
+Para realizar una solicitud `POST`, debemos cambiar el comportamiento predeterminado de fetch (que es hacer una solicitud GET). Esto se hace agregando un objeto como segundo argumento en una llamada de búsqueda.  
+
+La propiedad `method` en el objeto, especifica el método de solicitud. Para este caso, lo estableceremos como `POST` ya que vamos a enviar información al servidor. 
+
+Luego, en un objeto anidado dentro de la propiedad `headers`, especificamos el tipo de contenido. Por lo general, suele ser application/json.  
+
+Finalmente, en el `body` de la solicitud, pasamos los datos a enviar. Si se envía un objeto JavaScript, debemos convertirlo a formato JSON envolviéndolo en `JSON.stringify()`.
+
+Aquí en este ejemplo, podemos ver la aplicación de este método:  
+
