@@ -18,16 +18,15 @@ const fetchProducts = async (urlAPI) => {
     const response = await fetch(urlAPI);
     return response.json();
 };
-async function asyncGetProducts() {
+async function asyncGetSingleProduct() {
     try {
-        // ! GET A SINGLE PRODUCT
         const product1 = await fetchProducts(`${API_products}/1`);
         console.log(product1);
     } catch (err) {
         console.error(err);
     }
 }
-asyncGetProducts();
+asyncGetSingleProduct();
 ```
 
 ### Implementación del Método POST
