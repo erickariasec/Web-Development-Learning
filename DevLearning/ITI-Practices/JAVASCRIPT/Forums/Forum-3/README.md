@@ -29,5 +29,24 @@ Luego, en un objeto anidado dentro de la propiedad `headers`, especificamos el t
 
 Finalmente, en el `body` de la solicitud, pasamos los datos a enviar. Si se envía un objeto JavaScript, debemos convertirlo a formato JSON envolviéndolo en `JSON.stringify()`.
 
-Aquí en este ejemplo, podemos ver la aplicación de este método:  
+Aquí en este ejemplo, podemos ver la aplicación de este método:   
 
+```js
+const API_products = "https://fakestoreapi.com/products";
+fetch(`${API_products}`, {
+    method: "POST",
+    headers: {
+        "Content-type": "application/json",
+    },
+    body: JSON.stringify({
+        title: "test product",
+        price: 13.99,
+        description: "This is the new product added",
+        image: "https://i.pravatar.cc",
+        category: "electronic",
+    }),
+})
+    .then((res) => res.json())
+    .then((json) => console.log(json))
+    .catch((error) => console.log(error));
+```
