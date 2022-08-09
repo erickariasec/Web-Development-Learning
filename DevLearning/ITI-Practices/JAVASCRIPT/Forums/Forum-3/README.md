@@ -101,3 +101,5 @@ fetch(`${API_products}/6`, {
     .then((json) => console.log(json))
     .catch((error) => console.log(error));
 ```
+
+Recordemos nuevamente que con el uso de nuestra API, el producto no será eliminado de la base de datos, pero si se envió los datos con éxito, nos devolverá el producto falsamente eliminado.
