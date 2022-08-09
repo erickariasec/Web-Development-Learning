@@ -26,6 +26,7 @@ html {
 body {
     width: 100%;
     background-color: var(--turquoise-low);
+    font-family: var(--roboto-font);
 }
 
 .main-app-title {
@@ -51,14 +52,30 @@ body {
 }
 
 .cat-random-content .cat-random-generator {
-    height: 300px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.cat-random-content .cat-random-generator img {
+    margin: 20px 0;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--turquoise-high);
 }
 
 .cat-random-content .cat-random-generator button {
-    margin-right: 20px;
-    padding: 5px;
     height: 200px;
+    margin-right: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    font-family: var(--righteous-font);
+    background-color: var(--turquoise-high);
+    color: var(--cream);
+}
+
+.cat-random-content .cat-random-generator button:hover {
+    background-color: #16697aec;
 }
