@@ -87,4 +87,17 @@ Hacer una solicitud `DELETE` es similar a `POST` y `PUT` en el sentido de que te
 
 Sin embargo, hacer una solicitud `DELETE` requiere un poco menos de sintaxis que POST y PUT, porque no estamos pasando ningún dato para almacenarlo en el servidor.
 
-Aquí podemos apreciarlo mediante este ejemplo: 
+Aquí podemos apreciarlo mediante este ejemplo:  
+
+```js
+const API_products = "https://fakestoreapi.com/products";
+fetch(`${API_products}/6`, {
+    method: "DELETE",
+    headers: {
+        "Content-type": "application/json"
+    }
+})
+    .then((res) => res.json())
+    .then((json) => console.log(json))
+    .catch((error) => console.log(error));
+```
