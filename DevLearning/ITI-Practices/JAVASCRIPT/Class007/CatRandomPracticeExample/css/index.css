@@ -25,6 +25,7 @@ html {
 
 body {
     width: 100%;
+    background-color: var(--turquoise-low);
 }
 
 .main-app-title {
@@ -38,7 +39,6 @@ body {
 }
 
 .cat-random-content {
-    background-color: var(--turquoise-low);
     display: flex;
     flex-direction: column;
 }
