@@ -43,8 +43,8 @@ fetch(`${API_products}`, {
         price: 13.99,
         description: "This is the new product added",
         image: "https://i.pravatar.cc",
-        category: "electronic",
-    }),
+        category: "electronic"
+    })
 })
     .then((res) => res.json())
     .then((json) => console.log(json))
@@ -71,8 +71,8 @@ fetch(`${API_products}/7`, {
         price: 15.59,
         description: "Product 7 is updated",
         image: "https://i.pravatar.cc",
-        category: "electronic",
-    }),
+        category: "electronic"
+    })
 })
     .then((res) => res.json())
     .then((json) => console.log(json))
@@ -80,3 +80,11 @@ fetch(`${API_products}/7`, {
 ```
 
 Como lo habíamos mencionado anteriormente, con respecto a nuestra API, nada real se actualizará en la base de datos.
+
+### Implementación del Método DELETE  
+
+Hacer una solicitud `DELETE` es similar a `POST` y `PUT` en el sentido de que tenemos que especificar esto en un objeto colocado en la posición del segundo argumento en la llamada de búsqueda (para evitar que la búsqueda sea el comportamiento predeterminado de una solicitud GET), pero en este caso lo que vamos a hacer con el uso de este método, es eliminar información del servidor.
+
+Sin embargo, hacer una solicitud `DELETE` requiere un poco menos de sintaxis que POST y PUT, porque no estamos pasando ningún dato para almacenarlo en el servidor.
+
+Aquí podemos apreciarlo mediante este ejemplo: 
