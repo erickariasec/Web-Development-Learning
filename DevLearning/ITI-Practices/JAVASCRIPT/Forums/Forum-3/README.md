@@ -103,3 +103,5 @@ fetch(`${API_products}/6`, {
 ```
 
 Recordemos nuevamente que con el uso de nuestra API, el producto no será eliminado de la base de datos, pero si se envió los datos con éxito, nos devolverá el producto falsamente eliminado.
+
+## Explicación de los headers y body dentro de la función fetch()
