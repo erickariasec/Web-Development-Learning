@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --righteous-font: 'Righteous', cursive;
+    --roboto-font: 'Roboto', sans-serif;
+
+    /* Color Palette */
+    --turquoise-high: #16697a;
+    --turquoise-medium: #489fb5;
+    --turquoise-low: #82c0cc;
+    --cream: #ede7e3;
+    --yellow: #ffa62b;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+.main-app-title {
+    height: 80px;
+    background-color: var(--yellow);
+    font-size: 5rem;
+    font-family: var(--righteous-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-random-content {
+    background-color: var(--turquoise-low);
+    display: flex;
+    flex-direction: column;
+}
