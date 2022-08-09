@@ -105,3 +105,14 @@ fetch(`${API_products}/6`, {
 Recordemos nuevamente que con el uso de nuestra API, el producto no será eliminado de la base de datos, pero si se envió los datos con éxito, nos devolverá el producto falsamente eliminado.
 
 ## Explicación de los headers y body dentro de la función fetch()
+
+### Headers  
+Los `headers` dentro de la función `fetch()` son como una fuente adicional de información para cada llamada de API que realiza. Su trabajo es representar los metadatos asociados con una solicitud y respuesta de API.  
+
+Si en alguna ocasión llegamos a encontrar problemas con alguna API, el primer lugar dónde debemos ir a buscar es en los `headers`, ya que nos pueden ayudar a rastrear cualquier problema potencial. Esto los convierte en una parte muy importante de cada solicitud.
+
+Los `headers` nos informan sobre:
+- Cuerpo de solicitud y respuesta
+- Solicitud de autorización
+- Almacenamiento en caché de respuestas
+- Cookies de respuesta
