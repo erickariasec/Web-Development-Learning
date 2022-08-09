@@ -51,6 +51,21 @@ body {
     background-color: var(--turquoise-medium);
 }
 
+.cat-random-content .button-more-cats {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: var(--righteous-font);
+    font-size: 2rem;
+    background-color: #eba84a;
+}
+
+.cat-random-content .button-more-cats:hover {
+    background-color: #f0b057;
+}
+
 .cat-random-content .cat-random-generator {
     padding: 30px;
     display: flex;
@@ -60,7 +75,7 @@ body {
 }
 
 .cat-random-content .cat-random-generator img {
-    margin: 20px 0;
+    margin: 10px 0;
     border-radius: 10px 0 0 10px;
     background-color: var(--turquoise-high);
 }
@@ -72,6 +87,7 @@ body {
     border: none;
     border-radius: 0 10px 10px 0;
     font-family: var(--righteous-font);
+    font-size: 1.6rem;
     background-color: var(--turquoise-high);
     color: var(--cream);
 }
