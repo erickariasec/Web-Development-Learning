@@ -78,3 +78,5 @@ fetch(`${API_products}/7`, {
     .then((json) => console.log(json))
     .catch((error) => console.log(error));
 ```
+
+Como lo habíamos mencionado anteriormente, con respecto a nuestra API, nada real se actualizará en la base de datos.
