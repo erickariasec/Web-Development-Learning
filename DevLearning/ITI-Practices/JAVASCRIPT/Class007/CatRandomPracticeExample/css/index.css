@@ -42,3 +42,23 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.cat-random-content h2 {
+    padding: 20px;
+    font-size: 3rem;
+    font-family: var(--righteous-font);
+    background-color: var(--turquoise-medium);
+}
+
+.cat-random-content .cat-random-generator {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-random-content .cat-random-generator button {
+    margin-right: 20px;
+    padding: 5px;
+    height: 200px;
+}
