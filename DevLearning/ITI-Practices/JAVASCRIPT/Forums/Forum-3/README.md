@@ -116,3 +116,12 @@ Los `headers` nos informan sobre:
 - Solicitud de autorización
 - Almacenamiento en caché de respuestas
 - Cookies de respuesta
+
+### Body  
+Cuando necesitamos enviar datos desde un cliente (navegador) a una API, los envía como un body request.
+
+Un body request son datos enviados por el cliente a su API. Un body response son los datos que una API envía al cliente.
+
+Una API casi siempre tiene que enviar un body response. Pero los clientes no necesariamente necesitan enviar body requests todo el tiempo.
+
+El contenido del `body` puede ser cualquier objeto JSON válido.
