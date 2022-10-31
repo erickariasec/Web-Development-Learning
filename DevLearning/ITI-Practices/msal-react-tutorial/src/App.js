@@ -34,12 +34,16 @@ function ProfileContent() {
 
     return (
         <>
-            <h5 className="card-title">Welcome {name}</h5>
-            {graphData ? 
+            <h5 className="card-title text-center">Welcome {name}</h5>
+            {graphData ? (
                 <ProfileData graphData={graphData} />
-                :
-                <Button variant="secondary" onClick={RequestProfileData}>Request Profile Information</Button>
-            }
+            ) : (
+                <div className="d-flex justify-content-center">
+                    <Button variant="secondary" onClick={RequestProfileData}>
+                        Request Profile Information
+                    </Button>
+                </div>
+            )}
         </>
     );
 };
@@ -51,7 +55,7 @@ function App() {
                 <ProfileContent />
             </AuthenticatedTemplate>
             <UnauthenticatedTemplate>
-                <p>You are not signed in! Please sign in.</p>
+                <p className="text-center">You are not signed in! Please sign in.</p>
             </UnauthenticatedTemplate>
         </PageLayout>
     );
