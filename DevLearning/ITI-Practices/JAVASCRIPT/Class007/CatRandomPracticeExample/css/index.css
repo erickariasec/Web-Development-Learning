@@ -17,6 +17,7 @@
     --turquoise-low: #82c0cc;
     --cream: #ede7e3;
     --yellow: #ffa62b;
+    --red: #e44040;
 }
 
 html {
@@ -49,11 +50,13 @@ body {
     font-size: 3rem;
     font-family: var(--righteous-font);
     background-color: var(--turquoise-medium);
+    display: flex;
+    justify-content: center;
 }
 
-.cat-random-content .button-more-cats {
+.button-more-cats {
     width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -81,6 +84,7 @@ body {
 }
 
 .cat-random-content .cat-random-generator button {
+    width: 120px;
     height: 200px;
     margin-right: 45px;
     padding: 10px;
@@ -94,4 +98,49 @@ body {
 
 .cat-random-content .cat-random-generator button:hover {
     background-color: #16697aec;
+}
+
+.cat-favorite-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-favorite-content h2 {
+    padding: 20px;
+    font-size: 3rem;
+    font-family: var(--righteous-font);
+    background-color: var(--turquoise-medium);
+    display: flex;
+    justify-content: center;
+}
+
+.cat-favorite-content .cat-favorite-generator {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cat-favorite-content .cat-favorite-generator img {
+    margin: 10px 0;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--turquoise-high);
+}
+
+.cat-favorite-content .cat-favorite-generator button {
+    width: 120px;
+    height: 200px;
+    margin-right: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    font-family: var(--righteous-font);
+    font-size: 1.6rem;
+    background-color: var(--red);
+    color: var(--cream);
+}
+
+.cat-favorite-content .cat-favorite-generator button:hover {
+    background-color: #e04e4e;
 }

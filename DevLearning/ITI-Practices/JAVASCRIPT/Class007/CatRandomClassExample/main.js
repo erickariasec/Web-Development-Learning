@@ -7,6 +7,7 @@ const urlAPICatFavorite = "https://api.thecatapi.com/v1/favourites?api_key=f27f5
 // API Add Cats to Favorite
 const urlAPIAddCatFavorite = "https://api.thecatapi.com/v1/favourites?api_key=f27f5097-6251-4ee1-a67e-3767cd1d6b4f";
 
+// API Remove Cats from Favorite
 const urlAPIRemoveCatFavorite = "https://api.thecatapi.com/v1/favourites/";
 
 // Funcion de obtener gatos randomicos
@@ -33,7 +34,6 @@ const getCatsRandom = async () => {
         array.push(button);
     });
     div.append(...array);
-    console.log(data[0].id);
     
     // const img1 = document.getElementById("img1");
     // // ! const img1 = document.querySelector("#img1"); Antoher way
@@ -54,6 +54,7 @@ const getCatsRandom = async () => {
 
 // getCatsRandom();
 
+// Funcion de obtener los gatos favoritos
 const getCatsFavorite = async () => {
     const response = await fetch(urlAPICatFavorite);
     const data = await response.json();
@@ -80,15 +81,14 @@ const getCatsFavorite = async () => {
         }
         array.push(button);
     });
+    div.innerHTML = "";
     div.append(...array);
-    console.log(data[0].image);
 }
 
 // getCatsFavorite();
 
 // Funcion para agregar los gatos a favoritos
 const addCatsFavorite = async (id) => {
-    // console.log(id);
     const response = await fetch(urlAPIAddCatFavorite, {
         method: "POST",
         headers: {
@@ -105,12 +105,6 @@ const addCatsFavorite = async (id) => {
 const removeCatsFavorite = async (id) => {
     const response = await fetch(`${urlAPIRemoveCatFavorite}${id}?api_key=f27f5097-6251-4ee1-a67e-3767cd1d6b4f`, {
         method: "DELETE",
-        headers: {
-            "Content-type": "application/json",
-        },
     });
     getCatsFavorite();
 };
-
-
-// Funcion para eliminar los gatos de favoritos
