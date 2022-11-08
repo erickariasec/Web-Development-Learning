@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 
 import { TodoButton } from "./components/TodoButton";
 import { TodoCounter } from "./components/TodoCounter";
@@ -7,14 +7,15 @@ import { TodoList } from "./components/TodoList";
 import { TodoSearch } from "./components/TodoSearch";
 
 const todos = [
-    { content: "Aprender React Native", completed: true },
-    { content: "Aprender Next.js", completed: false },
-    { content: "Aprender Angular", completed: false },
+    { content: "Learn React Native", completed: true },
+    { content: "Learn Next.js", completed: false },
+    { content: "Learn Angular", completed: false },
+    { content: "Learn Vue.js", completed: false },
 ];
 
 function App() {
     return (
-        <>
+        <div className="todo-container">
             <TodoCounter />
             <TodoSearch />
             <TodoList>
@@ -23,7 +24,7 @@ function App() {
                 ))}
             </TodoList>
             <TodoButton />
-        </>
+        </div>
     );
 }
 

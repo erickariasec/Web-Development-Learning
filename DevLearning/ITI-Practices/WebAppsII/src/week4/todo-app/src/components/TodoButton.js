@@ -1,5 +1,6 @@
 import React from "react";
+import "./TodoButton.css"
 
-const TodoButton = () => <button>Add Task</button>
+const TodoButton = () => <button className="todo-button"> + </button>
 
 export {TodoButton}

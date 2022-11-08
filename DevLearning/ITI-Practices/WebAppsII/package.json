@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Erick Arias <erickarias1999@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-icons": "^4.6.0"
+  }
 }

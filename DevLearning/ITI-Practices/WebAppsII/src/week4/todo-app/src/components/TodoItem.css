@@ -1,0 +1,46 @@
+.todo-item {
+    padding: 0 15px;
+    list-style: none;
+    background-color: #220564;
+    border-radius: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 2px 10px 14px -7px rgba(0,0,0,0.48);
+    transition: all 0.5s ease;
+}
+
+.todo-item:hover {
+    transform: scale(1.0333);
+}
+
+.todo-item .check {
+    color: #5a55bd;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.5s color;
+}
+
+.todo-item .check:hover {
+    color: #453fbd;
+}
+
+.todo-item .paragraph {
+    min-width: 175px;
+    text-align: center;
+}
+
+.todo-item .trash {
+    color: rgb(202, 3, 3);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.5s color;
+}
+
+.todo-item .trash:hover {
+    color: rgb(255, 0, 0);
+}
