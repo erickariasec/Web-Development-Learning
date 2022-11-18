@@ -1,14 +1,11 @@
 import "./TodoSearch.css";
 
 const TodoSearch = ({search, setSearch}) => {
-  
-  // const [value, setValue] = useState("");
-  
-  const getInputValue = (event) => {
-      console.log(event.target.value);
-      let myValue = event.target.value;
-      setSearch(myValue)
-  };
+    
+    const getInputValue = (event) => {
+        let myValue = event.target.value;
+        setSearch(myValue)
+    };
 
     return (
         <>
@@ -16,6 +13,7 @@ const TodoSearch = ({search, setSearch}) => {
                 className="todo-search"
                 type={"text"}
                 placeholder="Search..."
+                value={search}
                 onChange={getInputValue}
             />
             <p>{search}</p>
