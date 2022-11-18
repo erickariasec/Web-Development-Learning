@@ -1,3 +1,8 @@
+# Screenshots of the Project
+
+![Dog-Search-App](./public/dog-search-app-state.png)
+![Dog-Search-App](./public/dog-search-app-search.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
