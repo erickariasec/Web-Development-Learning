@@ -16,7 +16,7 @@
     transform: scale(1.0333);
 }
 
-.todo-item .check {
+.todo-item .unchecked {
     color: #5a55bd;
     font-weight: bold;
     cursor: pointer;
@@ -24,8 +24,20 @@
     transition: 0.5s color;
 }
 
-.todo-item .check:hover {
+.todo-item .unchecked:hover {
     color: #453fbd;
+}
+
+.todo-item .checked {
+    color: #0fa;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.5s color;
+}
+
+.todo-item .checked:hover {
+    color: rgb(7, 190, 129);
 }
 
 .todo-item .paragraph {
