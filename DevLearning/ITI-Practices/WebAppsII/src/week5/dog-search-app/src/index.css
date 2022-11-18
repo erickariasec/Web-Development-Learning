@@ -1,0 +1,47 @@
+:root {
+    /* Text colors */
+    --white-color-text: #fff;
+    --cyan-color-text: rgba(45, 255, 255, 0.9);
+    --cyan-hover-color-text: #71b4bd;
+    /* Background colors */
+    --background-color: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);;
+    --logo-content-background-color: rgba(255, 255, 255, 0.973);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  background: var(--background-color);
+  color: var(--white-color-text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main {
+    width: 95vw;
+    max-width: 1100px;
+    padding: 25px;
+    margin: 35px 0;
+    /* border: 1px solid #000;
+    border-radius: 15px; */
+}
+
+.main .cards {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+}
