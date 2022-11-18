@@ -1,0 +1,32 @@
+.title-app {
+  animation: pulsate 2.5s infinite alternate; 
+  text-align: center;
+  font-size: 50px;    
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 2px #fff,
+      0 0 8px #fff,
+      0 0 5px #fff,
+      0 0 20px rgba(45, 255, 255, 0.9),
+      0 0 50px rgba(45, 255, 255, 0.9),
+      0 0 60px rgba(45, 255, 255, 0.9),
+      0 0 60px rgba(45, 255, 255, 0.9),
+      0 0 70px rgba(45, 255, 255, 0.9);
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 1px #fff,
+      0 0 3px #fff,
+      0 0 5px #fff,
+      0 0 5px rgba(45, 255, 255, 0.9),
+      0 0 20px rgba(45, 255, 255, 0.9),
+      0 0 35px rgba(45, 255, 255, 0.9),
+      0 0 40px rgba(45, 255, 255, 0.9),
+      0 0 50px rgba(45, 255, 255, 0.9);
+  }
+}
