@@ -1,0 +1,63 @@
+.main .cards article {
+    max-width: 250px;
+    overflow: hidden;
+    border: 4px solid var(--cyan-color-text);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+.main .cards article:hover {
+    border: 4px solid var(--cyan-color-text);
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow:0px 0px 26px 0px rgba(45, 255, 255, 0.9);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(45, 255, 255, 0.9);
+    box-shadow: 0px 0px 26px 0px rgba(45, 255, 255, 0.9);
+}
+
+.main .cards article .dog-image {
+    min-width: 250px;
+    max-width: 250px;
+    max-height: 225px;
+}
+
+.main .cards article .dog-image img {
+    width: 100%;
+    min-height: 225px;
+    max-height: 225px;
+    border-radius: 9px 9px 0px 0px;
+    object-fit: fill;
+    object-position: center;
+    transition: transform .2s;
+}
+.main .cards article .dog-image img:hover {
+    transform: scale(1.1);
+}
+.main .cards article .dog-image img:active {
+    transform: scale(1.1);
+}
+
+.main .cards article .dog-content {
+    min-height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .cards article .dog-content .breed-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main .cards article .dog-content .breed-title p {
+    padding: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    align-self: center;
+}
