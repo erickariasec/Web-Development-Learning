@@ -1,3 +1,8 @@
+# Screenshots of the Project
+
+![Todo App](./public/todo-app-state.png)
+![Todo App](./public/todo-app-search.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
