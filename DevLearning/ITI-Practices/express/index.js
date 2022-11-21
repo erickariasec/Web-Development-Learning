@@ -39,59 +39,6 @@ app.get('/', (req, res) => {
 
 routerAPI(app);
 
-// app.get('/authors', (req, res) => {
-//     res.json({
-//         authorId: 1,
-//         name: "Erick",
-//         lastName: "Arias"
-//     });
-// })
-
-
-// ! First goes specific routes, then dynamic routes.
-
-// app.get("/authors/filter", (req, res) => {
-//     res.send("I am a filter route");
-// });
-
-// app.get("/authors/:id", (req, res) => {
-//     const { id } = req.params
-//     res.json({
-//         authorId: id,
-//         name: "Erick",
-//         lastName: "Arias",
-//     });
-// });
-
-// app.get("/users", (req, res) => {
-//     res.json({
-//         userId: 1,
-//         name: "Erick",
-//         lastName: "Arias",
-//     });
-// });
-
-// app.get("/users/:userId/books/:bookId", (req, res) => {
-//     const { userId, bookId } = req.params
-//     res.json({
-//         userId: userId,
-//         bookId: bookId,
-//         name: "Erick",
-//         lastName: "Arias",
-//     });
-// });
-
-// http://localhost:3004/operations?limit=10&offset=20
-// app.get("/operations", (req, res) => {
-//     const { limit, offset } = req.query
-//     res.json({
-//         limit: limit,
-//         offset: offset,
-//         name: "Erick",
-//         lastName: "Arias",
-//     });
-// });
-
 app.listen(port, () => {
     console.log(`Listening from port ${port}`);
 });
