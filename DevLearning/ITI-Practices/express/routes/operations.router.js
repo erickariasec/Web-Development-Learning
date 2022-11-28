@@ -1,18 +1,37 @@
 const express = require("express");
-const { faker } = require("@faker-js/faker");
+const OperationsService = require("../services/operations.service");
 
 const route = express.Router();
-
-// http://localhost:3004/operations?limit=10&offset=20
+const service = new OperationsService();
 
 route.get("/", (req, res) => {
-    const { limit, offset } = req.query
-    res.json({
-        limit: limit,
-        offset: offset,
-        name: faker.name.firstName(),
-        lastName: faker.name.lastName(),
-    });
+  const operations = service.findAll();
+  res.json(operations);
+});
+
+route.get("/:id", (req, res) => {
+  const { id } = req.params;
+  const retFind = service.findSingle(id);
+  res.json(retFind);
+});
+
+route.post("/", (req, res) => {
+  const data = req.body;
+  const newOperation = service.create(data);
+  res.status(201).json(newOperation);
+});
+
+route.put("/:id", (req, res) => {
+  const { id } = req.params;
+  const changes = req.body;
+  const updateOperation = service.update(id, changes);
+  res.status(201).json(updateOperation);
+});
+
+route.delete("/:id", (req, res) => {
+  const { id } = req.params;
+  const deleteOperation = service.delete(id);
+  res.status(202).json(deleteOperation);
 });
 
 module.exports = route;
