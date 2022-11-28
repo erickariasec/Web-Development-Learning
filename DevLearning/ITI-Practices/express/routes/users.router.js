@@ -1,31 +1,38 @@
 const express = require("express");
-const { faker } = require("@faker-js/faker");
+const UsersService = require("../services/users.service");
 
 const route = express.Router();
+const service = new UsersService();
 
 route.get("/", (req, res) => {
-    const {size} = req.query
-    const limit = size || 10
-    const users = [];
-    for (let i = 0; i < limit; i++) {
-        users.push({
-            userId: faker.datatype.uuid(),
-            name: faker.name.firstName(),
-            lastName: faker.name.lastName(),
-        });
-    }
-    res.json(users);
+  const users = service.findAll();
 
+  res.json(users);
 });
 
-route.get("/:userId/books/:bookId", (req, res) => {
-    const { userId, bookId } = req.params
-    res.json({
-        userId: userId,
-        bookId: bookId,
-        name: faker.name.firstName(),
-        lastName: faker.name.lastName(),
-    });
+route.get("/:id", (req, res) => {
+  const { id } = req.params;
+  const retFind = service.findSingle(id);
+  res.json(retFind);
+});
+
+route.post("/", (req, res) => {
+  const data = req.body;
+  const newUser = service.create(data);
+  res.status(201).json(newUser);
+});
+
+route.put("/:id", (req, res) => {
+  const { id } = req.params;
+  const changes = req.body;
+  const updateUser = service.update(id, changes);
+  res.status(201).json(updateUser);
+});
+
+route.delete("/:id", (req, res) => {
+  const { id } = req.params;
+  const deleteUser = service.delete(id);
+  res.status(202).json(deleteUser);
 });
 
 module.exports = route;
