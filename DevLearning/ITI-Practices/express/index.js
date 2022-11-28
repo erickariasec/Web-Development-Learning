@@ -22,23 +22,23 @@
 
 // console.log("Listening port from port 3004");
 
-
-
 // NEW WAY EXPRESS
 
-const express = require('express');
+const express = require("express");
 // const routerAPI = require('./routes/index');
 const routerAPI = require("./routes");
 
 const app = express();
 const port = 3004;
 
-app.get('/', (req, res) => {
-    res.send("My first server with Express");
+app.get("/", (req, res) => {
+  res.send("My first server with Express");
 });
+
+app.use(express.json());
 
 routerAPI(app);
 
 app.listen(port, () => {
-    console.log(`Listening from port ${port}`);
+  console.log(`Listening from port ${port}`);
 });
