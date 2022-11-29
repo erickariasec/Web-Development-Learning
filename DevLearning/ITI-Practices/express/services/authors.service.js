@@ -11,19 +11,26 @@ class AuthorsService {
         authorId: i + 1,
         name: faker.name.firstName(),
         lastName: faker.name.lastName(),
+        birthDate: faker.date.birthdate(),
+        placeOfBirth: faker.address.country(),
+        placeOfResidence: faker.address.country(),
+        rating: Math.floor(Math.random() * 5) + 1,
+        organization: faker.company.name(),
+        booksPublished: faker.random.numeric(),
+        website: faker.internet.domainName(),
       });
     }
   }
 
-  findAll() {
+  findAllAuthors() {
     return this.authors;
   }
 
-  findSingle(id) {
+  findSingleAuthor(id) {
     return this.authors.find((author) => author.authorId === parseInt(id));
   }
 
-  create(data) {
+  createAuthor(data) {
     this.authors.push(data);
     const authorIndex = this.authors.length - 1;
     return {
@@ -32,7 +39,7 @@ class AuthorsService {
     };
   }
 
-  update(id, changes) {
+  updateAuthor(id, changes) {
     const index = this.authors.findIndex(
       (author) => author.authorId === parseInt(id)
     );
@@ -43,7 +50,7 @@ class AuthorsService {
     };
   }
 
-  delete(id) {
+  deleteAuthor(id) {
     const index = this.authors.findIndex(
       (author) => author.authorId === parseInt(id)
     );
