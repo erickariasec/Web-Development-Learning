@@ -9,23 +9,49 @@ class OperationsService {
     for (let i = 0; i < 10; i++) {
       this.operations.push({
         operationId: i + 1,
-        name: faker.name.firstName(),
-        lastName: faker.name.lastName(),
+        warehouseManagement: {
+          company: faker.company.name(),
+          companySuffix: faker.company.companySuffix(),
+          companyBuildingNumber: faker.address.buildingNumber(),
+          manager: {
+            name: faker.name.firstName(),
+            lastName: faker.name.lastName(),
+            email: faker.internet.email(),
+            profilePicture: faker.internet.avatar(),
+          },
+        },
+        shipping: {
+          distributor: {
+            association: faker.company.name(),
+            associationSuffix: faker.company.companySuffix(),
+            associationBuildingNumber: faker.address.buildingNumber(),
+            attendant: {
+              name: faker.name.firstName(),
+              lastName: faker.name.lastName(),
+              email: faker.internet.email(),
+              profilePicture: faker.internet.avatar(),
+            },
+          },
+          sendTo: {
+            country: faker.address.country(),
+            countryCode: faker.address.countryCode(),
+          },
+        },
       });
     }
   }
 
-  findAll() {
+  findAllOperations() {
     return this.operations;
   }
 
-  findSingle(id) {
+  findOperationById(id) {
     return this.operations.find(
       (operation) => operation.operationId === parseInt(id)
     );
   }
 
-  create(data) {
+  createOperation(data) {
     this.operations.push(data);
     const operationIndex = this.operations.length - 1;
     return {
@@ -34,7 +60,7 @@ class OperationsService {
     };
   }
 
-  update(id, changes) {
+  updateOperation(id, changes) {
     const index = this.operations.findIndex(
       (operation) => operation.operationId === parseInt(id)
     );
@@ -45,7 +71,7 @@ class OperationsService {
     };
   }
 
-  delete(id) {
+  deleteOperation(id) {
     const index = this.operations.findIndex(
       (operation) => operation.operationId === parseInt(id)
     );
