@@ -42,13 +42,19 @@ class OperationsService {
   }
 
   findAllOperations() {
-    return this.operations;
+    return {
+      message: "This list contains all the operations",
+      data: this.operations,
+    };
   }
 
   findOperationById(id) {
-    return this.operations.find(
-      (operation) => operation.operationId === parseInt(id)
-    );
+    return {
+      message: "You searched an operation by id",
+      data: this.operations.find(
+        (operation) => operation.operationId === parseInt(id)
+      ),
+    };
   }
 
   createOperation(data) {
