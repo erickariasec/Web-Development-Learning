@@ -17,6 +17,17 @@ route.get("/:id", (req, res) => {
   res.json(foundBookById);
 });
 
+// localhost:3004/api/v1/books/filter
+route.get("/filter", (req, res) => {
+  res.send("I am a filter route of books");
+});
+
+// localhost:3004/api/v1/books/filter/bestSellers
+route.get("/filter/bestSellers", (req, res) => {
+  const foundBestSellerBooks = service.findBestSellers();
+  res.json(foundBestSellerBooks);
+});
+
 //localhost:3004/api/v1/books/filter/:title
 route.get("/filter/:title", (req, res) => {
   const { title } = req.params;
