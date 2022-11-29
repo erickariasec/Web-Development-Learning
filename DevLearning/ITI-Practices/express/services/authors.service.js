@@ -9,7 +9,7 @@ class AuthorsService {
     for (let i = 0; i < 10; i++) {
       this.authors.push({
         authorId: i + 1,
-        name: faker.name.firstName(),
+        firstName: faker.name.firstName(),
         lastName: faker.name.lastName(),
         birthDate: faker.date.birthdate(),
         placeOfBirth: faker.address.country(),
@@ -26,8 +26,24 @@ class AuthorsService {
     return this.authors;
   }
 
-  findSingleAuthor(id) {
+  findAuthorById(id) {
     return this.authors.find((author) => author.authorId === parseInt(id));
+  }
+
+  findAuthorByLastName(lastName) {
+    const authorByLastNameInformation = this.authors.find(
+      (author) => author.lastName === lastName
+    );
+    if (authorByLastNameInformation) {
+      return {
+        message: "You searched an author by last name",
+        data: authorByLastNameInformation,
+      };
+    } else {
+      return {
+        message: `The author's last name: '${lastName}' does not exist!`,
+      };
+    }
   }
 
   createAuthor(data) {
