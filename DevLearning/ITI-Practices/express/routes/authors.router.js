@@ -5,7 +5,7 @@ const route = express.Router();
 const service = new AuthorsService();
 
 route.get("/", (req, res) => {
-  const authors = service.findAll();
+  const authors = service.findAllAuthors();
 
   res.json(authors);
 });
@@ -18,26 +18,26 @@ route.get("/filter", (req, res) => {
 
 route.get("/:id", (req, res) => {
   const { id } = req.params;
-  const retFind = service.findSingle(id);
+  const retFind = service.findSingleAuthor(id);
   res.json(retFind);
 });
 
 route.post("/", (req, res) => {
   const data = req.body;
-  const newAuthor = service.create(data);
+  const newAuthor = service.createAuthor(data);
   res.status(201).json(newAuthor);
 });
 
 route.put("/:id", (req, res) => {
   const { id } = req.params;
   const changes = req.body;
-  const updateAuthor = service.update(id, changes);
+  const updateAuthor = service.updateAuthor(id, changes);
   res.status(201).json(updateAuthor);
 });
 
 route.delete("/:id", (req, res) => {
   const { id } = req.params;
-  const deleteAuthor = service.delete(id);
+  const deleteAuthor = service.deleteAuthor(id);
   res.status(202).json(deleteAuthor);
 });
 
