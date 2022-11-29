@@ -10,13 +10,6 @@ route.get("/", (req, res) => {
   res.json(books);
 });
 
-//localhost:3004/api/v1/books/:id
-route.get("/:id", (req, res) => {
-  const { id } = req.params;
-  const foundBookById = service.findBookById(id);
-  res.json(foundBookById);
-});
-
 // localhost:3004/api/v1/books/filter
 route.get("/filter", (req, res) => {
   res.send("I am a filter route of books");
@@ -26,6 +19,13 @@ route.get("/filter", (req, res) => {
 route.get("/filter/bestSellers", (req, res) => {
   const foundBestSellerBooks = service.findBestSellers();
   res.json(foundBestSellerBooks);
+});
+
+//localhost:3004/api/v1/books/:id
+route.get("/:id", (req, res) => {
+  const { id } = req.params;
+  const foundBookById = service.findBookById(id);
+  res.json(foundBookById);
 });
 
 //localhost:3004/api/v1/books/filter/:title
