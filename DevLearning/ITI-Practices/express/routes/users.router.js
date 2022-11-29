@@ -18,6 +18,11 @@ route.get("/:id", (req, res) => {
   res.json(foundUserById);
 });
 
+// localhost:3004/api/v1/users/filter
+route.get("/filter", (req, res) => {
+  res.send("I am a filter route of users");
+});
+
 // localhost:3004/api/v1/users/filter/:genre
 route.get("/filter/:genre", (req, res) => {
   const { genre } = req.params;
