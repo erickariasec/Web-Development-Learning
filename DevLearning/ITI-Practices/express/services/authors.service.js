@@ -23,11 +23,17 @@ class AuthorsService {
   }
 
   findAllAuthors() {
-    return this.authors;
+    return {
+      message: "This list contains all the authors",
+      data: this.authors,
+    };
   }
 
   findAuthorById(id) {
-    return this.authors.find((author) => author.authorId === parseInt(id));
+    return {
+      message: "You searched an author by id",
+      data: this.authors.find((author) => author.authorId === parseInt(id)),
+    };
   }
 
   findAuthorByLastName(lastName) {
