@@ -11,19 +11,42 @@ class UsersService {
         userId: i + 1,
         name: faker.name.firstName(),
         lastName: faker.name.lastName(),
+        userName: faker.internet.userName(),
+        email: faker.internet.email(),
+        password: faker.internet.password(),
+        profilePicture: faker.image.avatar(),
+        genre: faker.name.sexType(),
+        phoneNumber: faker.phone.number(),
+        address: {
+          country: faker.address.country(),
+          state: faker.address.state(),
+          city: faker.address.cityName(),
+          street: faker.address.streetAddress(),
+          zipCode: faker.address.zipCode(),
+        },
       });
     }
   }
 
-  findAll() {
+  findAllUsers() {
     return this.users;
   }
 
-  findSingle(id) {
+  findUserById(id) {
     return this.users.find((user) => user.userId === parseInt(id));
   }
 
-  create(data) {
+  findUsersByGenre(userGenre) {
+    const userByGenreInformation = this.users.filter(
+      (user) => user.genre === userGenre
+    );
+    return {
+      message: `You searched ${userGenre} users`,
+      data: userByGenreInformation,
+    };
+  }
+
+  createUser(data) {
     this.users.push(data);
     const userIndex = this.users.length - 1;
     return {
@@ -32,7 +55,7 @@ class UsersService {
     };
   }
 
-  update(id, changes) {
+  updateUser(id, changes) {
     const index = this.users.findIndex((user) => user.userId === parseInt(id));
     this.users.fill(changes, index, index + 1);
     return {
@@ -41,7 +64,7 @@ class UsersService {
     };
   }
 
-  delete(id) {
+  deleteUser(id) {
     const index = this.users.findIndex((user) => user.userId === parseInt(id));
     return {
       message: "User Deleted",
