@@ -9,21 +9,51 @@ class BooksService {
     for (let i = 0; i < 10; i++) {
       this.books.push({
         id: i + 1,
-        name: faker.commerce.productName(),
+        title: faker.commerce.productName(),
+        author: faker.name.fullName(),
+        translator: faker.name.fullName(),
+        genre: faker.commerce.department(),
+        volume: faker.random.numeric(),
+        numberOfPages: Math.floor(Math.random() * 300) + 100,
         price: faker.commerce.price(),
+        bestSeller: Math.random() < 0.5,
+        publishedDate: faker.date.birthdate(),
+        editorial: faker.company.name(),
       });
     }
   }
 
-  findAll() {
-    return this.books;
+  findAllBooks() {
+    return {
+      message: "This list contains all the books",
+      data: this.books,
+    };
   }
 
-  findSingle(id) {
-    return this.books.find((book) => book.id === parseInt(id));
+  findBookById(id) {
+    return {
+      message: "You searched a book by id",
+      data: this.books.find((book) => book.id === parseInt(id)),
+    };
   }
 
-  create(data) {
+  findBookByTitle(bookTitle) {
+    const bookByTitleInformation = this.books.find(
+      (book) => book.title === bookTitle
+    );
+    if (bookByTitleInformation) {
+      return {
+        message: "You searched a book by title",
+        data: bookByTitleInformation,
+      };
+    } else {
+      return {
+        message: `The book: '${bookTitle}' does not exist!`,
+      };
+    }
+  }
+
+  createBook(data) {
     this.books.push(data);
     const bookIndex = this.books.length - 1;
     return {
@@ -32,7 +62,7 @@ class BooksService {
     };
   }
 
-  update(id, changes) {
+  updateBook(id, changes) {
     const index = this.books.findIndex((book) => book.id === parseInt(id));
     this.books.fill(changes, index, index + 1);
     return {
@@ -41,7 +71,7 @@ class BooksService {
     };
   }
 
-  delete(id) {
+  deleteBook(id) {
     const index = this.books.findIndex((book) => book.id === parseInt(id));
     return {
       message: "Book Deleted",
