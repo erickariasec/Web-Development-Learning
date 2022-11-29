@@ -29,11 +29,17 @@ class UsersService {
   }
 
   findAllUsers() {
-    return this.users;
+    return {
+      message: "This list contains all the users",
+      data: this.users,
+    };
   }
 
   findUserById(id) {
-    return this.users.find((user) => user.userId === parseInt(id));
+    return {
+      message: "You searched a user by id",
+      data: this.users.find((user) => user.userId === parseInt(id)),
+    };
   }
 
   findUsersByGenre(userGenre) {
