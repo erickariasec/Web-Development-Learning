@@ -11,13 +11,6 @@ route.get("/", (req, res) => {
   res.json(users);
 });
 
-// localhost:3004/api/v1/users/:id
-route.get("/:id", (req, res) => {
-  const { id } = req.params;
-  const foundUserById = service.findUserById(id);
-  res.json(foundUserById);
-});
-
 // localhost:3004/api/v1/users/filter
 route.get("/filter", (req, res) => {
   res.send("I am a filter route of users");
@@ -28,6 +21,13 @@ route.get("/filter/:genre", (req, res) => {
   const { genre } = req.params;
   const foundUserByGenre = service.findUsersByGenre(genre);
   res.json(foundUserByGenre);
+});
+
+// localhost:3004/api/v1/users/:id
+route.get("/:id", (req, res) => {
+  const { id } = req.params;
+  const foundUserById = service.findUserById(id);
+  res.json(foundUserById);
 });
 
 // localhost:3004/api/v1/users
