@@ -53,6 +53,16 @@ class BooksService {
     }
   }
 
+  findBestSellers() {
+    const bestSellerBooks = this.books.filter(
+      (book) => book.bestSeller === true
+    );
+    return {
+      message: "You searched the Best Seller Books",
+      data: bestSellerBooks,
+    };
+  }
+
   createBook(data) {
     this.books.push(data);
     const bookIndex = this.books.length - 1;
