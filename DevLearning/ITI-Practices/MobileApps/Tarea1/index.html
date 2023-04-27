@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html> define el tipo de documento que es el archivo, en este caso un documento HTML -->
+<!DOCTYPE html> 
+<!-- <html> indica que todo el código se encuentra dentro de un documento HTML -->
+<html lang="en">
+
+<!-- <head> contiene la información sobre la página, como el título, el conjunto de caracteres y los enlaces a los archivos CSS y JavaScript -->
+<head>
+    <!-- El elemento <meta> proporciona información adicional sobre la página, como la codificación de caracteres y la configuración de la ventana gráfica del navegador. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El enlace <link> se utiliza para conectar la hoja de estilo CSS de la página y la biblioteca de iconos Font Awesome a la página HTML. -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- El elemento <script> se utiliza para conectar la biblioteca de JavaScript jQuery a la página HTML. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- El título de la página aparece dentro del elemento <title>. -->
+    <title>Tarea 1.1 - Erick Arias</title>
+</head>
+
+<!-- El elemento <body> define el contenido principal de la página, como el encabezado, la sección principal y el pie de página. -->
+<body>
+    <!-- El encabezado de la página se define dentro del elemento <header>, que incluye el logotipo y la barra de navegación. -->
+    <header class="header">
+        <!-- La barra de navegación se define dentro del elemento <nav>, que incluye los enlaces a diferentes secciones de la página. -->
+        <nav class="navbar">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo-creative.png" alt="Logo Creative Studio">
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="#">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Servicios</a> <!--# solo establece enlaces dentro de la misma página.-->
+                </li>
+                <li>
+                    <a href="#">Clientes</a>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- La sección principal de la página se define dentro del elemento <section>, que contiene el título de la página y una serie de artículos de contenido. -->
+    <section class="main-container">
+        <h1 class="title">CREATIVE STUDIO</h1>
+        <div class="container">
+            <!-- Cada artículo de contenido se define dentro del elemento <article>, que incluye un icono, un título y un párrafo descriptivo. -->
+            <article class="subcontainer">
+                <i class="fa-solid fa-people-arrows"></i>
+                <h3>Conecta con tu audiencia</h3>
+                <p>Descubre cómo crear contenido digital que conecte con tu audiencia y genere impacto positivo en tu
+                    marca.</p>
+            </article>
+            <article class="subcontainer">
+                <i class="fa-solid fa-hand-sparkles"></i>
+                <h3>Crea para destacar</h3>
+                <p>Convierte tu creatividad en contenido digital de calidad que impulse tu presencia en línea y atraiga
+                    a nuevos seguidores.</p>
+            </article>
+            <article class="subcontainer">
+                <i class="fa-solid fa-star"></i>
+                <h3>Domina la creación digital</h3>
+                <p>Aprende las mejores prácticas para la creación de contenido digital y destaca en un mundo en línea
+                    cada vez más
+                    competitivo.</p>
+            </article>
+            <article class="subcontainer">
+                <i class="fa-solid fa-smile-beam"></i>
+                <h3>Genera impacto positivo</h3>
+                <p>Inspira, educa y entretiene a tu audiencia con contenido digital de valor que aumente la fidelidad y
+                    lealtad de tus
+                    seguidores.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- El pie de página se define dentro del elemento <footer>, que incluye una foto de perfil, el nombre del autor y la fecha de creación de la página. -->
+    <footer class="footer">
+        <img class="profile-picture" src="./images/profile-erick-arias-blue-dark.png" alt="">
+        <h5>Erick Arias</h5>
+        <h5>&copy; 2023. Creative Studio</h5>
+    </footer>
+
+</body>
+
+</html>
