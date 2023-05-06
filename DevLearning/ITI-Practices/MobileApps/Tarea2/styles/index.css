@@ -1,0 +1,175 @@
+/* se importan dos fuentes de Google Fonts, "Roboto" y "Ubuntu". */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* La sección ":root" define variables CSS que contienen colores y fuentes que se utilizarán en el resto del archivo. Las variables de colores son para una paleta de colores que incluye azul, crema, amarillo, naranja y rojo-naranja. Las variables de fuentes son para las fuentes "Ubuntu" y "Roboto". */
+:root {
+    /*Colors Palette*/
+    --blue-color: #03045e;
+    --light-blue-color: #0077b6;
+    --sky-blue-color: #00b4d8;
+    --sky-blue-medium-color: #90e0ef;
+    --sky-blue-light-color: #caf0f8;
+
+    /* Fonts */
+    --ubuntu-font: "Ubuntu", sans-serif;
+    --roboto-font: "Roboto", sans-serif;
+}
+
+/* Luego, se define el estilo predeterminado para todos los elementos en la página con el selector "*", que establece los valores de margen, relleno y box-sizing. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* La sección "html" establece el tamaño de fuente base en 62.5% para facilitar el cálculo de tamaños de fuente en rem. También establece la fuente predeterminada en "Roboto" y agrega un comportamiento de desplazamiento suave. */
+html {
+    font-size: 62.5%;
+    font-family: var(--roboto-font);
+    scroll-behavior: smooth;
+}
+
+/* La sección "body" establece el color de fondo en "crema". */
+body {
+    background-color: var(--light-blue-color);
+}
+
+/* La clase "header" define el estilo para el encabezado de la página. Es fijo en la parte superior de la página, tiene un ancho del 100% de la ventana, un fondo de color azul y bordes redondeados en la parte inferior. La clase "navbar" dentro del encabezado define un ancho máximo y un relleno para los elementos dentro del menú, y un estilo de visualización de flexbox para distribuir los elementos horizontalmente. La clase "logo" define el ancho del logotipo. La clase "menu" dentro del encabezado establece el tamaño de fuente, una lista sin viñetas y un estilo de visualización de flexbox para distribuir los elementos horizontalmente. También establece el espacio entre elementos y el color de fuente en el color rojo-naranja. Los enlaces dentro de la clase "menu" tienen un peso de fuente de 700, sin decoración de texto y una transición de color en el hover. Cuando se pasa el cursor sobre los enlaces, el color cambia a naranja. */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--blue-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.header .navbar {
+    padding: 0 100px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header .navbar .logo {
+    width: 100px;
+}
+
+.header .navbar .menu {
+    font-size: 2.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 20px;
+}
+
+.header .navbar .menu a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--sky-blue-light-color);
+    transition: 0.3s ease;
+}
+
+.header .navbar .menu a:hover {
+    color: var(--sky-blue-medium-color);
+}
+
+/* La clase "main-container" define el estilo para el contenedor principal del contenido de la página. Establece un margen superior y un margen inferior, un relleno, el color de fuente en crema, el tamaño de fuente en 2 rem, un estilo de visualización de flexbox para distribuir los elementos verticalmente y un espacio entre elementos. La clase "title" dentro del "main-container" define la fuente "Ubuntu", el color de fuente en rojo-naranja, el texto centrado y un peso de fuente de 800. La clase "container" dentro del "main-container" establece un estilo de visualización de flexbox para distribuir los elementos horizontalmente, con un espacio entre elementos. La clase "subcontainer" dentro de la clase "container" establece un ancho máximo, una altura mínima, un relleno, un color de fondo en rojo-naranja, bordes redondeados y centrado vertical y horizontalmente. La clase "i" dentro de la clase "subcontainer" define el tamaño de fuente en 7 rem. La clase "h3" dentro de la clase "subcontainer" define el tamaño de fuente en 3 rem. */
+.main-container {
+    margin-top: 125px;
+    margin-bottom: 150px;
+    padding: 50px;
+    color: var(--light-blue-color);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 0 0 25px 25px;
+    border-radius: 0.5rem;
+}
+
+#todo-input {
+    margin: 20px auto 15px;
+}
+
+#todo-input input {
+    line-height: 2rem;
+    width: 95%;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin:5px;
+}
+
+#form-container{
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 15px 15px 0;
+    border-radius: 0.5rem;
+}
+#todo-input input[type=submit],input[type=button]{
+    margin-top: 25px;
+    background-color: rgb(27, 118, 172);
+    color: #fff;
+}
+#content-container{
+    display: flex;
+    justify-content: space-between;
+}
+#display-result{
+    width: 50%;
+    margin: 0 auto;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: rgb(180, 179, 179);
+    font-size: 25px;
+    line-height: 40px;
+}
+h1{
+    margin: 25px;
+    color: rgb(27, 118, 172);
+}
+
+/* La clase "footer" define el estilo para el pie de página de la página. Es fijo en la parte inferior de la página */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px;
+    background-color: var(--sky-blue-color);
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+}
+
+.footer h5 {
+    font-size: 1.7rem;
+    color: var(--blue-color);
+    font-family: var(--ubuntu-font);
+}
+
+.footer .profile-picture {
+    width: 175px;
+    border-radius: 50%;
+}
