@@ -2,12 +2,11 @@ function submitEventHandeler(event) {
     event.preventDefault();
 
     let inputValueSide1 = inputSide1.value;
-    let inputValueSide2 = inputSide1.value;
+    let inputValueSide2 = inputSide2.value;
 
     let areaText = document.querySelector("#display-result");
 
     let area = (inputValueSide1 * inputValueSide2) / 2;
-    console.log(area);
     areaText.textContent = "The Triangle area is : " + area;
     areaText.style.color = "#000";
 }
