@@ -56,10 +56,18 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-decoration: none;
 }
 
 .header .navbar .logo {
     width: 100px;
+}
+
+.header .navbar .logo-title {
+    font-size: 3rem;
+    color: var(--sky-blue-light-color);
+    text-align: center;
+    font-family: var(--ubuntu-font);
 }
 
 .header .navbar .menu {
@@ -85,71 +93,84 @@ body {
 
 /* La clase "main-container" define el estilo para el contenedor principal del contenido de la página. Establece un margen superior y un margen inferior, un relleno, el color de fuente en crema, el tamaño de fuente en 2 rem, un estilo de visualización de flexbox para distribuir los elementos verticalmente y un espacio entre elementos. La clase "title" dentro del "main-container" define la fuente "Ubuntu", el color de fuente en rojo-naranja, el texto centrado y un peso de fuente de 800. La clase "container" dentro del "main-container" establece un estilo de visualización de flexbox para distribuir los elementos horizontalmente, con un espacio entre elementos. La clase "subcontainer" dentro de la clase "container" establece un ancho máximo, una altura mínima, un relleno, un color de fondo en rojo-naranja, bordes redondeados y centrado vertical y horizontalmente. La clase "i" dentro de la clase "subcontainer" define el tamaño de fuente en 7 rem. La clase "h3" dentro de la clase "subcontainer" define el tamaño de fuente en 3 rem. */
 .main-container {
-    margin-top: 125px;
-    margin-bottom: 150px;
+    max-width: 1000px;
+    margin: 125px auto;
     padding: 50px;
     color: var(--light-blue-color);
     font-size: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
-.wrapper {
-    width: 60%;
-    margin: 50px auto;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 0 0 25px 25px;
-    border-radius: 0.5rem;
+.main-container .title {
+    color: var(--sky-blue-light-color);
+    margin: 25px;
 }
 
-#todo-input {
+.main-container #todo-input {
     margin: 20px auto 15px;
 }
 
-#todo-input input {
+.main-container #todo-input input {
     line-height: 2rem;
     width: 95%;
     font-size: 1.5rem;
     border: none;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: none;
     text-align: center;
-    margin:5px;
+    margin: 5px;
 }
 
-#form-container{
+.main-container #form-container {
     width: 50%;
-    border: 1px solid #ccc;
+    border: 4px solid var(--sky-blue-light-color);
     padding: 15px 15px 0;
     border-radius: 0.5rem;
 }
-#todo-input input[type=submit],input[type=button]{
+.main-container #todo-input input[type="submit"],
+input[type="button"] {
     margin-top: 25px;
-    background-color: rgb(27, 118, 172);
+    background-color: var(--sky-blue-color);
     color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
 }
-#content-container{
+.main-container #content-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-#display-result{
-    width: 50%;
+.main-container #display-result {
     margin: 0 auto;
-    color: #ccc;
+    color: var(--sky-blue-light-color);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    color: rgb(180, 179, 179);
+    color: var(--sky-blue-light-color);
     font-size: 25px;
     line-height: 40px;
 }
-h1{
-    margin: 25px;
-    color: rgb(27, 118, 172);
+
+.result-container {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-container .right-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid var(--blue-color); /* Height of the triangle rectangle */
+    border-right: 200px solid transparent; /* Width of the triangle rectangle */
 }
 
 /* La clase "footer" define el estilo para el pie de página de la página. Es fijo en la parte inferior de la página */

@@ -16,7 +16,7 @@
         <nav class="navbar">
             <a class="logo-container" href="./index.html">
                 <img class="logo" src="./images/geometric-shape.png" alt="Logo Creative Studio">
-                <h1>Geometric Figures</h1>
+                <h1 class="logo-title">GEOMETRIC FIGURES</h1>
             </a>
             <ul class="menu">
                 <li>
@@ -34,22 +34,25 @@
             </ul>
         </nav>
     </header>
+
     <section class="main-container">
-        <div class="wrapper">
-            <h1>Triangle Area Calculator</h1>
-            <div id="content-container">
-                <div id="form-container">
-                    <form id="todo-input">
-                        <input id="input-side1" placeholder="Enter length of side 1" type="number">
-                        <input id="input-side2" placeholder=" Enter length of side 2" type="number">
-                        <input value="Show the result" type="submit">
-                        <input value="Reset" type="button" onclick="resetb()">
-                    </form>
-                </div>
-                <div id="display-result">The result will show Here</div>
-            </div>
+        <h1 class="title">Right Triangle Area Calculator</h1>
+        <div id="content-container">
+            <article id="form-container">
+                <form id="todo-input">
+                    <input id="base" placeholder="BASE" type="number">
+                    <input id="height" placeholder="HEIGHT" type="number">
+                    <input value="Show the result" type="submit">
+                    <input value="Reset" type="button" onclick="resetb()">
+                </form>
+            </article>
+            <article class="result-container">
+                <div class="right-triangle"></div>
+                <p id="display-result">The result will show here</p>
+            </article>
         </div>
     </section>
+
     <!-- El pie de página se define dentro del elemento <footer>, que incluye una foto de perfil, el nombre del autor y la fecha de creación de la página. -->
     <footer class="footer">
         <img class="profile-picture" src="./images/profile-erick-arias-blue-dark.png" alt="">
