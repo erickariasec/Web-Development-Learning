@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <title>Animations</title>
+</head>
+
+<body>
+  <a-scene>
+    <!-- Add texture images -->
+    <a-assets>
+      <img src="../textures/sky.jpeg" id="sky">
+      <img src="../textures/mapa-mundi.jpg" id="earth">
+      <img src="../textures/moon.jpg" id="moon">
+    </a-assets>
+
+    <a-sphere position="0 2.25 -4" radius="1.5" animation="property: rotation; to: 0 360 0; loop: true; dur: 15000"
+      src="#earth"></a-sphere>
+
+    <a-sphere position="-6 2.25 -8" radius="1.5" animation="property: rotation; to: 0 360 0; loop: true; dur: 15000"
+      src="#moon"></a-sphere>
+
+    <a-sky src="#sky"></a-sky>
+  </a-scene>
+</body>
+
+</html>
