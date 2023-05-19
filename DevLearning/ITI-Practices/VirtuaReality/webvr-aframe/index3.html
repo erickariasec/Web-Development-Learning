@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Texturas</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <title>Textures</title>
     </head>
     <body>
         <a-scene>
@@ -12,7 +15,7 @@
                 <img src="./textures/sunset_sky.jpg" id="sunset-sky">
             </a-assets>
             <a-sphere position="0 1.25 -6" radius="1.5" color="#bffb05"></a-sphere>
-            <a-sky src="#sky"></a-sky>
+            <a-sky src="#sunset-sky"></a-sky>
         </a-scene>
     </body>
 </html>
