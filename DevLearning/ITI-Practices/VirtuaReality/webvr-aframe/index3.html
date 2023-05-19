@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texturas</title>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <!-- Add texture images -->
+            <a-assets>
+                <img src="./textures/sky.jpeg" id="sky">
+                <img src="./textures/sunset_sky.jpg" id="sunset-sky">
+            </a-assets>
+            <a-sphere position="0 1.25 -6" radius="1.5" color="#bffb05"></a-sphere>
+            <a-sky src="#sunset-sky"></a-sky>
+        </a-scene>
+    </body>
+</html>
