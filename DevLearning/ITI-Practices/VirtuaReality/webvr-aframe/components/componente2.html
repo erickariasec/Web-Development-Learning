@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Componentes Ejemplo 2</title>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="#222b50"></a-sky>
+        
+            <a-entity 
+                geometry="primitive: box" 
+                position="-2 2 -3" 
+                rotation="0 45 0" 
+                scale="0.5 0.5 0.5" 
+                material="color: red;">
+            </a-entity>
+
+            <a-entity 
+                geometry="primitive: box" 
+                position="2 2 -3" 
+                rotation="0 45 0" 
+                material="color: green;">
+            </a-entity>
+
+        </a-scene>
+        
+    </body>
+</html>

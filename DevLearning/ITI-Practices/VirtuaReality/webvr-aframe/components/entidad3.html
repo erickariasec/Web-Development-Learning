@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entidades Ejemplo 3 - Iluminación</title>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="#222b50"></a-sky>
+            <a-entity id="sphere" 
+                geometry="primitive: sphere"
+                position="0 1.25 -3" 
+                radius="1.25" 
+                material="color: #EF2D5E">
+                <a-light type="point" intensity="1.5" position="1 -2 1"></a-light>
+            </a-entity>
+
+        </a-scene>
+    </body>
+</html>

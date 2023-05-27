@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Componentes Ejemplo 3</title>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        
+        <script>
+            //alert("ejemplo aframe");
+            /*var entity = document.createElement("a-entity");
+            entity.setAttribute("geometry", {primitive: "sphere", radius: 1.25});
+            entity.setAttribute("position", {x: 0, y: 1.8, z: -3});
+        
+            entity.setAttribute("rotation", {x: 0, y: 45, z: 0});
+            entity.setAttribute("scale", {x: 2, y: 2, z: 2});
+            entity.setAttribute("material", {color: "yellow"});
+            document.querySelector("a-scene").appendChild(entity);*/$
+
+            var sceneEl = document.querySelector('a-scene');
+
+            AFRAME.registerComponent('do-something-once-loaded', {
+            init: function () {
+                // This will be called after the entity has properly attached and loaded.
+                console.log('I am ready!');
+            }
+            });
+
+            var entityEl = document.createElement('a-entity');
+            entityEl.setAttribute('do-something-once-loaded', '');
+            sceneEl.appendChild(entityEl);
+
+
+        </script>
+
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="#222b50"></a-sky>
+        
+            <a-entity >
+            </a-entity>
+        </a-scene>
+        
+    </body>
+</html>

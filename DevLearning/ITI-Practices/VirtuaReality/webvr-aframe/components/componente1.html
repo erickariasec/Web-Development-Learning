@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Componentes Ejemplo 1</title>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="#8eecf7"></a-sky>
+        
+            <a-entity id="box" 
+                geometry="primitive: box" 
+                material="color: red" 
+                animation="property: position; to: 0 5 -10; dur: 2000; easing: easeInOutQuad">
+            </a-entity>
+
+            <a-entity id="sphere"
+                geometry="primitive: sphere"
+                material="color: green"
+                radius="1"
+                animation="property: position; to: 5 4 -8; dur: 5000; easing: easeInOutQuad">
+            </a-entity>
+        </a-scene>
+        
+    </body>
+</html>
