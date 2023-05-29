@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <title>Homework - Entities and Components AFrame - Erick Arias</title>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <img src="./textures/tree-green-texture.jpg" id="tree-green">
+      <img src="./textures/leaves.jpg" id="leaves">
+      <img src="./textures/grass.jpg" id="grass">
+      <img src="./textures/sky.jpg" id="sky">
+      <img src="./textures/sun2.jpg" id="sun">
+    </a-assets>
+
+    <!-- Sun -->
+    <a-sphere id="sunset" position="0 -5 -25" radius="9.5"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 10000;  easing: linear" src="#sun"></a-sphere>
+
+    <!-- Trees (Left) -->
+    <a-entity position="-4 0 3" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="-4 0 1" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="-4 0 -1" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="-4 0 -3" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="-4 0 -5" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+
+
+    <!-- Trees (right) -->
+    <a-entity position="2 0 3" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="2 0 1" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="2 0 -1" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="2 0 -3" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+    <a-entity position="2 0 -5" scale="1 1 1">
+      <a-box src="#leaves" position="1 1.5 -3" rotation="0 45 0" scale="1 1.5 1" color="#2A7E19"></a-box>
+      <a-cylinder src="#tree-green" position="1 0.75 -3" radius="0.1" height="1.5" color="#765c48"></a-cylinder>
+    </a-entity>
+
+
+    <a-plane position="0 0 -4" rotation="-90 -90 0" width="12" height="8" src="#grass"></a-plane>
+    <a-sky src="#sky"></a-sky>
+  </a-scene>
+</body>
+
+</html>
