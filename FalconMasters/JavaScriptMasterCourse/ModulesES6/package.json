@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "moduleses6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config --watch"
+  },
+  "author": "Erick Arias <erickarias1999@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^3.23.0"
+  }
+}
