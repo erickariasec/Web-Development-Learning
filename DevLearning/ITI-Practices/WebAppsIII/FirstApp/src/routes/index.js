@@ -7,13 +7,13 @@ const routesAPI = (app) => {
   
   app.use("/api/v1", route);
   route.use("/products", productsRouter); // Middleware
-  route.use("/students", productsRouter); // Middleware
-  route.use("/employess", productsRouter); // Middleware
+  // route.use("/students", productsRouter); // Middleware
+  // route.use("/employess", productsRouter); // Middleware
 
-  app.use("/api/v2", route1);
-  route.use("/products", productsRouter); // Middleware
-  route.use("/students", productsRouter); // Middleware
-  route.use("/employees", productsRouter); // Middleware
+  // app.use("/api/v2", route1);
+  // route.use("/products", productsRouter); // Middleware
+  // route.use("/students", productsRouter); // Middleware
+  // route.use("/employees", productsRouter); // Middleware
 }
 
 module.exports = routesAPI;
