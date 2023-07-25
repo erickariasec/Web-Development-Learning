@@ -2,7 +2,7 @@ const { Client } = require("pg");
 
 const getConnection = async () => {
   const client = new Client({
-    host: lallah.db.elephantsql.com,
+    host: "lallah.db.elephantsql.com",
     user: "lckvhfdk",
     password: "XUSZAiizrUBvqyeh9cL1_2nDAakgjR4G",
     database: "lckvhfdk",

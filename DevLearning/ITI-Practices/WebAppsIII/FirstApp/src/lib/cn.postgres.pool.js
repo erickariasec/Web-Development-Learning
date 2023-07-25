@@ -15,4 +15,4 @@ const pool = new Pool({
 // password: "XUSZAiizrUBvqyeh9cL1_2nDAakgjR4G",
 // database: "lckvhfdk",
 
-module.exports = { pool };
+module.exports = pool;

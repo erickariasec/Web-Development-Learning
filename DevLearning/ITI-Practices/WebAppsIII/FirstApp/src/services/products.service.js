@@ -3,13 +3,12 @@ const { getConnection } = require("../lib/cn.postgres");
 class Product {
   constructor() {}
 
-  find() {
-    const id = 1;
-    if (id === 1) {
-      throw Boom.badRequest("404 Not Found");
-    }
+  async find() {
+    const client = await getConnection();
+    const query = "SELECT * FROM student";
+    const rta = await client.query(query);
 
-    return id;
+    return rta.rows;
   }
 
   // async find() {

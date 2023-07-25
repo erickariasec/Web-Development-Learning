@@ -5,4 +5,10 @@ class Nivel {
     this.pool = pool;
     this.pool.on("error", (err) => console.log(err));
   }
+
+  async find() {
+    const query = "SELECT * FROM nivel";
+    const rta = await this.pool.query(query);
+    return rta.rows;
+  }
 }

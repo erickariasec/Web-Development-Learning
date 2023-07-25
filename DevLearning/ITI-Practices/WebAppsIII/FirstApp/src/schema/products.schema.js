@@ -4,7 +4,6 @@ const id = Joi.number().integer().positive();
 const name = Joi.string().min(1).max(50);
 
 const createdSchemaProduct = Joi.object({
-  id: id.required(),
   name: name.required(),
 });
 
