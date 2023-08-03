@@ -2,8 +2,12 @@ require("dotenv").config();
 
 const config = {
   env: process.env.NODE || "dev",
-  db_user: process.env.DBUSER,
-  // implementar las demás variables
+  PORT: process.env.PORT || 3005,
+  DBUSER: process.env.DBUSER,
+  DBPASSWORD: process.env.DBPASSWORD,
+  DBHOST: process.env.DBHOST,
+  DBPORT: process.env.DBPORT,
+  DBNAME: process.env.DBNAME,
 };
 
 module.exports = { config };

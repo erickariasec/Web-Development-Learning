@@ -1,12 +1,13 @@
 const express = require("express");
 const routeAPI = require("./src/routes");
+const { config } = require("./src/config/config");
 const {
   logError,
   errorHandler,
   boomErrorHandler,
 } = require("./src/middlewares/logErrorHandler");
 const app = express();
-const port = process.env.PORT || 3005;
+const port = config.PORT;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");

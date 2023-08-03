@@ -1,14 +1,37 @@
-const pool = require("../lib/cn.postgres.pool");
+const { models } = require("../lib/cn.sequelize");
 
 class Nivel {
-  constructor() {
-    this.pool = pool;
-    this.pool.on("error", (err) => console.log(err));
-  }
+  constructor() {}
 
   async find() {
-    const query = "SELECT * FROM nivel";
-    const rta = await this.pool.query(query);
-    return rta.rows;
+    const rta = await models.Nivel.findAll();
+    return rta;
+  }
+
+  async findOne(id) {
+    const rta = await models.Nivel.findByPk(id);
+    return rta;
+  }
+
+  async create(data) {
+    const rta = await models.Nivel.create(data);
+    if (!rta) {
+      throw new Error(`This ${data} is not valid}`);
+    }
+    return rta;
+  }
+
+  async update(id, data) {
+    const nivelIdSearch = await this.findOne(id);
+    const rta = await nivelIdSearch.update(data);
+    return rta;
+  }
+
+  async delete(id) {
+    const nivelIdSearch = await this.findOne(id);
+    const rta = await nivelIdSearch.destroy();
+    return rta;
   }
 }
+
+module.exports = Nivel;
