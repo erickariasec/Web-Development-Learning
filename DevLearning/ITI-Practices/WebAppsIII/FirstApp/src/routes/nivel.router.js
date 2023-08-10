@@ -32,11 +32,13 @@ route.get("/:id", validator(getSchemaProduct, "params"), (req, res) => {
   });
 });
 
-route.post("/", validator(createdSchemaProduct, "body"), (req, res) => {
+route.post("/", async (req, res) => {
   try {
     const body = req.body;
-    res.json({
-      description: "Everything is Ok!",
+    const newNivel = service.create(body);
+    res.status(201).json({
+      message: "Nivel created",
+      newNivel,
     });
   } catch (error) {
     next(error);

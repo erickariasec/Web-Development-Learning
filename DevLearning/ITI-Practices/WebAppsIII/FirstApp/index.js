@@ -8,6 +8,7 @@ const {
 } = require("./src/middlewares/logErrorHandler");
 const app = express();
 const port = config.PORT;
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");

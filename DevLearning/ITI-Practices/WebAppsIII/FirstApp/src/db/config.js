@@ -7,13 +7,13 @@ const PASSWORD = encodeURIComponent(config.DBPASSWORD);
 
 const URI = `postgres://${USER}:${PASSWORD}@${config.DBHOST}:${config.DBPORT}/${config.DBNAME}`;
 
-const sequelize = new Sequelize(URI, {
-  dialect: "postgres",
-  logging: (...msg) => console.log(msg),
-  // logging: false,
-});
-
-setupInitial(sequelize);
-// sequelize.sync();
-
-module.exports = sequelize;
+module.exports = {
+  development: {
+    url: URI,
+    dialect: "mysql",
+  },
+  production: {
+    url: URI,
+    dialect: "postgres",
+  }
+}
